@@ -1,31 +1,30 @@
-import { Button, Container, makeStyles, TextField } from "@mui/material";
+import { Button, Container, TextField } from "@mui/material";
 import React, { useState } from "react";
 
-import history from "../../routes/history";
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    marginTop: theme.spacing(8),
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: "100%",
-    minHeight : '63vH', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   paper: {
+//     marginTop: theme.spacing(8),
+//     display: "flex",
+//     flexDirection: "column",
+//     alignItems: "center",
+//   },
+//   avatar: {
+//     margin: theme.spacing(1),
+//     backgroundColor: theme.palette.secondary.main,
+//   },
+//   form: {
+//     width: "100%",
+//     minHeight : '63vH', // Fix IE 11 issue.
+//     marginTop: theme.spacing(1),
+//   },
+//   submit: {
+//     margin: theme.spacing(3, 0, 2),
+//   },
+// }));
 
 export default function SignIn(props) {
-  const classes = useStyles();
+ 
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
 
@@ -57,16 +56,9 @@ export default function SignIn(props) {
   return (
     <Container component="main" maxWidth="xs" className={'uttu-cls'}>
       
-      <div className={classes.paper}>
-        <img
-          alt="logo"
-          width="150"
-          src="https://www.inadev.com/assets/images/logo.png"
-        />
-        {/* <h2 style={{ display: "block", color: "#003f5eab" }}>
-          Virtual Waiting Room
-        </h2> */}
-        <form className={classes.form} noValidate onSubmit={handleForm}>
+      <div >
+        
+        <form  noValidate onSubmit={handleForm}>
           <TextField
             variant="outlined"
             margin="normal"
@@ -98,7 +90,7 @@ export default function SignIn(props) {
             fullWidth
             variant="contained"
             color="primary"
-            className={classes.submit}
+           
           >
             Sign In
           </Button>
