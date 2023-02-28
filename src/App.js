@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { ToysTwoTone } from "@mui/icons-material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import React, { Fragment } from "react";
+import { ToastContainer } from "react-toastify";
+import HeaderContent from "./Components/navbar/HeaderContent";
+import Navbar from "./Components/navbar/Navbar";
+import Topbar from "./Global/TopBar";
+import AppRoutes from "./routes/AppRoutes";
+
+import { ColorModeContext, useMode } from "./theme";
 
 function App() {
+  const [theme, colorMode] = useMode();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+
+        <div className="app">
+          <HeaderContent></HeaderContent>
+          <AppRoutes></AppRoutes>
+        </div>
+        <ToastContainer />
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }
 
