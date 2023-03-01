@@ -1,6 +1,7 @@
 import React from 'react'
 import Topbar from '../../Global/TopBar'
 import Header from './Header/Header'
+import './styles.scss'
 
 const HeaderContent = () => {
   return (

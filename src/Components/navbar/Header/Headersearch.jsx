@@ -1,53 +1,107 @@
-import { BedOutlined } from "@mui/icons-material";
-import { Autocomplete, Box, TextField } from "@mui/material";
+import {
+  AccountCircle,
+  ArrowDropUp,
+  ArrowUpward,
+  BedOutlined,
+  CalendarTodayOutlined,
+  CalendarViewMonth,
+  DateRange,
+  Person,
+  Search,
+} from "@mui/icons-material";
+import {
+  Autocomplete,
+  Box,
+  Button,
+  IconButton,
+  InputAdornment,
+  TextField,
+} from "@mui/material";
+import "../styles.scss";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
 
-import React from "react";
+import React, { Fragment, useState } from "react";
 import { countries, top100Films } from "../../../assets/Mock/Data";
+import { DateRangePicker } from "react-date-range";
 
 const Headersearch = () => {
-    const [value, setValue] = React.useState(null);
+  const [value, setValue] = React.useState([null, null]);
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: new Date(),
+      key: "selection"
+    }
+  ]);
   return (
-    <Box
-      display={"flex"}
-      width="100%"
-      justifyContent="start"
-      gap={1}
-      pt={2}
-      pb={5}
-      pl={10}
-      pr={10}
-      className="Headersearch">
-       <Autocomplete
-      id="country-select-demo"
-      sx={{ width: 300 }}
-      options={countries}
-      autoHighlight
-      getOptionLabel={(option) => option.label}
-      renderOption={(props, option) => (
-        <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
-          <img
-            loading="lazy"
-            width="20"
-            src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
-            srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
-            alt=""
+    <Fragment>
+      <Box
+        display={"flex"}
+        width="100%"
+        maxWidth={"1120px"}
+        justifyContent="space-between"
+        pb={2}
+        ml={10}
+        mr={10}
+        pt={2}
+        borderRadius={"5px"}
+        position={"absolute"}
+        bottom={2}
+        height={"30px"}
+        bgcolor={"white"}
+        border="3px solid #febb02"
+        alignItems={"center"}
+        className="Headersearch">
+        <div className="headerSearchItem">
+          <BedOutlined></BedOutlined>{" "}
+          <input
+            type="text"
+            placeholder="Where are you going?"
+            className="headerSearchBar"
           />
-          {option.label} ({option.code}) +{option.phone}
-        </Box>
-      )}
-      renderInput={(params) => (
-        <TextField
-          {...params}
-          label="Choose a country"
-          inputProps={{
-            ...params.inputProps,
-            autoComplete: 'new-password', // disable autocomplete and autofill
-          }}
-        />
-      )}
-    />
- 
-    </Box>
+        </div>
+        <div className="headerSearchItem">
+          <CalendarTodayOutlined></CalendarTodayOutlined>{" "}
+          <span className="headerSearchtext">date to date</span>
+        </div>
+        <div className="headerSearchItem">
+          <Person></Person>{" "}
+          <span className="headerSearchtext">2 adult 2 children 1 room</span>
+        </div>
+        <div className="headerSearchItem">
+          <Button
+            sx={{ bgcolor: "#003B95" }}
+            variant="contained"
+            className="headerSearchtext">
+            Search
+          </Button>
+        </div>
+      </Box>
+      <DateRange
+                editableDateInputs={true}
+                onChange={(item) => setDate([item.selection])}
+                moveRangeOnFirstSelection={false}
+                ranges={date}
+                className="date"
+              />
+      {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <StaticDateRangePicker
+        displayStaticWrapperAs="desktop"
+        value={value}
+        onChange={(newValue) => {
+          setValue(newValue);
+        }}
+        renderInput={(startProps, endProps) => (
+          <React.Fragment>
+            <TextField {...startProps} />
+            <Box sx={{ mx: 2 }}> to </Box>
+            <TextField {...endProps} />
+          </React.Fragment>
+        )}
+      />
+    </LocalizationProvider> */}
+    </Fragment>
   );
 };
 
