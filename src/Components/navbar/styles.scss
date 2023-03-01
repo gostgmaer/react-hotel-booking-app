@@ -1,3 +1,27 @@
-.Navbar{
-    
+.Navbar {
+
+  
+
+}
+
+
+.Headersearch {
+    padding-left: 5px;
+    .headerSearchItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg{
+            color: lightgray;
+        }
+        .headerSearchBar{
+            outline: none;
+            border: none;
+        }
+        .headerSearchtext{
+            color:lightgray;
+            cursor: pointer;
+        }
+
+    }
 }

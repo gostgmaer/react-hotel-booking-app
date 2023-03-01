@@ -29,6 +29,7 @@ const Header = () => {
         pb={5}
         pl={10}
         pr={10}
+        position='relative'
         className="headerlist"
         sx={{
           "& .MuiButton-outlined": {
@@ -93,7 +94,9 @@ const Header = () => {
        <Button sx={{  bgcolor: "#194e9f",}} variant="contained">Sign in/ Register</Button>
        </Box>
       </Box>
-      <Headersearch></Headersearch>
+      
+        <Headersearch></Headersearch>
+     
     </Box>
   );
 };
