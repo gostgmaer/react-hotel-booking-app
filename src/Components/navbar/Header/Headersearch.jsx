@@ -1,10 +1,11 @@
 import {
   BedOutlined,
   CalendarTodayOutlined,
+  LocationCity,
   Minimize,
   Person,
 } from "@mui/icons-material";
-import { Box, Button, IconButton, TextField } from "@mui/material";
+import { Box, Button, Grid, IconButton, TextField, Typography } from "@mui/material";
 import "../styles.scss";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
@@ -13,6 +14,7 @@ import React, { Fragment, useState } from "react";
 import { countries, top100Films } from "../../../assets/Mock/Data";
 import { DateRangePicker, DateRange } from "react-date-range";
 import { format } from "date-fns";
+import CountrySelect from "./AuthComplete";
 
 const Headersearch = () => {
   const [value, setValue] = React.useState([null, null]);
@@ -58,7 +60,7 @@ const Headersearch = () => {
         pt={2}
         borderRadius={"5px"}
         position={"absolute"}
-        bottom={2}
+        bottom={'-20px'}
         height={"30px"}
         bgcolor={"white"}
         border="3px solid #febb02"
@@ -72,6 +74,9 @@ const Headersearch = () => {
             placeholder="Where are you going?"
             className="headerSearchBar"
           />
+        {/* <CountrySelect></CountrySelect> */}
+
+
         </div>
         <div className="headerSearchItem">
           <CalendarTodayOutlined></CalendarTodayOutlined>{" "}

@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useGlobalAppContext } from "../../Context/useContext";
 
 const List = () => {
-  return (
-    <div>List</div>
-  )
-}
+  const { headerPage, setHeaderPage } = useGlobalAppContext();
 
-export default List
+  useEffect(() => {
+    setHeaderPage(null);
+  }, []);
+
+  
+  return <div>List</div>;
+};
+
+export default List;

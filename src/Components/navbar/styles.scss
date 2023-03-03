@@ -4,9 +4,13 @@
 
 }
 
+.Header{
+    position: relative;
+}
 
 .Headersearch {
     padding-left: 5px;
+  
     .headerSearchItem {
         display: flex;
         align-items: center;
