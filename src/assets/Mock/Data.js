@@ -550,3 +550,95 @@ export const countries = [
   { code: "ZM", label: "Zambia", phone: "260" },
   { code: "ZW", label: "Zimbabwe", phone: "263" },
 ];
+export const propertyType = [
+  {
+    id: 1,
+    image: "/assets/images/57584488.jpeg",
+    description: "943,528 hotels",
+    title: "Hotels",
+  },
+  {
+    id: 2,
+    image: "/assets/images/119467716.jpeg",
+    description: "977,737 apartments",
+    title: "Apartments",
+  },
+  {
+    id: 3,
+    image: "/assets/images/45450084.jpeg",
+    description: "18,880 resorts",
+    title: "Resorts",
+  },
+  {
+    id: 4,
+    image: "/assets/images/100235855.jpeg",
+    description: "528,380 villas",
+    title: "Villas",
+  },
+  {
+    id: 5,
+    image: "/assets/images/52979454.jpeg",
+    description: "40,118 cabins",
+    title: "Cabins",
+  },
+  {
+    id: 6,
+    image: "/assets/images/45450074.jpeg",
+    description: "577,565 cottages",
+    title: "Cottages",
+  },
+  {
+    id: 7,
+    image: "/assets/images/45450090.jpeg",
+    description: "14,005 glamping sites",
+    title: "Glamping",
+  },
+  {
+    id: 8,
+    image: "/assets/images/45450058.jpeg",
+    description: "36,357 serviced apartments",
+    title: "Serviced apartments",
+  },
+  {
+    id: 9,
+    image: "/assets/images/45450113.jpeg",
+    description: "528,380 holiday homes",
+    title: "Holiday homes",
+  },
+
+  {
+    id: 10,
+    image: "/assets/images/45450073.jpeg",
+    description: "102,281 guest houses",
+    title: "Guest houses",
+  },
+  {
+    id: 11,
+    image: "/assets/images/45450082.jpeg",
+    description: "17,272 hostels",
+    title: "Hostels",
+  },
+  {
+    id: 12,
+    image: "/assets/images/45450093.jpeg",
+    description: "13,112 motels",
+    title: "Motels",
+  },{
+    id: 13,
+    image: "/assets/images/45450056.jpeg",
+    description: "197,435 B&Bs",
+    title: "B&Bs",
+  },
+  {
+    id: 14,
+    image: "/assets/images/45450279.jpeg",
+    description: "2,158 ryokans",
+    title: "Ryokans",
+  },
+  {
+    id: 15,
+    image: "/assets/images/45450064.jpeg",
+    description: "1,341 riads",
+    title: "Riads",
+  },
+];

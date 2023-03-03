@@ -1,9 +1,43 @@
-import React from 'react'
-
+import { Box, Typography } from "@mui/material";
+import React, { useEffect } from "react";
+import { hotelList } from "../../assets/Mock/bookingAll";
+import { propertyType } from "../../assets/Mock/Data";
+import Featured from "../../Components/Featured/Featured";
+import Hotellistdata from "../../Components/Hotellistdata";
+import PropertyList from "../../Components/Propertylist";
+import { useGlobalAppContext } from "../../Context/useContext";
+import "./home.scss";
 const Homepage = () => {
-  return (
-    <div>Homepage</div>
-  )
-}
+  const { headerPage, setHeaderPage } = useGlobalAppContext();
 
-export default Homepage
+  useEffect(() => {
+    setHeaderPage("home");
+  }, []);
+
+  return (
+    <Box ml={10} mr={10} mt={"50px"} className="Homepage">
+      <Featured></Featured>
+      <Box width={"100%"} mt={1}>
+        <Typography
+          variant="h2"
+          sx={{ textAlign: "start" }}
+          className="listTitile">
+          Browse by property type
+        </Typography>
+        <Typography
+          variant="h5"
+          sx={{ textAlign: "start" }}
+          className="listbody">
+          These popular destinations have a lot to offer
+        </Typography>
+
+        <PropertyList></PropertyList>
+      </Box>
+     
+      <Hotellistdata isprice={true} title={'Homes guests love'} data={hotelList.result}></Hotellistdata>
+      <Hotellistdata isprice={false} title={'Stay at our top unique properties'} data={hotelList.result.slice(6,12)}></Hotellistdata>
+    </Box>
+  );
+};
+
+export default Homepage;

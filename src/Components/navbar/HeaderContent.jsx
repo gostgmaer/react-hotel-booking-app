@@ -3,11 +3,11 @@ import Topbar from '../../Global/TopBar'
 import Header from './Header/Header'
 import './styles.scss'
 
-const HeaderContent = () => {
+const HeaderContent = ({page}) => {
   return (
     <div className='HeaderContent'>
         <Topbar></Topbar>
-        <Header></Header>
+        <Header  ></Header>
     </div>
   )
 }

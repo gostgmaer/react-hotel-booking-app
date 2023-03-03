@@ -9,12 +9,15 @@ import {
   TourOutlined,
 } from "@mui/icons-material";
 import { Box, Button, Typography, useTheme } from "@mui/material";
-import React from "react";
+import React, { Fragment } from "react";
+import { useGlobalAppContext } from "../../../Context/useContext";
 import { tokens } from "../../../theme";
 import Headersearch from "./Headersearch";
 
 
 const Header = () => {
+  const {headerPage} = useGlobalAppContext()
+
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
@@ -74,7 +77,9 @@ const Header = () => {
           </Button>
         </Box>
       </Box>
-      <Box
+     
+      
+      { headerPage==='home'&&<Fragment> <Box
         width="100%"
         display={'flex'}
         flexDirection='column'
@@ -93,9 +98,7 @@ const Header = () => {
        <Box>
        <Button sx={{  bgcolor: "#194e9f",}} variant="contained">Sign in/ Register</Button>
        </Box>
-      </Box>
-      
-        <Headersearch></Headersearch>
+      </Box> <Headersearch></Headersearch></Fragment> }
      
     </Box>
   );
