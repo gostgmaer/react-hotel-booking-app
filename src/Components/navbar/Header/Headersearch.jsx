@@ -15,6 +15,7 @@ import { countries, top100Films } from "../../../assets/Mock/Data";
 import { DateRangePicker, DateRange } from "react-date-range";
 import { format } from "date-fns";
 import CountrySelect from "./AuthComplete";
+import { useNavigate } from "react-router-dom";
 
 const Headersearch = () => {
   const [value, setValue] = React.useState([null, null]);
@@ -22,6 +23,7 @@ const Headersearch = () => {
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({ adult: 1, children: 0, room: 1 });
   const [location, setLocation] = useState(null);
+  const navigation = useNavigate()
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -46,6 +48,7 @@ const Headersearch = () => {
       location:location,date:date,option:options
     }
     console.log(obj);
+    navigation('/hotels')
    }
   return (
     <Fragment>

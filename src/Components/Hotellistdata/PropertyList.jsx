@@ -14,9 +14,10 @@ import "swiper/css/scrollbar";
 const PropertyData = ({ data,isprice }) => {
     console.log(data);
   return (
-    <Box marginTop={5} mb={5} className="PropertyData">
+    <Box marginTop={'10px'} mb={'5px'} className="PropertyData">
       <Swiper
         slidesPerView={4}
+        style={{paddingBottom:'10px'}}
         scrollbar={{ draggable: true }}
         className="mySwiper">
         {data.map((item) => (
@@ -24,7 +25,7 @@ const PropertyData = ({ data,isprice }) => {
             <Box className="propertyItem">
               <img style={{ width: "275px" }} src={item.main_photo_url} alt="" />
               <Box fontSize={"1rem !important"} display={"block"}>
-                <Typography variant="h4">{item.hotel_name}</Typography>
+                <Typography variant="h5">{item.hotel_name}</Typography>
                 <Typography variant="body2">{item?.address?.substring(0,40)}</Typography>
               </Box>
              { isprice&&<Box

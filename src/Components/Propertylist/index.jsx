@@ -27,7 +27,7 @@ const PropertyList = () => {
         ))}
       </Box> */}
 
-      <Box marginTop={5} mb={2} className="PropertyList">
+      <Box marginTop={'10px'} mb={'5px'} className="PropertyList">
         <Swiper
           slidesPerView={5}
           pagination={{ clickable: true }}
@@ -39,7 +39,7 @@ const PropertyList = () => {
             <SwiperSlide key={item.id}>
               <Box className="propertyItem">
                 <img style={{ width: "220px" }} src={item.image} alt="" />
-                <Typography variant="h4">{item.title}</Typography>
+                <Typography variant="h5">{item.title}</Typography>
                 <Typography variant="body2">{item.description}</Typography>
               </Box>
             </SwiperSlide>
