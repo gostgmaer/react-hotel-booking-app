@@ -4,9 +4,9 @@ import PropertyData from "./PropertyList";
 import "./style.scss";
 const Hotellistdata = ({title,isprice,data}) => {
   return (
-    <Box mt={1} width={'100%'}>
+    <Box mt={'5px'} width={'100%'}>
     <Typography
-      variant="h2"
+      variant="h3"
       sx={{ textAlign: "start" }}
       className="listTitile">
       {title}

@@ -2,6 +2,7 @@ import { ToysTwoTone } from "@mui/icons-material";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import React, { Fragment } from "react";
 import { ToastContainer } from "react-toastify";
+import Footer from "./Components/Footer/Footer";
 import HeaderContent from "./Components/navbar/HeaderContent";
 import Navbar from "./Components/navbar/Navbar";
 import Topbar from "./Global/TopBar";
@@ -20,6 +21,7 @@ function App() {
         <div className="app">
           <HeaderContent></HeaderContent>
           <AppRoutes></AppRoutes>
+          <Footer></Footer>
         </div>
         <ToastContainer />
       </ThemeProvider>
