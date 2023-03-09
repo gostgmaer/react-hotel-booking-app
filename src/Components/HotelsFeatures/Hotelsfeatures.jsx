@@ -1,7 +1,13 @@
 import React from "react";
 import "./styles.scss";
 import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
-import { Menu } from "@mui/icons-material";
+import {
+  ArrowForward,
+  ArrowRight,
+  EnergySavingsLeaf,
+  EnergySavingsLeafOutlined,
+  Menu,
+} from "@mui/icons-material";
 import { tokens } from "../../theme";
 
 const Hotelsfeatures = () => {
@@ -20,16 +26,22 @@ const Hotelsfeatures = () => {
         />
       </Box>
       <Box className="right">
+        <div className="leftBlock"></div>
+        <div className="rightBlock">
+
+        </div>
         <Box className="top">
           <Box className="titleBlock">
             <div className="title">
               {" "}
-              <h4>ITC Royal Bengal, a Luxury Collection Hotel, Kolkata</h4>{" "}
+              <Typography fontSize={'20px'} variant="h3" color="#3971C2" fontWeight={700}>
+                ITC Royal Bengal, a Luxury Collection Hotel, Kolkata
+              </Typography>{" "}
               <h5>*****</h5>
             </div>
             <Box className="review">
               <div className="status">
-                <h6>Good</h6>
+                <h5>Good</h5>
                 <span>2012 reviews</span>
               </div>
               <Button
@@ -45,45 +57,70 @@ const Hotelsfeatures = () => {
             </Box>
           </Box>
           <Box className="addressBlock">
-            <div className="location">
+            <Box
+              fontSize={"16px"}
+              textTransform="capitalize"
+              color="#3971C2"
+              className="location">
               {" "}
-              <span>kolkata</span> <span>show on map</span>{" "}
-              <span>1.3 km from center</span>
-            </div>
+              <span style={{ textDecoration: "underline" }}>kolkata</span>{" "}
+              <span style={{ textDecoration: "underline" }}>show on map</span>{" "}
+              <span style={{ color: "black" }}>1.3 km from center</span>
+            </Box>
             <Box className="icon">
-              <Menu></Menu> <span>Travel Sustainable property</span>
+              <EnergySavingsLeafOutlined></EnergySavingsLeafOutlined>{" "}
+              <span>Travel Sustainable property</span>
             </Box>
             <Box className="airport">
-              <span>free airport Taxi</span>
+              <span
+                style={{
+                  backgroundColor: "green",
+                  color: "#fff",
+                  padding: "5px",
+                }}>
+                free airport Taxi
+              </span>
             </Box>
           </Box>
         </Box>
         <Box className="buttom">
           <div className="bottomLeft">
-            <div className="bottomleftbed">
-              <span>Towers Exclusive, Guest room, 1 Queen</span>
+            <div style={{ padding: "5px" }} className="bottomleftbed">
+              <span style={{ fontWeight: "bold" }}>
+                Towers Exclusive, Guest room, 1 Queen
+              </span>
               <span>1 double bed</span>
             </div>
             <div className="bottomleftfeature">
-              <span>Breakfast included</span>
-              <span>
+              <span style={{ color: "green", fontWeight: "bold" }}>
+                Breakfast included
+              </span>
+              <span style={{ color: "green", fontWeight: "bold" }}>
                 <span>FREE cancellation </span> •{" "}
                 <span>No prepayment needed</span>
               </span>
-              <span className="items">
+              <span style={{ color: "green" }} className="items">
                 You can cancel later, so lock in this great price today.
               </span>
-              <span>Only 5 rooms left at this price on our site</span>
+              <span style={{ color: "crimson", fontWeight: "bold" }}>
+                Only 5 rooms left at this price on our site
+              </span>
             </div>
           </div>
-          <div className="bottomRight">
+          <Box className="bottomRight">
             <span>
               <span>2 night</span> <span>2 adult</span>
             </span>
-            <span className="price">$ 12,350</span>
+            <span
+              className="price"
+              style={{ fontSize: "2rem", fontWeight: "bold" }}>
+              $ 12,350
+            </span>
             <span className="tax">+₹ 1,524 taxes and charges</span>
-            <Button variant="contained">See avaliabality</Button>
-          </div>
+            <Button variant="contained" endIcon={<ArrowRight />}>
+              See avaliabality
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Box>

@@ -21,7 +21,9 @@
                 align-items: center;
                 justify-content: space-between;
 
-                .title {}
+                .title {
+                    
+                }
 
                 .review {
                     display: flex;
@@ -29,7 +31,12 @@
                     justify-content: space-between;
                     gap: 10px;
 
-                    .status {}
+                    .status {
+                        display: flex;
+                        align-items: flex-end;
+                        flex-direction: column;
+
+                    }
                 }
 
             }
@@ -85,14 +92,14 @@
                     display: flex;
                     align-items: flex-start;
                     flex-direction: column;
-                    gap: 5px;
+                    gap: 2px;
                 }
 
                 .bottomleftbed {
                     display: flex;
                     align-items: flex-start;
                     flex-direction: column;
-                    gap: 5px;
+                   // gap: 5px;
 
                 }
 
@@ -101,7 +108,8 @@
             .bottomRight {
                 display: flex;
                 flex-direction: column;
-                gap: 5px;
+                //  gap: 5px;
+                align-items: end;
             }
 
         }
