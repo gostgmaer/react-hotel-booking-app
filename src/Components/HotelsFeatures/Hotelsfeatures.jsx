@@ -16,7 +16,8 @@ const Hotelsfeatures = () => {
   return (
     <Box
       className="HotelsfeaturesItem"
-      bgcolor={colors.grey[100]}
+     
+      bgcolor={'#fff'}
       color={colors.grey[900]}>
       <Box className="left">
         <img
@@ -34,7 +35,7 @@ const Hotelsfeatures = () => {
           <Box className="titleBlock">
             <div className="title">
               {" "}
-              <Typography fontSize={'20px'} variant="h3" color="#3971C2" fontWeight={700}>
+              <Typography fontSize={'18px'} variant="h3" color="#3971C2" fontWeight={700}>
                 ITC Royal Bengal, a Luxury Collection Hotel, Kolkata
               </Typography>{" "}
               <h5>*****</h5>
@@ -63,8 +64,8 @@ const Hotelsfeatures = () => {
               color="#3971C2"
               className="location">
               {" "}
-              <span style={{ textDecoration: "underline" }}>kolkata</span>{" "}
-              <span style={{ textDecoration: "underline" }}>show on map</span>{" "}
+              <span style={{ textDecoration: "underline",cursor:'pointer' }}>kolkata</span>{" "}
+              <span style={{ textDecoration: "underline",cursor:'pointer' }}>show on map</span>{" "}
               <span style={{ color: "black" }}>1.3 km from center</span>
             </Box>
             <Box className="icon">

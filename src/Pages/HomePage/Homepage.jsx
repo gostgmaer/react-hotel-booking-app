@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React, { Fragment, useEffect } from "react";
 import { hotelList } from "../../assets/Mock/bookingAll";
-import { propertyType } from "../../assets/Mock/Data";
 import Featured from "../../Components/Featured/Featured";
 import Hotellistdata from "../../Components/Hotellistdata";
 import Emailform from "../../Components/mainlist/Emailform";
@@ -9,10 +8,11 @@ import PropertyList from "../../Components/Propertylist";
 import { useGlobalAppContext } from "../../Context/useContext";
 import "./home.scss";
 const Homepage = () => {
-  const { headerPage, setHeaderPage } = useGlobalAppContext();
+  const { setHeaderPage } = useGlobalAppContext();
 
   useEffect(() => {
     setHeaderPage("home");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
