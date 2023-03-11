@@ -1,3 +1,124 @@
-.Hotelsfeatures{
-    
+.HotelsfeaturesItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    &:first-child{
+        background-color: #F0F8FF;
+        box-shadow: 1px 1px 5px 4px #c6e2fa;
+    }
+
+    .left {}
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .titleBlock {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .title {
+                    
+                }
+
+                .review {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    .status {
+                        display: flex;
+                        align-items: flex-end;
+                        flex-direction: column;
+
+                    }
+                }
+
+            }
+
+            .addressBlock {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                flex-direction: column;
+
+                .location {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 20px;
+
+                }
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 5px;
+
+                }
+
+                .airport {
+                    .span {
+                        background-color: #fff;
+                    }
+
+                }
+            }
+
+        }
+
+        .buttom {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            border-left: 2px solid gray;
+            padding: 10px;
+            gap: 20px;
+
+            .bottomLeft {
+
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5px;
+
+                .bottomleftfeature {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 2px;
+                }
+
+                .bottomleftbed {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                   // gap: 5px;
+
+                }
+
+            }
+
+            .bottomRight {
+                display: flex;
+                flex-direction: column;
+                //  gap: 5px;
+                align-items: flex-end;
+            }
+
+        }
+    }
 }
