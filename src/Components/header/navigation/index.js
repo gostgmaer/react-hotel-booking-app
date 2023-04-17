@@ -10,12 +10,11 @@ import {
 } from "react-icons/md";
 
 const Navigation = () => {
-
-const route = useRouter()
-console.log(route);
-const activeClass ={
-    color:'red'
-}
+  const route = useRouter();
+  console.log(route);
+  const activeClass = {
+    color: "red",
+  };
 
   return (
     <Box
@@ -38,7 +37,12 @@ const activeClass ={
         },
       }}
     >
-      <Button variant="outlined" style={route.pathname==='/'?{border:'1px solid #f1f1f1'}:{}} className={route.pathname==='/'?'border  border-stone-100 ':''} startIcon={<MdOutlineBed />}>
+      <Button
+        variant="outlined"
+        style={route.pathname === "/" ? { border: "1px solid #f1f1f1" } : {}}
+        className={route.pathname === "/" ? "border  border-stone-100 " : ""}
+        startIcon={<MdOutlineBed />}
+      >
         Stys
       </Button>
       <Button variant="outlined" startIcon={<MdOutlineFlight />}>
