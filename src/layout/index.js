@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <Box className="main" component={"main"}>
       <Header />
-      <Box className=" text-white py-2 px-2 flex justify-between items-center">
+      <Box className=" text-white flex justify-between items-center">
         {children}
       </Box>
       <Footer />

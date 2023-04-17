@@ -5,8 +5,15 @@ import {
   Minimize,
   Person,
 } from "@mui/icons-material";
-import { Box, Button, Grid, IconButton, TextField, Typography } from "@mui/material";
-import "../styles.scss";
+import {
+  Box,
+  Button,
+  Grid,
+  IconButton,
+  TextField,
+  Typography,
+} from "@mui/material";
+
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 
@@ -14,8 +21,7 @@ import React, { Fragment, useState } from "react";
 import { countries, top100Films } from "../../../assets/Mock/Data";
 import { DateRangePicker, DateRange } from "react-date-range";
 import { format } from "date-fns";
-import CountrySelect from "./AuthComplete";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/router";
 
 const Headersearch = () => {
   const [value, setValue] = React.useState([null, null]);
@@ -23,7 +29,7 @@ const Headersearch = () => {
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({ adult: 1, children: 0, room: 1 });
   const [location, setLocation] = useState(null);
-  const navigation = useNavigate()
+  const navigation = useRouter();
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -43,54 +49,41 @@ const Headersearch = () => {
       };
     });
   };
-  const handleSearch = () => { 
-    const obj ={
-      location:location,date:date,option:options
-    }
+  const handleSearch = () => {
+    const obj = {
+      location: location,
+      date: date,
+      option: options,
+    };
     console.log(obj);
-    navigation('/hotels')
-   }
+    navigation.push("/hotels");
+  };
   return (
     <Fragment>
       <Box
-        display={"flex"}
-        width="100%"
-        maxWidth={"1120px"}
-        justifyContent="space-between"
-        pb={2}
-        ml={10}
-        mr={10}
-        pt={2}
-        borderRadius={"5px"}
-        position={"absolute"}
-        bottom={'-20px'}
-        height={"30px"}
-        bgcolor={"white"}
         border="3px solid #febb02"
-        alignItems={"center"}
-        className="Headersearch">
-        <div className="headerSearchItem">
+        className="Headersearch flex items-center bg-white rounded-sm w-full"
+      >
+        <div className="headerSearchItem text-cyan-950">
           <BedOutlined></BedOutlined>{" "}
           <input
-          onChange={(e)=>setLocation(e.target['value'])}
-         
+            onChange={(e) => setLocation(e.target["value"])}
             placeholder="Where are you going?"
             className="headerSearchBar"
           />
-        {/* <CountrySelect></CountrySelect> */}
-
-
         </div>
-        <div className="headerSearchItem">
+        <div className="headerSearchItem relative">
           <CalendarTodayOutlined></CalendarTodayOutlined>{" "}
           <span
             onClick={() => setOpenDate(!openDate)}
-            className="headerSearchtext">{`${format(
-            date[0].startDate,
+            className="headerSearchtext"
+          >{`${format(date[0].startDate, "eee d MMM, yyyy")} --- ${format(
+            date[0].endDate,
             "eee d MMM, yyyy"
-          )} --- ${format(date[0].endDate, "eee d MMM, yyyy")}`}</span>
+          )}`}</span>
           {openDate && (
             <DateRange
+              className="absolute top-10 right-0 left-0"
               onRangeFocusChange={() => console.log(date)}
               editableDateInputs={true}
               // @ts-ignore
@@ -98,30 +91,32 @@ const Headersearch = () => {
               onChange={(item) => handleDateChange(item)}
               moveRangeOnFirstSelection={false}
               ranges={date}
-              className="date"
             />
           )}
         </div>
-        <div className="headerSearchItem">
+        <div className="headerSearchItem relative">
           <Person></Person>{" "}
           <span
             onClick={() => setOpenOptions(!openOptions)}
-            className="headerSearchtext">{`adult ${options.adult} . children ${options.children} . room ${options.room}`}</span>
+            className="headerSearchtext"
+          >{`adult ${options.adult} . children ${options.children} . room ${options.room}`}</span>
           {openOptions && (
-            <div className="option">
+            <div className="option absolute top-10 right-0 left-0 w-24 bg-white border text-cyan-950">
               <div className="optionItem">
                 <span className="label">Adult</span>
                 <div className="counter">
                   <button
                     className="minus"
                     disabled={options.adult <= 1}
-                    onClick={() => handleOption("adult", "d")}>
+                    onClick={() => handleOption("adult", "d")}
+                  >
                     -
                   </button>
                   <span className="value">{options.adult}</span>
                   <button
                     className="plus"
-                    onClick={() => handleOption("adult", "i")}>
+                    onClick={() => handleOption("adult", "i")}
+                  >
                     +
                   </button>
                 </div>
@@ -129,12 +124,18 @@ const Headersearch = () => {
               <div className="optionItem">
                 <span className="label">Children</span>
                 <div className="counter">
-                  <button className="minus"  disabled={options.children <= 0}
-                    onClick={() => handleOption("children", "d")}>
+                  <button
+                    className="minus"
+                    disabled={options.children <= 0}
+                    onClick={() => handleOption("children", "d")}
+                  >
                     -
                   </button>
                   <span className="value">{options.children}</span>
-                  <button className="plus"  onClick={() => handleOption("children", "i")}>
+                  <button
+                    className="plus"
+                    onClick={() => handleOption("children", "i")}
+                  >
                     +
                   </button>
                 </div>
@@ -142,12 +143,18 @@ const Headersearch = () => {
               <div className="optionItem">
                 <span className="label">Room</span>
                 <div className="counter">
-                  <button className="minus" disabled={options.room <= 1}
-                    onClick={() => handleOption("room", "d")}>
+                  <button
+                    className="minus"
+                    disabled={options.room <= 1}
+                    onClick={() => handleOption("room", "d")}
+                  >
                     -
                   </button>
                   <span className="value">{options.room}</span>
-                  <button className="plus"  onClick={() => handleOption("room", "i")}>
+                  <button
+                    className="plus"
+                    onClick={() => handleOption("room", "i")}
+                  >
                     +
                   </button>
                 </div>
@@ -155,11 +162,11 @@ const Headersearch = () => {
               <div className="optionItem done-btn">
                 <Button
                   className="done"
-                  variant='outlined'
-                  color='primary'
-                  sx={{bgcolor:'transparent'}}
-                  
-                  onClick={() => setOpenOptions(!openOptions)}>
+                  variant="outlined"
+                  color="primary"
+                  sx={{ bgcolor: "transparent" }}
+                  onClick={() => setOpenOptions(!openOptions)}
+                >
                   Done
                 </Button>
               </div>
@@ -171,28 +178,12 @@ const Headersearch = () => {
             sx={{ bgcolor: "#003B95" }}
             variant="contained"
             onClick={handleSearch}
-            className="headerSearchtext">
+            className="headerSearchtext"
+          >
             Search
           </Button>
         </div>
       </Box>
-
-      {/* <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <StaticDateRangePicker
-        displayStaticWrapperAs="desktop"
-        value={value}
-        onChange={(newValue) => {
-          setValue(newValue);
-        }}
-        renderInput={(startProps, endProps) => (
-          <React.Fragment>
-            <TextField {...startProps} />
-            <Box sx={{ mx: 2 }}> to </Box>
-            <TextField {...endProps} />
-          </React.Fragment>
-        )}
-      />
-    </LocalizationProvider> */}
     </Fragment>
   );
 };
