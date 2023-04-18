@@ -11,7 +11,7 @@ import {
 
 const Navigation = () => {
   const route = useRouter();
-  console.log(route);
+
   const activeClass = {
     color: "red",
   };
