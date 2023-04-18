@@ -17,7 +17,7 @@ import {
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { countries, top100Films } from "../../../assets/Mock/Data";
 import { DateRangePicker, DateRange } from "react-date-range";
 import { format } from "date-fns";
@@ -25,6 +25,7 @@ import { useRouter } from "next/router";
 
 const Headersearch = () => {
   const [value, setValue] = React.useState([null, null]);
+
   const [openDate, setOpenDate] = useState(false);
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({ adult: 1, children: 0, room: 1 });
@@ -37,6 +38,9 @@ const Headersearch = () => {
       key: "selection",
     },
   ]);
+  useEffect(() => {
+    console.log(date);
+  }, [date]);
 
   const handleDateChange = (item) => {
     setDate([item.selection]);
@@ -64,7 +68,7 @@ const Headersearch = () => {
         border="3px solid #febb02"
         className="Headersearch flex items-center bg-white rounded-sm w-full"
       >
-        <div className="headerSearchItem text-cyan-950">
+        <div className="headerSearchItem flex-3/4 text-cyan-950">
           <BedOutlined></BedOutlined>{" "}
           <input
             onChange={(e) => setLocation(e.target["value"])}
@@ -72,18 +76,22 @@ const Headersearch = () => {
             className="headerSearchBar"
           />
         </div>
-        <div className="headerSearchItem relative">
-          <CalendarTodayOutlined></CalendarTodayOutlined>{" "}
+
+        <Box
+          className="headerSearchItem text-blue-950 flex-1 relative"
+          sx={{ "&>.newclass:": { width: "100%" } }}
+        >
+          <CalendarTodayOutlined></CalendarTodayOutlined>
           <span
             onClick={() => setOpenDate(!openDate)}
             className="headerSearchtext"
-          >{`${format(date[0].startDate, "eee d MMM, yyyy")} --- ${format(
+          >{`${format(date[0].startDate, "eee d MMM")}  ---  ${format(
             date[0].endDate,
-            "eee d MMM, yyyy"
+            "eee d MMM"
           )}`}</span>
           {openDate && (
             <DateRange
-              className="absolute top-10 right-0 left-0"
+              className="absolute  top-10 right-0 left-0"
               onRangeFocusChange={() => console.log(date)}
               editableDateInputs={true}
               // @ts-ignore
@@ -93,8 +101,8 @@ const Headersearch = () => {
               ranges={date}
             />
           )}
-        </div>
-        <div className="headerSearchItem relative">
+        </Box>
+        <div className="headerSearchItem flex-1 relative">
           <Person></Person>{" "}
           <span
             onClick={() => setOpenOptions(!openOptions)}
@@ -173,7 +181,7 @@ const Headersearch = () => {
             </div>
           )}
         </div>
-        <div className="headerSearchItem">
+        <div className="headerSearchItem flex-1">
           <Button
             sx={{ bgcolor: "#003B95" }}
             variant="contained"
