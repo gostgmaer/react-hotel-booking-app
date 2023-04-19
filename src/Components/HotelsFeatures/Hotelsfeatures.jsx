@@ -1,6 +1,13 @@
 import React from "react";
-import "./styles.scss";
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+
+import {
+  Box,
+  Button,
+  IconButton,
+  Typography,
+  colors,
+  useTheme,
+} from "@mui/material";
 import {
   ArrowForward,
   ArrowRight,
@@ -8,17 +15,16 @@ import {
   EnergySavingsLeafOutlined,
   Menu,
 } from "@mui/icons-material";
-import { tokens } from "../../theme";
 
 const Hotelsfeatures = () => {
   const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+
   return (
     <Box
       className="HotelsfeaturesItem"
-     
-      bgcolor={'#fff'}
-      color={colors.grey[900]}>
+      bgcolor={"#fff"}
+      color={colors.grey[900]}
+    >
       <Box className="left">
         <img
           style={{ height: "200px" }}
@@ -28,14 +34,17 @@ const Hotelsfeatures = () => {
       </Box>
       <Box className="right">
         <div className="leftBlock"></div>
-        <div className="rightBlock">
-
-        </div>
+        <div className="rightBlock"></div>
         <Box className="top">
           <Box className="titleBlock">
             <div className="title">
               {" "}
-              <Typography fontSize={'18px'} variant="h3" color="#3971C2" fontWeight={700}>
+              <Typography
+                fontSize={"18px"}
+                variant="h3"
+                color="#3971C2"
+                fontWeight={700}
+              >
                 ITC Royal Bengal, a Luxury Collection Hotel, Kolkata
               </Typography>{" "}
               <h5>*****</h5>
@@ -51,8 +60,9 @@ const Hotelsfeatures = () => {
                   fontSize: "18px",
                   p: "5px",
                   minWidth: "40px",
-                  backgroundColor: colors.primary[500],
-                }}>
+                  backgroundColor: colors.blue[500],
+                }}
+              >
                 8.6
               </Button>
             </Box>
@@ -62,10 +72,15 @@ const Hotelsfeatures = () => {
               fontSize={"16px"}
               textTransform="capitalize"
               color="#3971C2"
-              className="location">
+              className="location"
+            >
               {" "}
-              <span style={{ textDecoration: "underline",cursor:'pointer' }}>kolkata</span>{" "}
-              <span style={{ textDecoration: "underline",cursor:'pointer' }}>show on map</span>{" "}
+              <span style={{ textDecoration: "underline", cursor: "pointer" }}>
+                kolkata
+              </span>{" "}
+              <span style={{ textDecoration: "underline", cursor: "pointer" }}>
+                show on map
+              </span>{" "}
               <span style={{ color: "black" }}>1.3 km from center</span>
             </Box>
             <Box className="icon">
@@ -78,7 +93,8 @@ const Hotelsfeatures = () => {
                   backgroundColor: "green",
                   color: "#fff",
                   padding: "5px",
-                }}>
+                }}
+              >
                 free airport Taxi
               </span>
             </Box>
@@ -114,7 +130,8 @@ const Hotelsfeatures = () => {
             </span>
             <span
               className="price"
-              style={{ fontSize: "2rem", fontWeight: "bold" }}>
+              style={{ fontSize: "2rem", fontWeight: "bold" }}
+            >
               $ 12,350
             </span>
             <span className="tax">+₹ 1,524 taxes and charges</span>

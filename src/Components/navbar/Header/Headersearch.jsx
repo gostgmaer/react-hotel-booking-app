@@ -69,7 +69,7 @@ export const SearchHotels = (second) => {
   return (
     <Box
       border="3px solid #febb02"
-      className="Headersearch  flex items-center bg-white rounded-sm w-full gap-2 justify-between backdrop-grayscale-0 text-cyan-950"
+      className="Headersearch absolute flex items-center bg-white rounded-sm w-full gap-2 justify-between backdrop-grayscale-0 text-cyan-950"
     >
       <Stack direction={"row"} flex={1.5}>
         <FormControl sx={{ width: "100%", p: 0.5 }} variant="outlined">

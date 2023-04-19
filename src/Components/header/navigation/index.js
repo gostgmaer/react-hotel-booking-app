@@ -42,6 +42,7 @@ const Navigation = () => {
         style={route.pathname === "/" ? { border: "1px solid #f1f1f1" } : {}}
         className={route.pathname === "/" ? "border  border-stone-100 " : ""}
         startIcon={<MdOutlineBed />}
+        onClick={() => route.push("/")}
       >
         Stys
       </Button>

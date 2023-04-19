@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { countries } from "../../../assets/Mock/Data";
-import { useNavigate } from "react-router-dom";
+
 import {
   BedOutlined,
   CalendarTodayOutlined,
@@ -23,7 +23,7 @@ const Sidebarelement = () => {
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({ adult: 1, children: 0, room: 1 });
   const [location, setLocation] = useState(null);
-  const navigation = useNavigate();
+
   const [date, setDate] = useState([
     {
       startDate: new Date(),
@@ -50,7 +50,7 @@ const Sidebarelement = () => {
       option: options,
     };
     console.log(obj);
-    navigation("/hotels");
+
   };
   return (
     <Box

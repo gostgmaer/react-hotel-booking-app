@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box className="footerbottom-0 gap-5 w-full bg-blue-900 px-24 text-gray-50 flex flex-col py-2 pt-5">
+    <Box className="footerbottom-0 gap-5 w-full bg-blue-50 px-24 text-gray-900 flex flex-col py-2 pt-5">
       <Box className="fLists flex justify-between gap-5">
         <ul className="fList flex flex-col gap-1">
           <li className="fListItem cursor-pointer">Countries</li>
