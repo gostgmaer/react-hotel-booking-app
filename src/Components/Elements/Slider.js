@@ -10,16 +10,16 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation, Pagination } from "swiper";
 import { response } from "@/assets/Mock/property";
-import Propertycard from "./Propertycard";
+import SimplePropertycard from "./Simplecard";
 
-const Slider = () => {
+const Slider = ({ children, slide }) => {
+  console.log(children);
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={slide ? slide : 4}
         spaceBetween={10}
         navigation={true}
-      
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -37,10 +37,7 @@ const Slider = () => {
         modules={[Navigation]}
         className=" flex"
       >
-        {response.byProperty.items.map((item,index) => (
-          <SwiperSlide key={index} > <Propertycard data={item}></Propertycard></SwiperSlide>
-         
-        ))}
+        {children}
       </Swiper>
     </>
   );
