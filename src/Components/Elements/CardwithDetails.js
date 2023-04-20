@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 
-const Propertycard = ({ data }) => {
+const CardwithDeatils = ({ data }) => {
   return (
     <Card sx={{ maxWidth: 345 }} className=" bg-transparent border-none">
       <CardMedia
@@ -16,7 +16,7 @@ const Propertycard = ({ data }) => {
         title="green iguana"
       />
       <CardContent className="flex flex-col gap-1 item-start p-0 bg-transparent mt-2">
-        <Typography gutterBottom variant="h6" fontWeight={'600'} fontSize={'16px'}>
+        <Typography gutterBottom variant="h6">
           Moustache Rishikesh Luxuria
         </Typography>
         <Typography variant="body2" color="text.secondary">
@@ -25,12 +25,14 @@ const Propertycard = ({ data }) => {
         <Typography variant="body2" color="text.secondary">
           Starting from <span>Rs. 13,949</span>
         </Typography>
+        <Typography className=" flex justify-start" variant="body2" color="text.secondary">
+          <span className=" p-2 bg-blue-950 text-white">9.3</span>
+          <span>Very good</span>
+          <span>212 reviews</span>
+        </Typography>
       </CardContent>
     </Card>
   );
 };
 
-export default Propertycard;
-
-
-
+export default CardwithDeatils;

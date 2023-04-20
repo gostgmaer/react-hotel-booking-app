@@ -1,31 +1,24 @@
-import Hotelsfeatures from "@/Components/HotelsFeatures/Hotelsfeatures"
-import HotelSearchSidebar from "@/Components/List/hotelSearchSidebar"
-import Layout from "@/layout"
-import { Box } from "@mui/material"
-import { hotelList } from "../../../../public/assets/Mock/bookingAll"
+import Hotelsfeatures from "@/Components/HotelsFeatures/Hotelsfeatures";
+import HotelSearchSidebar from "@/Components/List/hotelSearchSidebar";
+import Layout from "@/layout";
+import { Box } from "@mui/material";
+import { hotelList } from "../../../../public/assets/Mock/bookingAll";
 
 const index = () => {
   return (
-   <Layout>
-    <Box
-      display={"flex"}
-      justifyContent="space-around"
-      alignItems={"flex-start"}
-      bgcolor='f2f2f2'
-      padding='0 50px'
-      gap={1}
-      className="hotelList">
-      <Box  bgcolor={"#FEBB02"} className="leftSide" flex={1}>
-        <HotelSearchSidebar />
+    <Layout>
+      <Box className="hotelList  w-full px-24 text-gray-950  py-8 gap-10  relative flex items-start">
+        <Box flex={1}>
+          <HotelSearchSidebar />
+        </Box>
+        <Box  flex={2}>
+          {hotelList.result.map((hotel) => (
+            <Hotelsfeatures key={hotel.id}></Hotelsfeatures>
+          ))}
+        </Box>
       </Box>
-      <Box className="rightSide"  >
-        {hotelList.result.map((hotel) => (
-          <Hotelsfeatures key={hotel.id}></Hotelsfeatures>
-        ))}
-      </Box>
-    </Box>
-   </Layout>
-  )
-}
+    </Layout>
+  );
+};
 
-export default index
+export default index;
