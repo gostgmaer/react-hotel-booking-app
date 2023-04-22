@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Herosection />
-        <Box className=" w-full px-20 text-gray-950 flex flex-col gap-2 py-8  relative">
+        <Box className=" w-full px-20  text-gray-950 flex flex-col gap-2 py-8  relative">
           <Perfectstay />
           <Destination></Destination>
           <Explore />

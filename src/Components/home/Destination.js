@@ -33,7 +33,6 @@ const Destination = () => {
       <Stack direction={"row"} className="headerlist gap-1 my-2 items-center">
         <RadioGroup
           row
-
           aria-labelledby="demo-row-radio-buttons-group-label"
           name="row-radio-buttons-group"
           onChange={handleClick}
@@ -44,7 +43,7 @@ const Destination = () => {
               sx={{
                 "&.MuiFormControlLabel-root:has(span.Mui-checked)": {
                   backgroundColor: colors.blue[50],
-                  "border-radius": "9999px",
+                  borderRadius: "9999px",
                   "--tw-text-opacity": 1,
                   color: "rgb(29 78 216 / var(--tw-text-opacity))",
                 },

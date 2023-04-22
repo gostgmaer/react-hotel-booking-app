@@ -38,7 +38,7 @@ const Slider = ({ Card, slide, data }) => {
         modules={[Navigation]}
         className=" flex"
       >
-        {data.map((item, index) => {
+        {data?.map((item, index) => {
           return (
             <SwiperSlide key={index}>
               <Card data={item} />
