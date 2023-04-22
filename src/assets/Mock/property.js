@@ -2407,268 +2407,583 @@ export const response = {
     ],
   },
   topUnique: {
-    __typename: "AcidCarouselOutput",
-    acidCards: [
-      {
-        __typename: "AcidCardOutput",
-        districtName: "",
-        basicPropertyData: {
-          name: "Ranczo w Dolinie",
-          __typename: "BasicPropertyData",
-          pageName: "ranczo-w-dolinie-kiszkowo",
-          photos: {
-            __typename: "PropertyPhotos",
-            main: {
-              __typename: "Photo",
-              lowResJpegUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square200/132452060.jpg?k=c83f220ac55d938bd39508cce8062c94f95d1f15926d510683ccd24ab4d5cd94&o=",
-              },
-              highResUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square600/132452060.webp?k=8448bab55c87dbb42ab7c6643fbbce542124c908f63f6b36dc3cdc859e60cb0a&o=&s=1",
-              },
+    "title": "Stay at our top unique properties",
+    "hasAvailability": true,
+    "acidCards": [
+        {
+            "basicPropertyData": {
+                "reviews": {
+                    "__typename": "Reviews",
+                    "totalScore": 8.4,
+                    "reviewsCount": 90
+                },
+                "id": 5505707,
+                "photos": {
+                    "__typename": "PropertyPhotos",
+                    "main": {
+                        "lowResJpegUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square200/286659200.jpg?k=6bdb5263921e39c60fbee48bd82c5083ce470f2e2b3ee6b5c81d7ad68bd4f2d7&o=",
+                            "__typename": "PhotoResource"
+                        },
+                        "__typename": "Photo",
+                        "highResUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square600/286659200.webp?k=9206fc9239b3e4538c22d04b85213d6d5e6257015022de8a37effd956fcde4b6&o=&s=1",
+                            "__typename": "PhotoResource"
+                        }
+                    }
+                },
+                "pageName": "la-roulotte-de-ciney",
+                "location": {
+                    "country": "Belgium",
+                    "countryCode": "be",
+                    "__typename": "Location",
+                    "city": "Ciney"
+                },
+                "name": "La Roulotte de Ciney",
+                "__typename": "BasicPropertyData"
             },
-          },
-          id: 3143663,
-          reviews: {
-            __typename: "Reviews",
-            reviewsCount: 233,
-            totalScore: 9.5,
-          },
-          location: {
-            countryCode: "pl",
-            __typename: "Location",
-            country: "Poland",
-            city: "Kiszkowo",
-          },
+            "landingOptions": null,
+            "__typename": "AcidCardOutput",
+            "districtName": "",
+            "priceDisplayInfo": null
         },
-        landingOptions: null,
-        priceDisplayInfo: {
-          displayPrice: {
-            amountPerStay: {
-              __typename: "PriceDisplay",
-              amountRounded: "Rs. 4,956",
+        {
+            "__typename": "AcidCardOutput",
+            "basicPropertyData": {
+                "id": 1798050,
+                "photos": {
+                    "__typename": "PropertyPhotos",
+                    "main": {
+                        "lowResJpegUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square200/280950287.jpg?k=ec7cf222e55bc51b78780a58505bfb7f9e9999c928de818ad54ada322fa1ce3d&o=",
+                            "__typename": "PhotoResource"
+                        },
+                        "__typename": "Photo",
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/280950287.webp?k=b984c542b8b1a2ee0e019e4491da338a85b660caa10c5e1197225c5f3052d629&o=&s=1"
+                        }
+                    }
+                },
+                "reviews": {
+                    "__typename": "Reviews",
+                    "totalScore": 9.7,
+                    "reviewsCount": 89
+                },
+                "__typename": "BasicPropertyData",
+                "pageName": "domki-wierszyki",
+                "location": {
+                    "country": "Poland",
+                    "countryCode": "pl",
+                    "__typename": "Location",
+                    "city": "Zakopane"
+                },
+                "name": "Wierszyki Shelters"
             },
-            __typename: "PriceDisplayAggregated",
-          },
-          __typename: "PriceDisplayInfo",
+            "landingOptions": null,
+            "priceDisplayInfo": null,
+            "districtName": ""
         },
-      },
-      {
-        districtName: "",
-        __typename: "AcidCardOutput",
-        priceDisplayInfo: {
-          displayPrice: {
-            __typename: "PriceDisplayAggregated",
-            amountPerStay: {
-              __typename: "PriceDisplay",
-              amountRounded: "Rs. 8,990",
+        {
+            "basicPropertyData": {
+                "pageName": "ranczo-w-dolinie-kiszkowo",
+                "location": {
+                    "country": "Poland",
+                    "countryCode": "pl",
+                    "city": "Kiszkowo",
+                    "__typename": "Location"
+                },
+                "name": "Ranczo w Dolinie",
+                "__typename": "BasicPropertyData",
+                "reviews": {
+                    "totalScore": 9.5,
+                    "reviewsCount": 233,
+                    "__typename": "Reviews"
+                },
+                "id": 3143663,
+                "photos": {
+                    "main": {
+                        "__typename": "Photo",
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/132452060.jpg?k=c83f220ac55d938bd39508cce8062c94f95d1f15926d510683ccd24ab4d5cd94&o="
+                        },
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/132452060.webp?k=8448bab55c87dbb42ab7c6643fbbce542124c908f63f6b36dc3cdc859e60cb0a&o=&s=1"
+                        }
+                    },
+                    "__typename": "PropertyPhotos"
+                }
             },
-          },
-          __typename: "PriceDisplayInfo",
+            "landingOptions": null,
+            "__typename": "AcidCardOutput",
+            "districtName": "",
+            "priceDisplayInfo": null
         },
-        landingOptions: null,
-        basicPropertyData: {
-          photos: {
-            __typename: "PropertyPhotos",
-            main: {
-              highResUrl: {
-                relativeUrl:
-                  "/xdata/images/hotel/square600/126764303.webp?k=1887d9e0a796fe553436a57823a481ed3584310d6a940e69cc8db875b110ae66&o=&s=1",
-                __typename: "PhotoResource",
-              },
-              lowResJpegUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square200/126764303.jpg?k=f02d7dfd34037256513db34050af45f402736bfa3411fd9e1ac9dc58dc1869d3&o=",
-              },
-              __typename: "Photo",
+        {
+            "districtName": "",
+            "priceDisplayInfo": null,
+            "landingOptions": null,
+            "basicPropertyData": {
+                "__typename": "BasicPropertyData",
+                "pageName": "dreischwesternherz",
+                "name": "Tiny House Dreischwesternherz",
+                "location": {
+                    "countryCode": "de",
+                    "country": "Germany",
+                    "city": "Trier ",
+                    "__typename": "Location"
+                },
+                "id": 4184817,
+                "photos": {
+                    "__typename": "PropertyPhotos",
+                    "main": {
+                        "__typename": "Photo",
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/187855604.jpg?k=1ad5abe80930101e636e0b8a2e48f9cb0e55b656904fd49a4e7a89e5d2b1db59&o="
+                        },
+                        "highResUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square600/187855604.webp?k=bbb45aa5b540c7608ea3af52d92b95a215df9af831dd3ae0e4c4cce501e28b1b&o=&s=1",
+                            "__typename": "PhotoResource"
+                        }
+                    }
+                },
+                "reviews": {
+                    "reviewsCount": 139,
+                    "totalScore": 9.6,
+                    "__typename": "Reviews"
+                }
             },
-          },
-          id: 3034174,
-          pageName: "agriturismo-cabrele",
-          __typename: "BasicPropertyData",
-          name: "Agriturismo Cabrele",
-          location: {
-            city: "Santorso",
-            countryCode: "it",
-            __typename: "Location",
-            country: "Italy",
-          },
-          reviews: {
-            __typename: "Reviews",
-            reviewsCount: 211,
-            totalScore: 9.3,
-          },
+            "__typename": "AcidCardOutput"
         },
-      },
-      {
-        __typename: "AcidCardOutput",
-        districtName: "",
-        priceDisplayInfo: {
-          displayPrice: {
-            amountPerStay: {
-              __typename: "PriceDisplay",
-              amountRounded: "Rs. 6,276",
+        {
+            "landingOptions": null,
+            "basicPropertyData": {
+                "reviews": {
+                    "__typename": "Reviews",
+                    "reviewsCount": 48,
+                    "totalScore": 9.3
+                },
+                "id": 4540189,
+                "photos": {
+                    "__typename": "PropertyPhotos",
+                    "main": {
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/178421525.webp?k=262301cdcbef1d33942bb02607906eafdee8dde3106ac5732966a206baeebb04&o=&s=1"
+                        },
+                        "__typename": "Photo",
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/178421525.jpg?k=1d345e5ff104aad732e2fca61e6992720d4cdbd915f00ed05d3fe2e918d168f5&o="
+                        }
+                    }
+                },
+                "pageName": "das-rote-haus",
+                "location": {
+                    "__typename": "Location",
+                    "city": "Simonsberg",
+                    "countryCode": "de",
+                    "country": "Germany"
+                },
+                "name": "Das rote Haus hinterm Deich",
+                "__typename": "BasicPropertyData"
             },
-            __typename: "PriceDisplayAggregated",
-          },
-          __typename: "PriceDisplayInfo",
+            "__typename": "AcidCardOutput",
+            "districtName": "",
+            "priceDisplayInfo": null
         },
-        landingOptions: null,
-        basicPropertyData: {
-          location: {
-            city: "Saint-Gabriel-de-Valcartier ",
-            __typename: "Location",
-            countryCode: "ca",
-            country: "Canada",
-          },
-          reviews: {
-            totalScore: 8.2,
-            __typename: "Reviews",
-            reviewsCount: 153,
-          },
-          id: 2550794,
-          photos: {
-            main: {
-              lowResJpegUrl: {
-                relativeUrl:
-                  "/xdata/images/hotel/square200/106411975.jpg?k=f2c29dc8dedd12e129e270515d34ae56a4a617418cfc343665c2e136d8acd119&o=",
-                __typename: "PhotoResource",
-              },
-              highResUrl: {
-                relativeUrl:
-                  "/xdata/images/hotel/square600/106411975.webp?k=53597242e9727e6e44a618b8edbc222c39b6937ac1bbe76761e24a2d796aed62&o=&s=1",
-                __typename: "PhotoResource",
-              },
-              __typename: "Photo",
+        {
+            "priceDisplayInfo": null,
+            "districtName": "",
+            "__typename": "AcidCardOutput",
+            "landingOptions": null,
+            "basicPropertyData": {
+                "name": "Agriturismo Cabrele",
+                "location": {
+                    "__typename": "Location",
+                    "city": "Santorso",
+                    "countryCode": "it",
+                    "country": "Italy"
+                },
+                "pageName": "agriturismo-cabrele",
+                "__typename": "BasicPropertyData",
+                "reviews": {
+                    "__typename": "Reviews",
+                    "reviewsCount": 212,
+                    "totalScore": 9.3
+                },
+                "photos": {
+                    "__typename": "PropertyPhotos",
+                    "main": {
+                        "__typename": "Photo",
+                        "lowResJpegUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square200/126764303.jpg?k=f02d7dfd34037256513db34050af45f402736bfa3411fd9e1ac9dc58dc1869d3&o=",
+                            "__typename": "PhotoResource"
+                        },
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/126764303.webp?k=1887d9e0a796fe553436a57823a481ed3584310d6a940e69cc8db875b110ae66&o=&s=1"
+                        }
+                    }
+                },
+                "id": 3034174
+            }
+        },
+        {
+            "__typename": "AcidCardOutput",
+            "landingOptions": null,
+            "basicPropertyData": {
+                "reviews": {
+                    "reviewsCount": 120,
+                    "totalScore": 8.2,
+                    "__typename": "Reviews"
+                },
+                "id": 741467,
+                "photos": {
+                    "__typename": "PropertyPhotos",
+                    "main": {
+                        "__typename": "Photo",
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/356256733.jpg?k=833987c0de758cd57d0e287439c6486e62f537c43235c1822b2fce74487db54f&o="
+                        },
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/356256733.webp?k=d26e6f029087ccbccf4057b95461d46e7ae18d2aa3dd4247ff6b0a148c10bc33&o=&s=1"
+                        }
+                    }
+                },
+                "pageName": "mini-abernachten-im-gurkenfass",
+                "location": {
+                    "city": "Lübbenau",
+                    "__typename": "Location",
+                    "countryCode": "de",
+                    "country": "Germany"
+                },
+                "name": "Mini Hotel Übernachten Im Gurkenfass",
+                "__typename": "BasicPropertyData"
             },
-            __typename: "PropertyPhotos",
-          },
-          pageName: "la-seigneurie-de-la-valcartier",
-          name: "Auberge La Seigneurie Valcartier",
-          __typename: "BasicPropertyData",
+            "priceDisplayInfo": null,
+            "districtName": ""
         },
-      },
-      {
-        priceDisplayInfo: {
-          displayPrice: {
-            __typename: "PriceDisplayAggregated",
-            amountPerStay: {
-              __typename: "PriceDisplay",
-              amountRounded: "Rs. 13,650",
+        {
+            "districtName": "",
+            "priceDisplayInfo": null,
+            "basicPropertyData": {
+                "__typename": "BasicPropertyData",
+                "name": "Carinya Park",
+                "location": {
+                    "__typename": "Location",
+                    "city": "Gembrook",
+                    "country": "Australia",
+                    "countryCode": "au"
+                },
+                "pageName": "carinya-park",
+                "photos": {
+                    "main": {
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/154543781.jpg?k=868ff54aa25ef6a79bf336d10a70cbb0460e9200740fc7686e3f5b050bd41af0&o="
+                        },
+                        "__typename": "Photo",
+                        "highResUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square600/154543781.webp?k=ad89bc70ec138736b22947f52b7e0ecbac176026e13c50646147303582d94bcd&o=&s=1",
+                            "__typename": "PhotoResource"
+                        }
+                    },
+                    "__typename": "PropertyPhotos"
+                },
+                "id": 3843478,
+                "reviews": {
+                    "totalScore": 9.3,
+                    "reviewsCount": 33,
+                    "__typename": "Reviews"
+                }
             },
-          },
-          __typename: "PriceDisplayInfo",
+            "landingOptions": null,
+            "__typename": "AcidCardOutput"
         },
-        landingOptions: null,
-        basicPropertyData: {
-          reviews: {
-            __typename: "Reviews",
-            reviewsCount: 803,
-            totalScore: 9.4,
-          },
-          location: {
-            __typename: "Location",
-            country: "Norway",
-            countryCode: "no",
-            city: "Reine",
-          },
-          pageName: "may-39-s-apartsments",
-          name: "May's Apartments by May's",
-          __typename: "BasicPropertyData",
-          photos: {
-            main: {
-              __typename: "Photo",
-              lowResJpegUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square200/109319008.jpg?k=6a0a505eeb98986d5a1c2f8ed23ffe386a213a241daee318a1ae3b116f40d0e8&o=",
-              },
-              highResUrl: {
-                relativeUrl:
-                  "/xdata/images/hotel/square600/109319008.webp?k=b8fc6fbc8d874cffedf49c0080f14933a20995b040dc02aeaee3afad1e79c670&o=&s=1",
-                __typename: "PhotoResource",
-              },
+        {
+            "basicPropertyData": {
+                "reviews": {
+                    "totalScore": 9.3,
+                    "reviewsCount": 307,
+                    "__typename": "Reviews"
+                },
+                "id": 6202118,
+                "photos": {
+                    "__typename": "PropertyPhotos",
+                    "main": {
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/283036728.jpg?k=4212dde8fa2a221a574dda91ac9d7ceb34d27c8b163e4abce2ab21f5a0ef69f4&o="
+                        },
+                        "__typename": "Photo",
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/283036728.webp?k=b53dc60651b70813b1a2b12cb3903f54b36f1a04128ab0340ee03b860b0f9c48&o=&s=1"
+                        }
+                    }
+                },
+                "pageName": "gyttja-vastergards",
+                "name": "Gyttja Västergårds",
+                "location": {
+                    "country": "Finland",
+                    "countryCode": "fi",
+                    "city": "Lillandet",
+                    "__typename": "Location"
+                },
+                "__typename": "BasicPropertyData"
             },
-            __typename: "PropertyPhotos",
-          },
-          id: 2553304,
+            "landingOptions": null,
+            "__typename": "AcidCardOutput",
+            "districtName": "",
+            "priceDisplayInfo": null
         },
-        __typename: "AcidCardOutput",
-        districtName: "",
-      },
-      {
-        landingOptions: null,
-        priceDisplayInfo: {
-          __typename: "PriceDisplayInfo",
-          displayPrice: {
-            amountPerStay: {
-              amountRounded: "Rs. 63,019",
-              __typename: "PriceDisplay",
+        {
+            "__typename": "AcidCardOutput",
+            "landingOptions": null,
+            "basicPropertyData": {
+                "pageName": "au-coeur-des-lacs",
+                "location": {
+                    "city": "Gérardmer",
+                    "__typename": "Location",
+                    "countryCode": "fr",
+                    "country": "France"
+                },
+                "name": "Au Cœur des Lacs - Chambres d'hôtes",
+                "__typename": "BasicPropertyData",
+                "reviews": {
+                    "totalScore": 9.4,
+                    "reviewsCount": 295,
+                    "__typename": "Reviews"
+                },
+                "id": 1118596,
+                "photos": {
+                    "main": {
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/332074170.webp?k=9e07443aa7ca1a35645b6572aef736095c3bffbd5e8b00c7633f0578a6c2ec3a&o=&s=1"
+                        },
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/332074170.jpg?k=c8ece3f04de03cbce291c73511427b72db87445de548e6a8bf2c4cf94186d6dc&o="
+                        },
+                        "__typename": "Photo"
+                    },
+                    "__typename": "PropertyPhotos"
+                }
             },
-            __typename: "PriceDisplayAggregated",
-          },
+            "priceDisplayInfo": null,
+            "districtName": ""
         },
-        basicPropertyData: {
-          __typename: "BasicPropertyData",
-          name: "Forestis Dolomites",
-          pageName: "hotel-rosalpina-dolomites",
-          photos: {
-            main: {
-              lowResJpegUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square200/242740031.jpg?k=3936af45c12e73e9ccb65a8ac44a1bb28a7bf4522564a86f9577c59e10665791&o=",
-              },
-              highResUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square600/242740031.webp?k=c0748b237e6051854e8b1bee33f5e0993619995cc96742d55240ab6e324d2c34&o=&s=1",
-              },
-              __typename: "Photo",
+        {
+            "districtName": "",
+            "priceDisplayInfo": null,
+            "basicPropertyData": {
+                "id": 2245019,
+                "photos": {
+                    "main": {
+                        "lowResJpegUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square200/92356437.jpg?k=004e4744ccc20cf1df9f5bc49d0e345faa5ee1f199b424d8765bcd962a79ffde&o=",
+                            "__typename": "PhotoResource"
+                        },
+                        "__typename": "Photo",
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/92356437.webp?k=9696d60e5b732b17d934f3bddfb71e553dfb8960add90d3e0392968a4e93cfc4&o=&s=1"
+                        }
+                    },
+                    "__typename": "PropertyPhotos"
+                },
+                "reviews": {
+                    "reviewsCount": 54,
+                    "totalScore": 8.7,
+                    "__typename": "Reviews"
+                },
+                "__typename": "BasicPropertyData",
+                "pageName": "la-sapinette-val-david",
+                "location": {
+                    "city": "Val-David",
+                    "__typename": "Location",
+                    "countryCode": "ca",
+                    "country": "Canada"
+                },
+                "name": "La Sapinette"
             },
-            __typename: "PropertyPhotos",
-          },
-          id: 410491,
-          reviews: {
-            totalScore: 9.7,
-            __typename: "Reviews",
-            reviewsCount: 369,
-          },
-          location: {
-            city: "Brixen ",
-            __typename: "Location",
-            country: "Italy",
-            countryCode: "it",
-          },
+            "landingOptions": null,
+            "__typename": "AcidCardOutput"
         },
-        districtName: "",
-        __typename: "AcidCardOutput",
-      },
+        {
+            "landingOptions": null,
+            "basicPropertyData": {
+                "__typename": "BasicPropertyData",
+                "name": "MFC Erfurter Seen",
+                "location": {
+                    "__typename": "Location",
+                    "city": "Erfurt",
+                    "country": "Germany",
+                    "countryCode": "de"
+                },
+                "pageName": "mfc-erfurter-seen",
+                "photos": {
+                    "main": {
+                        "__typename": "Photo",
+                        "lowResJpegUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square200/101174842.jpg?k=1514f6647082bf1100c366d6c0916f58d93255188f0a295eeffd498d64689190&o=",
+                            "__typename": "PhotoResource"
+                        },
+                        "highResUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square600/101174842.webp?k=515b19cd29852207a9e6add777068c1df7931a0dc58ddb80b36af9b605a3a00d&o=&s=1",
+                            "__typename": "PhotoResource"
+                        }
+                    },
+                    "__typename": "PropertyPhotos"
+                },
+                "id": 2436608,
+                "reviews": {
+                    "totalScore": 8.2,
+                    "reviewsCount": 143,
+                    "__typename": "Reviews"
+                }
+            },
+            "__typename": "AcidCardOutput",
+            "districtName": "",
+            "priceDisplayInfo": null
+        },
+        {
+            "priceDisplayInfo": null,
+            "districtName": "",
+            "__typename": "AcidCardOutput",
+            "basicPropertyData": {
+                "id": 1809323,
+                "photos": {
+                    "main": {
+                        "__typename": "Photo",
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/73425718.jpg?k=c6ca74bfb481fffdb8f78532e3fd73a2008eb3ee9da235863762aa3aaf5b5c86&o="
+                        },
+                        "highResUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square600/73425718.webp?k=9b94b5d27f08138674d3ffd26102dfcabdcac68387586e2d42777515bb39a27f&o=&s=1",
+                            "__typename": "PhotoResource"
+                        }
+                    },
+                    "__typename": "PropertyPhotos"
+                },
+                "reviews": {
+                    "reviewsCount": 131,
+                    "totalScore": 9,
+                    "__typename": "Reviews"
+                },
+                "__typename": "BasicPropertyData",
+                "pageName": "finca-esperanza",
+                "location": {
+                    "countryCode": "es",
+                    "country": "Spain",
+                    "__typename": "Location",
+                    "city": "Yaiza"
+                },
+                "name": "Finca Esperanza"
+            },
+            "landingOptions": null
+        },
+        {
+            "districtName": "",
+            "priceDisplayInfo": null,
+            "basicPropertyData": {
+                "pageName": "la-seigneurie-de-la-valcartier",
+                "name": "Auberge La Seigneurie Valcartier",
+                "location": {
+                    "country": "Canada",
+                    "countryCode": "ca",
+                    "city": "Saint-Gabriel-de-Valcartier ",
+                    "__typename": "Location"
+                },
+                "__typename": "BasicPropertyData",
+                "reviews": {
+                    "reviewsCount": 153,
+                    "totalScore": 8.2,
+                    "__typename": "Reviews"
+                },
+                "id": 2550794,
+                "photos": {
+                    "main": {
+                        "highResUrl": {
+                            "relativeUrl": "/xdata/images/hotel/square600/106411975.webp?k=53597242e9727e6e44a618b8edbc222c39b6937ac1bbe76761e24a2d796aed62&o=&s=1",
+                            "__typename": "PhotoResource"
+                        },
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/106411975.jpg?k=f2c29dc8dedd12e129e270515d34ae56a4a617418cfc343665c2e136d8acd119&o="
+                        },
+                        "__typename": "Photo"
+                    },
+                    "__typename": "PropertyPhotos"
+                }
+            },
+            "landingOptions": null,
+            "__typename": "AcidCardOutput"
+        },
+        {
+            "landingOptions": null,
+            "basicPropertyData": {
+                "reviews": {
+                    "totalScore": 9.4,
+                    "reviewsCount": 303,
+                    "__typename": "Reviews"
+                },
+                "id": 2201986,
+                "photos": {
+                    "__typename": "PropertyPhotos",
+                    "main": {
+                        "__typename": "Photo",
+                        "lowResJpegUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square200/90166571.jpg?k=2d4e8667d2c3c1be04046c73381950f84f80ac45835ac68ba484f5bf5387192c&o="
+                        },
+                        "highResUrl": {
+                            "__typename": "PhotoResource",
+                            "relativeUrl": "/xdata/images/hotel/square600/90166571.webp?k=0b63f507a150b0e5f6e2173786be4374ee7deae468fc1a6443feef111cc01ef5&o=&s=1"
+                        }
+                    }
+                },
+                "pageName": "lofthus-camping",
+                "name": "Lofthus Camping",
+                "location": {
+                    "countryCode": "no",
+                    "country": "Norway",
+                    "__typename": "Location",
+                    "city": "Lofthus"
+                },
+                "__typename": "BasicPropertyData"
+            },
+            "__typename": "AcidCardOutput",
+            "districtName": "",
+            "priceDisplayInfo": null
+        }
     ],
-    landingOptions: {
-      nbAdults: 2,
-      selectedFilters: null,
-      destType: "NO_DEST_TYPE",
-      nbRooms: 0,
-      checkout: "2023-04-22",
-      nbChildren: 0,
-      sorter: null,
-      destId: 0,
-      checkin: "2023-04-21",
-      page: "PROPERTY_PAGE",
-      childrenAges: [],
-      __typename: "LandingOptions",
-      travelPurpose: 0,
+    "__typename": "AcidCarouselOutput",
+    "landingOptions": {
+        "selectedFilters": null,
+        "checkout": "",
+        "nbAdults": 2,
+        "travelPurpose": 0,
+        "checkin": "",
+        "childrenAges": [],
+        "destType": "NO_DEST_TYPE",
+        "nbChildren": 0,
+        "__typename": "LandingOptions",
+        "nbRooms": 0,
+        "page": "PROPERTY_PAGE",
+        "sorter": null,
+        "destId": 0
     },
-    hasAvailability: true,
-    subtitle: "From castles and villas to boats and igloos, we've got it all",
-    title: "Stay at our top unique properties",
-  },
+    "subtitle": "From castles and villas to boats and igloos, we've got it all"
+},
   typeof:{
     "nbAdults": 2,
     "nbRooms": 1,

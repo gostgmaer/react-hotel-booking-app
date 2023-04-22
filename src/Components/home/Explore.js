@@ -12,22 +12,24 @@ import {
 } from "@mui/material";
 import { useEffect, useState } from "react";
 import Slider from "../Elements/Slider";
+import { ExploreCard } from "../Elements/Simplecard";
 
 const Explore = () => {
   const [value, setValue] = useState(null);
-  console.log(response);
-  useEffect(() => {
-    console.log(value);
-  }, [value]);
+
   return (
     <Box>
-      <Stack className="flex flex-col gap-1 mb-2">
-        <Typography className=" text-2xl">Explore India</Typography>
-        <Typography>These popular destinations have a lot to offer</Typography>
+      <Stack className="flex flex-col gap-1 my-2">
+        <Typography className=" text-xl font-semibold">Explore India</Typography>
+        <Typography className="text-sm opacity-80">These popular destinations have a lot to offer</Typography>
       </Stack>
 
-      <Box className="py-5">
-        <Slider></Slider>
+      <Box className="py-3">
+      <Slider
+        slide={6}
+        Card={ExploreCard}
+        data={response.exploreIndia.items}
+      ></Slider>
       </Box>
     </Box>
   );
