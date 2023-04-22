@@ -4,9 +4,9 @@ import { SearchHotels } from "../navbar/Header/Headersearch";
 
 const Herosection = () => {
   const [dateValue, setDateValue] = useState([null, null]);
-  console.log(dateValue);
+
   return (
-    <Box className=" w-full bg-blue-900 px-24 text-gray-50 flex flex-col py-8 gap-10 mb-10 relative">
+    <Box className=" w-full bg-blue-900 px-20 text-gray-50 flex flex-col py-8 gap-10 mb-10 relative">
       <Box>
         {" "}
         <Typography variant="h2">Find your next stay</Typography>

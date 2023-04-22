@@ -11,33 +11,40 @@ import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper";
 import { response } from "@/assets/Mock/property";
 import SimplePropertycard from "./Simplecard";
+import { hotelList } from "../../../public/assets/Mock/bookingAll";
 
-const Slider = ({ children, slide }) => {
-  console.log(children);
+const Slider = ({ Card, slide, data }) => {
+
   return (
     <>
       <Swiper
-        slidesPerView={slide ? slide : 4}
+        slidesPerView={slide ? slide : 6}
         spaceBetween={10}
         navigation={true}
         breakpoints={{
           640: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 5,
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: 50,
+            slidesPerView: slide ? slide : 6,
+            spaceBetween: 10,
           },
         }}
         modules={[Navigation]}
         className=" flex"
       >
-        {children}
+        {data?.map((item, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <Card data={item} />
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </>
   );

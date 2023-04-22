@@ -5,7 +5,7 @@ import Navigation from "./navigation";
 
 const Header = () => {
   return (
-    <Box className=" bg-blue-900 px-24 text-gray-50 flex flex-col py-2 gap-2">
+    <Box className=" bg-blue-900 px-20 text-gray-50 flex flex-col py-2 gap-2">
       <Topbar />
       <Navigation />
     </Box>

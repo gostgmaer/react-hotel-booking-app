@@ -1,3 +1,4 @@
+import { baseImageUrl } from "@/services/config";
 import {
   Button,
   Card,
@@ -8,22 +9,32 @@ import {
 } from "@mui/material";
 
 const Propertycard = ({ data }) => {
+  console.log(data);
   return (
-    <Card sx={{ maxWidth: 345 }} className=" bg-transparent border-none">
+    <Card
+      sx={{ maxWidth: 345 }}
+      className=" w-full bg-transparent shadow-none border-none"
+    >
       <CardMedia
-        sx={{ height: 140 }}
-        image="https://cf.bstatic.com/xdata/images/hotel/square600/412005153.webp?k=c50f810d7791e1157b3a4e9fd3ff83d93a5070fd9b8ce12e9737a88b0f3cd686&o=&s=1"
+        sx={{ height: 220 }}
+        image={
+          baseImageUrl +
+          data.basicPropertyData.photos.main.highResUrl.relativeUrl
+        }
         title="green iguana"
       />
-      <CardContent className="flex flex-col gap-1 item-start p-0 bg-transparent mt-2">
-        <Typography gutterBottom variant="h6" fontWeight={'600'} fontSize={'16px'}>
-          Moustache Rishikesh Luxuria
+      <CardContent className="flex flex-col pb-0 item-start !p-0 bg-transparent mt-2">
+        <Typography gutterBottom className="font-bold text-md">
+          {data.basicPropertyData.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Rishikesh, India
+        <Typography variant="body2" color="text.secondary" className=" text-xs">
+          {data.basicPropertyData.districtName}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Starting from <span>Rs. 13,949</span>
+        <Typography variant="body2" className="text-xs flex items-center gap-2" color="text.secondary">
+          Starting from
+          <span>
+            {data.priceDisplayInfo.displayPrice.amountPerStay.amountRounded}
+          </span>
         </Typography>
       </CardContent>
     </Card>
@@ -31,6 +42,3 @@ const Propertycard = ({ data }) => {
 };
 
 export default Propertycard;
-
-
-

@@ -9,6 +9,8 @@ import { Box } from "@mui/material";
 import Destination from "@/Components/home/Destination";
 import Explore from "@/Components/home/Explore";
 import Propertytype from "@/Components/home/Propertytype";
+import Quickplaner from "@/Components/home/QuickPlaner";
+import Uniqueplaces from "@/Components/home/Uniqueplace";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,11 +22,13 @@ export default function Home() {
       </Head>
       <Layout>
         <Herosection />
-        <Box className=" w-full px-24 text-gray-950 flex flex-col py-8 gap-10  relative">
+        <Box className=" w-full px-20  text-gray-950 flex flex-col gap-2 py-8  relative">
           <Perfectstay />
           <Destination></Destination>
           <Explore />
-          <Propertytype/>
+          <Quickplaner />
+          <Propertytype />
+          <Uniqueplaces />
         </Box>
       </Layout>
     </>

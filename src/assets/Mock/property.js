@@ -2407,17 +2407,105 @@ export const response = {
     ],
   },
   topUnique: {
-    __typename: "AcidCarouselOutput",
+    title: "Stay at our top unique properties",
+    hasAvailability: true,
     acidCards: [
       {
-        __typename: "AcidCardOutput",
-        districtName: "",
         basicPropertyData: {
-          name: "Ranczo w Dolinie",
-          __typename: "BasicPropertyData",
-          pageName: "ranczo-w-dolinie-kiszkowo",
+          reviews: {
+            __typename: "Reviews",
+            totalScore: 8.4,
+            reviewsCount: 90,
+          },
+          id: 5505707,
           photos: {
             __typename: "PropertyPhotos",
+            main: {
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/286659200.jpg?k=6bdb5263921e39c60fbee48bd82c5083ce470f2e2b3ee6b5c81d7ad68bd4f2d7&o=",
+                __typename: "PhotoResource",
+              },
+              __typename: "Photo",
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/286659200.webp?k=9206fc9239b3e4538c22d04b85213d6d5e6257015022de8a37effd956fcde4b6&o=&s=1",
+                __typename: "PhotoResource",
+              },
+            },
+          },
+          pageName: "la-roulotte-de-ciney",
+          location: {
+            country: "Belgium",
+            countryCode: "be",
+            __typename: "Location",
+            city: "Ciney",
+          },
+          name: "La Roulotte de Ciney",
+          __typename: "BasicPropertyData",
+        },
+        landingOptions: null,
+        __typename: "AcidCardOutput",
+        districtName: "",
+        priceDisplayInfo: null,
+      },
+      {
+        __typename: "AcidCardOutput",
+        basicPropertyData: {
+          id: 1798050,
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/280950287.jpg?k=ec7cf222e55bc51b78780a58505bfb7f9e9999c928de818ad54ada322fa1ce3d&o=",
+                __typename: "PhotoResource",
+              },
+              __typename: "Photo",
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/280950287.webp?k=b984c542b8b1a2ee0e019e4491da338a85b660caa10c5e1197225c5f3052d629&o=&s=1",
+              },
+            },
+          },
+          reviews: {
+            __typename: "Reviews",
+            totalScore: 9.7,
+            reviewsCount: 89,
+          },
+          __typename: "BasicPropertyData",
+          pageName: "domki-wierszyki",
+          location: {
+            country: "Poland",
+            countryCode: "pl",
+            __typename: "Location",
+            city: "Zakopane",
+          },
+          name: "Wierszyki Shelters",
+        },
+        landingOptions: null,
+        priceDisplayInfo: null,
+        districtName: "",
+      },
+      {
+        basicPropertyData: {
+          pageName: "ranczo-w-dolinie-kiszkowo",
+          location: {
+            country: "Poland",
+            countryCode: "pl",
+            city: "Kiszkowo",
+            __typename: "Location",
+          },
+          name: "Ranczo w Dolinie",
+          __typename: "BasicPropertyData",
+          reviews: {
+            totalScore: 9.5,
+            reviewsCount: 233,
+            __typename: "Reviews",
+          },
+          id: 3143663,
+          photos: {
             main: {
               __typename: "Photo",
               lowResJpegUrl: {
@@ -2431,1195 +2519,1453 @@ export const response = {
                   "/xdata/images/hotel/square600/132452060.webp?k=8448bab55c87dbb42ab7c6643fbbce542124c908f63f6b36dc3cdc859e60cb0a&o=&s=1",
               },
             },
-          },
-          id: 3143663,
-          reviews: {
-            __typename: "Reviews",
-            reviewsCount: 233,
-            totalScore: 9.5,
-          },
-          location: {
-            countryCode: "pl",
-            __typename: "Location",
-            country: "Poland",
-            city: "Kiszkowo",
+            __typename: "PropertyPhotos",
           },
         },
         landingOptions: null,
-        priceDisplayInfo: {
-          displayPrice: {
-            amountPerStay: {
-              __typename: "PriceDisplay",
-              amountRounded: "Rs. 4,956",
-            },
-            __typename: "PriceDisplayAggregated",
-          },
-          __typename: "PriceDisplayInfo",
-        },
+        __typename: "AcidCardOutput",
+        districtName: "",
+        priceDisplayInfo: null,
       },
       {
         districtName: "",
-        __typename: "AcidCardOutput",
-        priceDisplayInfo: {
-          displayPrice: {
-            __typename: "PriceDisplayAggregated",
-            amountPerStay: {
-              __typename: "PriceDisplay",
-              amountRounded: "Rs. 8,990",
-            },
-          },
-          __typename: "PriceDisplayInfo",
-        },
+        priceDisplayInfo: null,
         landingOptions: null,
         basicPropertyData: {
+          __typename: "BasicPropertyData",
+          pageName: "dreischwesternherz",
+          name: "Tiny House Dreischwesternherz",
+          location: {
+            countryCode: "de",
+            country: "Germany",
+            city: "Trier ",
+            __typename: "Location",
+          },
+          id: 4184817,
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
+              __typename: "Photo",
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/187855604.jpg?k=1ad5abe80930101e636e0b8a2e48f9cb0e55b656904fd49a4e7a89e5d2b1db59&o=",
+              },
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/187855604.webp?k=bbb45aa5b540c7608ea3af52d92b95a215df9af831dd3ae0e4c4cce501e28b1b&o=&s=1",
+                __typename: "PhotoResource",
+              },
+            },
+          },
+          reviews: {
+            reviewsCount: 139,
+            totalScore: 9.6,
+            __typename: "Reviews",
+          },
+        },
+        __typename: "AcidCardOutput",
+      },
+      {
+        landingOptions: null,
+        basicPropertyData: {
+          reviews: {
+            __typename: "Reviews",
+            reviewsCount: 48,
+            totalScore: 9.3,
+          },
+          id: 4540189,
           photos: {
             __typename: "PropertyPhotos",
             main: {
               highResUrl: {
-                relativeUrl:
-                  "/xdata/images/hotel/square600/126764303.webp?k=1887d9e0a796fe553436a57823a481ed3584310d6a940e69cc8db875b110ae66&o=&s=1",
                 __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/178421525.webp?k=262301cdcbef1d33942bb02607906eafdee8dde3106ac5732966a206baeebb04&o=&s=1",
               },
+              __typename: "Photo",
               lowResJpegUrl: {
                 __typename: "PhotoResource",
                 relativeUrl:
-                  "/xdata/images/hotel/square200/126764303.jpg?k=f02d7dfd34037256513db34050af45f402736bfa3411fd9e1ac9dc58dc1869d3&o=",
+                  "/xdata/images/hotel/square200/178421525.jpg?k=1d345e5ff104aad732e2fca61e6992720d4cdbd915f00ed05d3fe2e918d168f5&o=",
               },
+            },
+          },
+          pageName: "das-rote-haus",
+          location: {
+            __typename: "Location",
+            city: "Simonsberg",
+            countryCode: "de",
+            country: "Germany",
+          },
+          name: "Das rote Haus hinterm Deich",
+          __typename: "BasicPropertyData",
+        },
+        __typename: "AcidCardOutput",
+        districtName: "",
+        priceDisplayInfo: null,
+      },
+      {
+        priceDisplayInfo: null,
+        districtName: "",
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+        basicPropertyData: {
+          name: "Agriturismo Cabrele",
+          location: {
+            __typename: "Location",
+            city: "Santorso",
+            countryCode: "it",
+            country: "Italy",
+          },
+          pageName: "agriturismo-cabrele",
+          __typename: "BasicPropertyData",
+          reviews: {
+            __typename: "Reviews",
+            reviewsCount: 212,
+            totalScore: 9.3,
+          },
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
               __typename: "Photo",
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/126764303.jpg?k=f02d7dfd34037256513db34050af45f402736bfa3411fd9e1ac9dc58dc1869d3&o=",
+                __typename: "PhotoResource",
+              },
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/126764303.webp?k=1887d9e0a796fe553436a57823a481ed3584310d6a940e69cc8db875b110ae66&o=&s=1",
+              },
             },
           },
           id: 3034174,
-          pageName: "agriturismo-cabrele",
-          __typename: "BasicPropertyData",
-          name: "Agriturismo Cabrele",
-          location: {
-            city: "Santorso",
-            countryCode: "it",
-            __typename: "Location",
-            country: "Italy",
-          },
-          reviews: {
-            __typename: "Reviews",
-            reviewsCount: 211,
-            totalScore: 9.3,
-          },
         },
       },
       {
         __typename: "AcidCardOutput",
-        districtName: "",
-        priceDisplayInfo: {
-          displayPrice: {
-            amountPerStay: {
-              __typename: "PriceDisplay",
-              amountRounded: "Rs. 6,276",
-            },
-            __typename: "PriceDisplayAggregated",
-          },
-          __typename: "PriceDisplayInfo",
-        },
         landingOptions: null,
         basicPropertyData: {
-          location: {
-            city: "Saint-Gabriel-de-Valcartier ",
-            __typename: "Location",
-            countryCode: "ca",
-            country: "Canada",
-          },
           reviews: {
+            reviewsCount: 120,
             totalScore: 8.2,
             __typename: "Reviews",
-            reviewsCount: 153,
           },
-          id: 2550794,
+          id: 741467,
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
+              __typename: "Photo",
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/356256733.jpg?k=833987c0de758cd57d0e287439c6486e62f537c43235c1822b2fce74487db54f&o=",
+              },
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/356256733.webp?k=d26e6f029087ccbccf4057b95461d46e7ae18d2aa3dd4247ff6b0a148c10bc33&o=&s=1",
+              },
+            },
+          },
+          pageName: "mini-abernachten-im-gurkenfass",
+          location: {
+            city: "Lübbenau",
+            __typename: "Location",
+            countryCode: "de",
+            country: "Germany",
+          },
+          name: "Mini Hotel Übernachten Im Gurkenfass",
+          __typename: "BasicPropertyData",
+        },
+        priceDisplayInfo: null,
+        districtName: "",
+      },
+      {
+        districtName: "",
+        priceDisplayInfo: null,
+        basicPropertyData: {
+          __typename: "BasicPropertyData",
+          name: "Carinya Park",
+          location: {
+            __typename: "Location",
+            city: "Gembrook",
+            country: "Australia",
+            countryCode: "au",
+          },
+          pageName: "carinya-park",
+          photos: {
+            main: {
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/154543781.jpg?k=868ff54aa25ef6a79bf336d10a70cbb0460e9200740fc7686e3f5b050bd41af0&o=",
+              },
+              __typename: "Photo",
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/154543781.webp?k=ad89bc70ec138736b22947f52b7e0ecbac176026e13c50646147303582d94bcd&o=&s=1",
+                __typename: "PhotoResource",
+              },
+            },
+            __typename: "PropertyPhotos",
+          },
+          id: 3843478,
+          reviews: {
+            totalScore: 9.3,
+            reviewsCount: 33,
+            __typename: "Reviews",
+          },
+        },
+        landingOptions: null,
+        __typename: "AcidCardOutput",
+      },
+      {
+        basicPropertyData: {
+          reviews: {
+            totalScore: 9.3,
+            reviewsCount: 307,
+            __typename: "Reviews",
+          },
+          id: 6202118,
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/283036728.jpg?k=4212dde8fa2a221a574dda91ac9d7ceb34d27c8b163e4abce2ab21f5a0ef69f4&o=",
+              },
+              __typename: "Photo",
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/283036728.webp?k=b53dc60651b70813b1a2b12cb3903f54b36f1a04128ab0340ee03b860b0f9c48&o=&s=1",
+              },
+            },
+          },
+          pageName: "gyttja-vastergards",
+          name: "Gyttja Västergårds",
+          location: {
+            country: "Finland",
+            countryCode: "fi",
+            city: "Lillandet",
+            __typename: "Location",
+          },
+          __typename: "BasicPropertyData",
+        },
+        landingOptions: null,
+        __typename: "AcidCardOutput",
+        districtName: "",
+        priceDisplayInfo: null,
+      },
+      {
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+        basicPropertyData: {
+          pageName: "au-coeur-des-lacs",
+          location: {
+            city: "Gérardmer",
+            __typename: "Location",
+            countryCode: "fr",
+            country: "France",
+          },
+          name: "Au Cœur des Lacs - Chambres d'hôtes",
+          __typename: "BasicPropertyData",
+          reviews: {
+            totalScore: 9.4,
+            reviewsCount: 295,
+            __typename: "Reviews",
+          },
+          id: 1118596,
+          photos: {
+            main: {
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/332074170.webp?k=9e07443aa7ca1a35645b6572aef736095c3bffbd5e8b00c7633f0578a6c2ec3a&o=&s=1",
+              },
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/332074170.jpg?k=c8ece3f04de03cbce291c73511427b72db87445de548e6a8bf2c4cf94186d6dc&o=",
+              },
+              __typename: "Photo",
+            },
+            __typename: "PropertyPhotos",
+          },
+        },
+        priceDisplayInfo: null,
+        districtName: "",
+      },
+      {
+        districtName: "",
+        priceDisplayInfo: null,
+        basicPropertyData: {
+          id: 2245019,
           photos: {
             main: {
               lowResJpegUrl: {
                 relativeUrl:
-                  "/xdata/images/hotel/square200/106411975.jpg?k=f2c29dc8dedd12e129e270515d34ae56a4a617418cfc343665c2e136d8acd119&o=",
+                  "/xdata/images/hotel/square200/92356437.jpg?k=004e4744ccc20cf1df9f5bc49d0e345faa5ee1f199b424d8765bcd962a79ffde&o=",
                 __typename: "PhotoResource",
               },
+              __typename: "Photo",
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/92356437.webp?k=9696d60e5b732b17d934f3bddfb71e553dfb8960add90d3e0392968a4e93cfc4&o=&s=1",
+              },
+            },
+            __typename: "PropertyPhotos",
+          },
+          reviews: {
+            reviewsCount: 54,
+            totalScore: 8.7,
+            __typename: "Reviews",
+          },
+          __typename: "BasicPropertyData",
+          pageName: "la-sapinette-val-david",
+          location: {
+            city: "Val-David",
+            __typename: "Location",
+            countryCode: "ca",
+            country: "Canada",
+          },
+          name: "La Sapinette",
+        },
+        landingOptions: null,
+        __typename: "AcidCardOutput",
+      },
+      {
+        landingOptions: null,
+        basicPropertyData: {
+          __typename: "BasicPropertyData",
+          name: "MFC Erfurter Seen",
+          location: {
+            __typename: "Location",
+            city: "Erfurt",
+            country: "Germany",
+            countryCode: "de",
+          },
+          pageName: "mfc-erfurter-seen",
+          photos: {
+            main: {
+              __typename: "Photo",
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/101174842.jpg?k=1514f6647082bf1100c366d6c0916f58d93255188f0a295eeffd498d64689190&o=",
+                __typename: "PhotoResource",
+              },
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/101174842.webp?k=515b19cd29852207a9e6add777068c1df7931a0dc58ddb80b36af9b605a3a00d&o=&s=1",
+                __typename: "PhotoResource",
+              },
+            },
+            __typename: "PropertyPhotos",
+          },
+          id: 2436608,
+          reviews: {
+            totalScore: 8.2,
+            reviewsCount: 143,
+            __typename: "Reviews",
+          },
+        },
+        __typename: "AcidCardOutput",
+        districtName: "",
+        priceDisplayInfo: null,
+      },
+      {
+        priceDisplayInfo: null,
+        districtName: "",
+        __typename: "AcidCardOutput",
+        basicPropertyData: {
+          id: 1809323,
+          photos: {
+            main: {
+              __typename: "Photo",
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/73425718.jpg?k=c6ca74bfb481fffdb8f78532e3fd73a2008eb3ee9da235863762aa3aaf5b5c86&o=",
+              },
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/73425718.webp?k=9b94b5d27f08138674d3ffd26102dfcabdcac68387586e2d42777515bb39a27f&o=&s=1",
+                __typename: "PhotoResource",
+              },
+            },
+            __typename: "PropertyPhotos",
+          },
+          reviews: {
+            reviewsCount: 131,
+            totalScore: 9,
+            __typename: "Reviews",
+          },
+          __typename: "BasicPropertyData",
+          pageName: "finca-esperanza",
+          location: {
+            countryCode: "es",
+            country: "Spain",
+            __typename: "Location",
+            city: "Yaiza",
+          },
+          name: "Finca Esperanza",
+        },
+        landingOptions: null,
+      },
+      {
+        districtName: "",
+        priceDisplayInfo: null,
+        basicPropertyData: {
+          pageName: "la-seigneurie-de-la-valcartier",
+          name: "Auberge La Seigneurie Valcartier",
+          location: {
+            country: "Canada",
+            countryCode: "ca",
+            city: "Saint-Gabriel-de-Valcartier ",
+            __typename: "Location",
+          },
+          __typename: "BasicPropertyData",
+          reviews: {
+            reviewsCount: 153,
+            totalScore: 8.2,
+            __typename: "Reviews",
+          },
+          id: 2550794,
+          photos: {
+            main: {
               highResUrl: {
                 relativeUrl:
                   "/xdata/images/hotel/square600/106411975.webp?k=53597242e9727e6e44a618b8edbc222c39b6937ac1bbe76761e24a2d796aed62&o=&s=1",
                 __typename: "PhotoResource",
               },
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/106411975.jpg?k=f2c29dc8dedd12e129e270515d34ae56a4a617418cfc343665c2e136d8acd119&o=",
+              },
               __typename: "Photo",
             },
             __typename: "PropertyPhotos",
           },
-          pageName: "la-seigneurie-de-la-valcartier",
-          name: "Auberge La Seigneurie Valcartier",
-          __typename: "BasicPropertyData",
         },
+        landingOptions: null,
+        __typename: "AcidCardOutput",
       },
       {
-        priceDisplayInfo: {
-          displayPrice: {
-            __typename: "PriceDisplayAggregated",
-            amountPerStay: {
-              __typename: "PriceDisplay",
-              amountRounded: "Rs. 13,650",
-            },
-          },
-          __typename: "PriceDisplayInfo",
-        },
         landingOptions: null,
         basicPropertyData: {
           reviews: {
-            __typename: "Reviews",
-            reviewsCount: 803,
             totalScore: 9.4,
-          },
-          location: {
-            __typename: "Location",
-            country: "Norway",
-            countryCode: "no",
-            city: "Reine",
-          },
-          pageName: "may-39-s-apartsments",
-          name: "May's Apartments by May's",
-          __typename: "BasicPropertyData",
-          photos: {
-            main: {
-              __typename: "Photo",
-              lowResJpegUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square200/109319008.jpg?k=6a0a505eeb98986d5a1c2f8ed23ffe386a213a241daee318a1ae3b116f40d0e8&o=",
-              },
-              highResUrl: {
-                relativeUrl:
-                  "/xdata/images/hotel/square600/109319008.webp?k=b8fc6fbc8d874cffedf49c0080f14933a20995b040dc02aeaee3afad1e79c670&o=&s=1",
-                __typename: "PhotoResource",
-              },
-            },
-            __typename: "PropertyPhotos",
-          },
-          id: 2553304,
-        },
-        __typename: "AcidCardOutput",
-        districtName: "",
-      },
-      {
-        landingOptions: null,
-        priceDisplayInfo: {
-          __typename: "PriceDisplayInfo",
-          displayPrice: {
-            amountPerStay: {
-              amountRounded: "Rs. 63,019",
-              __typename: "PriceDisplay",
-            },
-            __typename: "PriceDisplayAggregated",
-          },
-        },
-        basicPropertyData: {
-          __typename: "BasicPropertyData",
-          name: "Forestis Dolomites",
-          pageName: "hotel-rosalpina-dolomites",
-          photos: {
-            main: {
-              lowResJpegUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square200/242740031.jpg?k=3936af45c12e73e9ccb65a8ac44a1bb28a7bf4522564a86f9577c59e10665791&o=",
-              },
-              highResUrl: {
-                __typename: "PhotoResource",
-                relativeUrl:
-                  "/xdata/images/hotel/square600/242740031.webp?k=c0748b237e6051854e8b1bee33f5e0993619995cc96742d55240ab6e324d2c34&o=&s=1",
-              },
-              __typename: "Photo",
-            },
-            __typename: "PropertyPhotos",
-          },
-          id: 410491,
-          reviews: {
-            totalScore: 9.7,
+            reviewsCount: 303,
             __typename: "Reviews",
-            reviewsCount: 369,
           },
+          id: 2201986,
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
+              __typename: "Photo",
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/90166571.jpg?k=2d4e8667d2c3c1be04046c73381950f84f80ac45835ac68ba484f5bf5387192c&o=",
+              },
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/90166571.webp?k=0b63f507a150b0e5f6e2173786be4374ee7deae468fc1a6443feef111cc01ef5&o=&s=1",
+              },
+            },
+          },
+          pageName: "lofthus-camping",
+          name: "Lofthus Camping",
           location: {
-            city: "Brixen ",
+            countryCode: "no",
+            country: "Norway",
             __typename: "Location",
-            country: "Italy",
-            countryCode: "it",
+            city: "Lofthus",
           },
+          __typename: "BasicPropertyData",
         },
-        districtName: "",
         __typename: "AcidCardOutput",
+        districtName: "",
+        priceDisplayInfo: null,
       },
     ],
+    __typename: "AcidCarouselOutput",
     landingOptions: {
-      nbAdults: 2,
       selectedFilters: null,
+      checkout: "",
+      nbAdults: 2,
+      travelPurpose: 0,
+      checkin: "",
+      childrenAges: [],
       destType: "NO_DEST_TYPE",
-      nbRooms: 0,
-      checkout: "2023-04-22",
       nbChildren: 0,
+      __typename: "LandingOptions",
+      nbRooms: 0,
+      page: "PROPERTY_PAGE",
       sorter: null,
       destId: 0,
-      checkin: "2023-04-21",
-      page: "PROPERTY_PAGE",
+    },
+    subtitle: "From castles and villas to boats and igloos, we've got it all",
+  },
+  typeof: {
+    nbAdults: 2,
+    nbRooms: 1,
+    types: [
+      {
+        title: "Romance",
+        id: "ROMANCE",
+        __typename: "DestinationType",
+      },
+      {
+        title: "Outdoors",
+        id: "NATURE_ACTIVE",
+        __typename: "DestinationType",
+      },
+      {
+        __typename: "DestinationType",
+        title: "Relax",
+        id: "NATURE_RELAX",
+      },
+      {
+        __typename: "DestinationType",
+        title: "Beach",
+        id: "BEACH",
+      },
+    ],
+    title: "Quick and easy trip planner",
+    childrenAges: [],
+    campaignId: "8d2ef4ac-1cf8-4530-9f94-a43dd558eb0b",
+    __typename: "TripTypeDestinationsResult",
+    carouselName: "trip_type_destinations_carousel",
+    destinations: [
+      {
+        typeIds: ["ROMANCE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046613.jpg?k=bf730767ccc5a12020fddd6584eb018e535432b59030c7e658ac5d3e6a5ddfae&o=",
+        destId: 20001594,
+        tripTypeThemeUpsortPhotoUrl: null,
+        distance: "920 km from Virginia Beach",
+        order: 0,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        destType: "CITY",
+        title: "Fort Payne",
+      },
+      {
+        destType: "CITY",
+        title: "Scottsboro",
+        order: 1,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        destId: 20003996,
+        tripTypeThemeUpsortPhotoUrl: null,
+        distance: "939 km from Virginia Beach",
+        typeIds: ["ROMANCE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046637.jpg?k=53a51eede5f1bb68de7da2e8934a6ee90cc3ff71bdfd83ca9e7e7f564bdeb9af&o=",
+      },
+      {
+        distance: "961 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        destId: 20001657,
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046614.jpg?k=650431ed861bf6b20fed6bb50df813a22df3bbcc7047e7aabe42a8c96a764822&o=",
+        typeIds: ["ROMANCE"],
+        title: "Gadsden",
+        destType: "CITY",
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        order: 2,
+      },
+      {
+        typeIds: ["ROMANCE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046619.jpg?k=8174e87b8ebec19ac13d2c135b5892d61f780828f7d6469c76b0eb2e9da05c4d&o=",
+        distance: "973 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        destId: 20001854,
+        order: 3,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        destType: "CITY",
+        title: "Guntersville",
+      },
+      {
+        typeIds: ["ROMANCE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046623.jpg?k=638b9bb3f8bb3460bfa44632c4ebde6abf38d9d5a0180c4cf2f5b3795a968869&o=",
+        destId: 20002147,
+        distance: "985 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        order: 4,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        destType: "CITY",
+        title: "Huntsville",
+      },
+      {
+        typeIds: ["ROMANCE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046598.jpg?k=95ca09f9a0641cd11efd132f71fd9ed1c196b067da0e6fb28ba9ff1ece40631c&o=",
+        destId: 20000152,
+        tripTypeThemeUpsortPhotoUrl: null,
+        distance: "988 km from Virginia Beach",
+        order: 5,
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        destType: "CITY",
+        title: "Auburn",
+      },
+      {
+        title: "Madison",
+        destType: "CITY",
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        order: 6,
+        destId: 20002633,
+        distance: "1,000 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046627.jpg?k=a9b89290cce3e7bb1114eab98a833fd43d3de96a4ced605b5c4155c3c0c3dcd6&o=",
+        typeIds: ["ROMANCE"],
+      },
+      {
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        order: 7,
+        title: "Decatur",
+        destType: "CITY",
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046604.jpg?k=48e76dd124e4a4ff56b2c1c0c73bd54318e6d5b7a97ff23c9de2809ae8c2ecbd&o=",
+        typeIds: ["ROMANCE"],
+        destId: 20001162,
+        distance: "1,024 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+      },
+      {
+        distance: "1,050 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        destId: 20000374,
+        typeIds: ["ROMANCE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046599.jpg?k=d95a92040fd980f8300af9d799aa3990275bf8f07925c43def20996485e1a5fc&o=",
+        destType: "CITY",
+        title: "Birmingham",
+        order: 8,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+      },
+      {
+        title: "Hoover",
+        destType: "CITY",
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        order: 9,
+        distance: "1,057 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        destId: 20002094,
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046621.jpg?k=f0444aefddff73bc1b7fcdd468acc32de85bbbde28fc64599bf4f9f557d14082&o=",
+        typeIds: ["ROMANCE"],
+      },
+      {
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        order: 10,
+        title: "Montgomery",
+        destType: "CITY",
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046629.jpg?k=252bf32cf0a9a4904413dcef766a0ba5a45dbc8cebc30add334a238efa0f9361&o=",
+        typeIds: ["ROMANCE"],
+        distance: "1,067 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        destId: 20002903,
+      },
+      {
+        title: "Dothan",
+        destType: "CITY",
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        order: 11,
+        distance: "1,069 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        destId: 20001223,
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046606.jpg?k=aedeeb17b9d1abd50b0b7d3fa6545d0d193335c50ec28b43573694080fd73369&o=",
+        typeIds: ["ROMANCE"],
+      },
+      {
+        tripTypeThemeUpsortPhotoUrl: null,
+        distance: "1,075 km from Virginia Beach",
+        destId: 20003634,
+        typeIds: ["ROMANCE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046635.jpg?k=9809e451d9cf6c469607d7cf64a1fb93608193cd0bad5d2da26d47c27eeaf59b&o=",
+        destType: "CITY",
+        title: "Prattville",
+        order: 12,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+      },
+      {
+        order: 13,
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        destType: "CITY",
+        title: "Florence",
+        typeIds: ["ROMANCE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046609.jpg?k=4d6771db8c18655fe3092da291c3e2e7a6a239a223a357ca02210a56026962ed&o=",
+        destId: 20001555,
+        tripTypeThemeUpsortPhotoUrl: null,
+        distance: "1,078 km from Virginia Beach",
+      },
+      {
+        destId: 20004535,
+        tripTypeThemeUpsortPhotoUrl: null,
+        distance: "1,130 km from Virginia Beach",
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046641.jpg?k=0ecfa55a66cef39f88009a5b846cfd30fc0e1de3d30df0d5385f597606d25143&o=",
+        typeIds: ["ROMANCE"],
+        title: "Tuscaloosa",
+        destType: "CITY",
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        order: 14,
+      },
+      {
+        destType: "CITY",
+        title: "Gulf Shores",
+        order: 15,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        distance: "1,310 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/222880695.jpg?k=2c689ec79dbf7b65baf09008150151f0f119622905e74a193b62c8338a12022f&o=",
+        destId: 20001848,
+        typeIds: ["BEACH"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046618.jpg?k=70bdd0a85efed704e8f6b4ebafa281709afebb22a320f959433b74b21f82acbe&o=",
+      },
+      {
+        title: "Pinetop-Lakeside",
+        destType: "CITY",
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        order: 16,
+        destId: 20006910,
+        distance: "3,075 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046717.jpg?k=35d32c052ba925c20177ab5799b202a1f5e14276a21737e3fd9151eb1a6e3abf&o=",
+        typeIds: ["NATURE_ACTIVE"],
+      },
+      {
+        typeIds: ["NATURE_ACTIVE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046710.jpg?k=6e8760b0ba38fb3ff8c22993bd526f8d09278f706e5f26cfe5fafc1aa9a74808&o=",
+        destId: 20006816,
+        distance: "3,137 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/315951458.jpg?k=44535256d16d211ce1ce185a9e428fd448578e1cde24ff095ea5d339e096e8c9&o=",
+        order: 17,
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        destType: "CITY",
+        title: "Page",
+      },
+      {
+        title: "Flagstaff",
+        destType: "CITY",
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        order: 18,
+        distance: "3,195 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/235429968.jpg?k=88a4b0e6f38ad904bb5dad00d9942fbb73615b73550f50b98ea9e743ff75aec9&o=",
+        destId: 20006240,
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046690.jpg?k=8948e81eb7b87910e59e676e8d7dce4f3315843b11b1752601260828bb80cca6&o=",
+        typeIds: ["NATURE_ACTIVE"],
+      },
+      {
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046723.jpg?k=bedf73729a4d5c66821c49517e6efa021fe9cbb16d7afe9d2e3687f81651e563&o=",
+        typeIds: ["NATURE_ACTIVE"],
+        destId: 20007140,
+        distance: "3,216 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        order: 19,
+        title: "Sedona",
+        destType: "CITY",
+      },
+      {
+        title: "Bishop",
+        destType: "CITY",
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        order: 20,
+        tripTypeThemeUpsortPhotoUrl: null,
+        distance: "3,729 km from Virginia Beach",
+        destId: 20011659,
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046809.jpg?k=30a73a14019a7bda50013fdeaaf4940921df19256c3e3ee2c1485444e0d230f3&o=",
+        typeIds: ["NATURE_ACTIVE"],
+      },
+      {
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046830.jpg?k=a295f2ecfad8db8672260f9e2359fb1eaaf9f00c59d35fb909b4766da20a9fc0&o=",
+        typeIds: ["BEACH"],
+        destId: 20012027,
+        distance: "3,761 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/221654916.jpg?k=dac2405b1a4799e642bea30505958117f5301c81d4a0fd59ccf5a3979a12576a&o=",
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        order: 21,
+        title: "Carlsbad",
+        destType: "CITY",
+      },
+      {
+        order: 22,
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        destType: "CITY",
+        title: "Avalon",
+        typeIds: ["NATURE_RELAX"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046793.jpg?k=079c26c198083c952ce330771afeaeb3ebd0d601360c259b24adfa0f1a4f4243&o=",
+        destId: 20011436,
+        distance: "3,841 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/235755070.jpg?k=24ab1901f4f5d63caf83327f0c49158042bd4ff0b9a027f998bf7feb0450c428&o=",
+      },
+      {
+        distance: "4,011 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        destId: 20011946,
+        typeIds: ["NATURE_RELAX"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046825.jpg?k=e1de89f0bc6e34c8f2ebd05ed30e93124ab60706ab9b0866587c18b7cfedb9a9&o=",
+        destType: "CITY",
+        title: "Cambria",
+        order: 23,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+      },
+      {
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        order: 24,
+        title: "Carmel",
+        destType: "CITY",
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046832.jpg?k=0d4c8bad4dfb248df6cb227c8fbca482fa7be299b1a65b38c570b36073dca155&o=",
+        typeIds: ["BEACH"],
+        distance: "4,055 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl: null,
+        destId: 20012034,
+      },
+      {
+        order: 25,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        destType: "CITY",
+        title: "Calistoga",
+        typeIds: ["NATURE_RELAX"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046824.jpg?k=d4ad21f131f8e73b29192bc9622198a6f8ff9e4d0780be63355b9ad3df62e3fd&o=",
+        destId: 20011932,
+        distance: "4,059 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/175695781.jpg?k=403300b314e1d73be3840447773b5e7093489296ea5061c20a0d98754b3948e7&o=",
+      },
+      {
+        typeIds: ["NATURE_RELAX"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046853.jpg?k=479c4808cd469c0d919bd330d3504c20e3cb1f305e3787dcc0f0b5aa6eabea67&o=",
+        destId: 20012390,
+        distance: "4,130 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/328287963.jpg?k=a2526366d7bf67ad4c694442b5b33a14b337db92b364a118c5bc5d1a9aa6e478&o=",
+        order: 26,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        destType: "CITY",
+        title: "Crescent City",
+      },
+      {
+        typeIds: ["NATURE_RELAX"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046883.jpg?k=75aefedf7aea8646d208c894f7b7c682444237f2c7539fb783b08b4eadd97699&o=",
+        distance: "4,143 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/384167912.jpg?k=da52ac6bb8fec869ad5d782d7f15bcd5e47be70c6824e6c374aa6d4af5189437&o=",
+        destId: 20013021,
+        order: 27,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        destType: "CITY",
+        title: "Fort Bragg",
+      },
+      {
+        formattedPrice: null,
+        __typename: "TripTypeDestination",
+        order: 28,
+        title: "Fairbanks",
+        destType: "CITY",
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046644.jpg?k=47f99faeb5724b22f5ff8c121ca761095e8088ca0ed21dae591163ccca238ae0&o=",
+        typeIds: ["NATURE_RELAX"],
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/224582205.jpg?k=b553357ebb22073bbe5500825d861928ada564051e4ad2eacb2ec74e2990049d&o=",
+        distance: "5,504 km from Virginia Beach",
+        destId: 20005153,
+      },
+      {
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        order: 29,
+        title: "Seward",
+        destType: "CITY",
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046664.jpg?k=c29d82ce579cc4012e576c5f1ce7bdc458b418d585cec0ad857e4d92689f3257&o=",
+        typeIds: ["NATURE_ACTIVE"],
+        tripTypeThemeUpsortPhotoUrl: null,
+        distance: "5,637 km from Virginia Beach",
+        destId: 20005528,
+      },
+      {
+        typeIds: ["NATURE_ACTIVE"],
+        imageUrl:
+          "/xdata/images/xphoto/<SIZE>/140046642.jpg?k=c9e9d25aea449f9594430b6964146b312cb2c39a319c6eed3f5a366918d958e9&o=",
+        destId: 20004981,
+        distance: "5,646 km from Virginia Beach",
+        tripTypeThemeUpsortPhotoUrl:
+          "/xdata/images/hotel/<SIZE>/261621433.jpg?k=cbc52036aa018094c050b7d029746c1c8e463f8cdc645b6ad5942228ee9f3923&o=",
+        order: 30,
+        __typename: "TripTypeDestination",
+        formattedPrice: null,
+        destType: "CITY",
+        title: "Anchorage",
+      },
+    ],
+    nbChildren: 0,
+    subtitle:
+      "Pick a vibe and explore the top destinations in the United States",
+    checkout: "2023-04-22",
+    checkin: "2023-04-21",
+  },
+  getslove: {
+    landingOptions: {
+      nbAdults: 2,
+      checkin: "2023-04-20",
+      destType: "CITY",
+      nbRooms: 0,
+      selectedFilters: "review_score=50",
       childrenAges: [],
+      destId: -510625,
+      nbChildren: 0,
+      checkout: "2023-04-21",
+      sorter: null,
       __typename: "LandingOptions",
+      page: "SEARCH_RESULTS_PAGE",
       travelPurpose: 0,
     },
+    __typename: "AcidCarouselOutput",
     hasAvailability: true,
-    subtitle: "From castles and villas to boats and igloos, we've got it all",
-    title: "Stay at our top unique properties",
-  },
-  typeof:{
-    "nbAdults": 2,
-    "nbRooms": 1,
-    "types": [
-        {
-            "title": "Romance",
-            "id": "ROMANCE",
-            "__typename": "DestinationType"
+    acidCards: [
+      {
+        priceDisplayInfo: {
+          __typename: "PriceDisplayInfo",
+          displayPrice: {
+            __typename: "PriceDisplayAggregated",
+            amountPerStay: {
+              amountRounded: "₹ 11,914",
+              __typename: "PriceDisplay",
+            },
+          },
         },
-        {
-            "title": "Outdoors",
-            "id": "NATURE_ACTIVE",
-            "__typename": "DestinationType"
+        districtName: "Old Town",
+        basicPropertyData: {
+          pageName: "aparthotel",
+          id: 260295,
+          reviews: {
+            reviewsCount: 2145,
+            __typename: "Reviews",
+            totalScore: 8.6,
+          },
+          __typename: "BasicPropertyData",
+          name: "Aparthotel Stare Miasto",
+          location: {
+            city: "Kraków",
+            countryCode: "pl",
+            country: "Poland",
+            __typename: "Location",
+          },
+          photos: {
+            main: {
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/13125860.jpg?k=b5f4783a8a6ecf84738e080755acfebf943253d71f4458fbe2510a356cf3d8c8&o=",
+                __typename: "PhotoResource",
+              },
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/13125860.webp?k=e148feeb802ac3d28d1391dad9e4cf1e12d9231f897d0b53ca067bde8a9d3355&o=&s=1",
+              },
+              __typename: "Photo",
+            },
+            __typename: "PropertyPhotos",
+          },
         },
-        {
-            "__typename": "DestinationType",
-            "title": "Relax",
-            "id": "NATURE_RELAX"
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+      },
+      {
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+        districtName: "06. Terézváros",
+        basicPropertyData: {
+          __typename: "BasicPropertyData",
+          id: 78365,
+          pageName: "7seasons-apartments-budapest",
+          reviews: {
+            __typename: "Reviews",
+            reviewsCount: 7625,
+            totalScore: 8.8,
+          },
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
+              __typename: "Photo",
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/87428762.jpg?k=3f7ea7636b2689409ba55ce84f1b3c8921054cbeaebc747a517f1b2caead7a31&o=",
+                __typename: "PhotoResource",
+              },
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/87428762.webp?k=9a065fcd92168145d8c8358701662c76793535597b678efc8f6921c8e3c188e6&o=&s=1",
+                __typename: "PhotoResource",
+              },
+            },
+          },
+          location: {
+            __typename: "Location",
+            country: "Hungary",
+            countryCode: "hu",
+            city: "Budapest",
+          },
+          name: "7Seasons Apartments Budapest",
         },
-        {
-            "__typename": "DestinationType",
-            "title": "Beach",
-            "id": "BEACH"
-        }
+        priceDisplayInfo: {
+          displayPrice: {
+            __typename: "PriceDisplayAggregated",
+            amountPerStay: {
+              amountRounded: "₹ 10,393",
+              __typename: "PriceDisplay",
+            },
+          },
+          __typename: "PriceDisplayInfo",
+        },
+      },
+      {
+        districtName: "Split City Centre",
+        basicPropertyData: {
+          __typename: "BasicPropertyData",
+          pageName: "villa-domina",
+          id: 539886,
+          reviews: {
+            __typename: "Reviews",
+            reviewsCount: 1088,
+            totalScore: 9.4,
+          },
+          photos: {
+            main: {
+              __typename: "Photo",
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/44146554.webp?k=bc461f3aff9a66c15ddae3b3a7e10a44f6aea550cb89ce292cec7ca0b4ccecdb&o=&s=1",
+              },
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/44146554.jpg?k=c418ab13d5c0ad2402cb939d157a20953f233ffbba42753b0f00c4195626a1c1&o=",
+              },
+            },
+            __typename: "PropertyPhotos",
+          },
+          name: "Villa Domina",
+          location: {
+            countryCode: "hr",
+            city: "Split",
+            __typename: "Location",
+            country: "Croatia",
+          },
+        },
+        priceDisplayInfo: {
+          displayPrice: {
+            __typename: "PriceDisplayAggregated",
+            amountPerStay: {
+              __typename: "PriceDisplay",
+              amountRounded: "₹ 5,306",
+            },
+          },
+          __typename: "PriceDisplayInfo",
+        },
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+      },
+      {
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+        districtName: "Centro",
+        priceDisplayInfo: {
+          __typename: "PriceDisplayInfo",
+          displayPrice: {
+            __typename: "PriceDisplayAggregated",
+            amountPerStay: {
+              amountRounded: "₹ 12,494",
+              __typename: "PriceDisplay",
+            },
+          },
+        },
+        basicPropertyData: {
+          name: "Oriente Palace Apartments",
+          location: {
+            __typename: "Location",
+            country: "Spain",
+            city: "Madrid",
+            countryCode: "es",
+          },
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/95058973.webp?k=979587fd2ac8f7777a34758264d557eef57d0e98e58bdaeb121f5b968a20f810&o=&s=1",
+              },
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/95058973.jpg?k=a061dc2474962409577f55cce44e8bf56df849294da0e1244965e2351ec6683d&o=",
+              },
+              __typename: "Photo",
+            },
+          },
+          pageName: "oriente-palace-apartments",
+          id: 2182677,
+          reviews: {
+            totalScore: 8.9,
+            reviewsCount: 2666,
+            __typename: "Reviews",
+          },
+          __typename: "BasicPropertyData",
+        },
+      },
+      {
+        priceDisplayInfo: {
+          displayPrice: {
+            amountPerStay: {
+              __typename: "PriceDisplay",
+              amountRounded: "₹ 25,228",
+            },
+            __typename: "PriceDisplayAggregated",
+          },
+          __typename: "PriceDisplayInfo",
+        },
+        districtName: "Fortezza da Basso",
+        basicPropertyData: {
+          location: {
+            countryCode: "it",
+            city: "Florence",
+            country: "Italy",
+            __typename: "Location",
+          },
+          name: "numa I Vita Apartments",
+          photos: {
+            __typename: "PropertyPhotos",
+            main: {
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/352170812.jpg?k=5c14d09931322b1c9414849e1b736fe36dcea264ee5bdaf008fb7b8fcc74ce64&o=",
+                __typename: "PhotoResource",
+              },
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/352170812.webp?k=75ffc5f9eb3f3cc394b901714c1544757b05849dbbdf30e4fc8c6df53931c131&o=&s=1",
+                __typename: "PhotoResource",
+              },
+              __typename: "Photo",
+            },
+          },
+          pageName: "m7-contemporary-apartments-my-extra-home",
+          id: 2132601,
+          reviews: {
+            __typename: "Reviews",
+            reviewsCount: 1000,
+            totalScore: 9.3,
+          },
+          __typename: "BasicPropertyData",
+        },
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+      },
+      {
+        priceDisplayInfo: {
+          displayPrice: {
+            __typename: "PriceDisplayAggregated",
+            amountPerStay: {
+              __typename: "PriceDisplay",
+              amountRounded: "₹ 64,233",
+            },
+          },
+          __typename: "PriceDisplayInfo",
+        },
+        districtName: "City of London",
+        basicPropertyData: {
+          pageName: "cheval-three-quays",
+          id: 785838,
+          reviews: {
+            totalScore: 9.5,
+            reviewsCount: 565,
+            __typename: "Reviews",
+          },
+          __typename: "BasicPropertyData",
+          name: "Cheval Three Quays at The Tower of London",
+          location: {
+            __typename: "Location",
+            country: "United Kingdom",
+            city: "London",
+            countryCode: "gb",
+          },
+          photos: {
+            main: {
+              __typename: "Photo",
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/29466558.jpg?k=b374e34682efcde472aaebbeb8a8507c1b93d3e380c1b33cbcb708026e36afd3&o=",
+                __typename: "PhotoResource",
+              },
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/29466558.webp?k=fa323cf3e030ae6b41c8b475fe2853ae4e9e38148501d68dd5b915905dcea664&o=&s=1",
+              },
+            },
+            __typename: "PropertyPhotos",
+          },
+        },
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+      },
+      {
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+        priceDisplayInfo: {
+          displayPrice: {
+            amountPerStay: {
+              amountRounded: "₹ 24,283",
+              __typename: "PriceDisplay",
+            },
+            __typename: "PriceDisplayAggregated",
+          },
+          __typename: "PriceDisplayInfo",
+        },
+        districtName: "Sant Martí",
+        basicPropertyData: {
+          __typename: "BasicPropertyData",
+          reviews: {
+            __typename: "Reviews",
+            reviewsCount: 373,
+            totalScore: 8.6,
+          },
+          id: 283745,
+          pageName: "mar-bella-apartments",
+          photos: {
+            main: {
+              __typename: "Photo",
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/287103884.jpg?k=a08eede6935f718431632c93ffa92188c0a6697f90380e506475f5818d9402f7&o=",
+              },
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/287103884.webp?k=1dda225f7472470d2e8524c258089c089c106e4dee40e93bf7d1ef9e4638720e&o=&s=1",
+              },
+            },
+            __typename: "PropertyPhotos",
+          },
+          name: "RAMBLA BEACH Barcelonastuff Apartments",
+          location: {
+            countryCode: "es",
+            city: "Barcelona",
+            __typename: "Location",
+            country: "Spain",
+          },
+        },
+      },
+      {
+        landingOptions: null,
+        __typename: "AcidCardOutput",
+        districtName: "Kensington and Chelsea",
+        basicPropertyData: {
+          location: {
+            countryCode: "gb",
+            city: "London",
+            __typename: "Location",
+            country: "United Kingdom",
+          },
+          name: "The Apartments by The Sloane Club",
+          photos: {
+            main: {
+              highResUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square600/420377357.webp?k=73f8c029827076805ee781cdf818bb5e5e9b963227d74e4ebe071f3564ae4423&o=&s=1",
+              },
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/420377357.jpg?k=ce3ac93f628f46dc3747fb173abbb72a9625ffd892ddd21ab2a443151d698672&o=",
+                __typename: "PhotoResource",
+              },
+              __typename: "Photo",
+            },
+            __typename: "PropertyPhotos",
+          },
+          reviews: {
+            __typename: "Reviews",
+            reviewsCount: 132,
+            totalScore: 9,
+          },
+          pageName: "the-apartments-by-the-sloane-club",
+          id: 1129506,
+          __typename: "BasicPropertyData",
+        },
+        priceDisplayInfo: {
+          __typename: "PriceDisplayInfo",
+          displayPrice: {
+            __typename: "PriceDisplayAggregated",
+            amountPerStay: {
+              amountRounded: "₹ 56,953",
+              __typename: "PriceDisplay",
+            },
+          },
+        },
+      },
+      {
+        districtName: "Prague 1",
+        priceDisplayInfo: {
+          displayPrice: {
+            __typename: "PriceDisplayAggregated",
+            amountPerStay: {
+              amountRounded: "₹ 8,027",
+              __typename: "PriceDisplay",
+            },
+          },
+          __typename: "PriceDisplayInfo",
+        },
+        basicPropertyData: {
+          reviews: {
+            __typename: "Reviews",
+            reviewsCount: 413,
+            totalScore: 8.7,
+          },
+          pageName: "royal-boutique-residence",
+          id: 381352,
+          __typename: "BasicPropertyData",
+          name: "3 Epoques Apartments by Prague Residences",
+          location: {
+            country: "Czech Republic",
+            __typename: "Location",
+            countryCode: "cz",
+            city: "Praha 1",
+          },
+          photos: {
+            main: {
+              __typename: "Photo",
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/421852968.webp?k=f3889222c82f4a8e3783dddb5f1cc04d6140eeb2d5cb8297817a15aacfe4d191&o=&s=1",
+                __typename: "PhotoResource",
+              },
+              lowResJpegUrl: {
+                __typename: "PhotoResource",
+                relativeUrl:
+                  "/xdata/images/hotel/square200/421852968.jpg?k=2b11c50ea80ba1b145e4508a7dabdec6ae4ba041cd3f3e43c4a5f49a059109c6&o=",
+              },
+            },
+            __typename: "PropertyPhotos",
+          },
+        },
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+      },
+      {
+        __typename: "AcidCardOutput",
+        landingOptions: null,
+        priceDisplayInfo: {
+          __typename: "PriceDisplayInfo",
+          displayPrice: {
+            __typename: "PriceDisplayAggregated",
+            amountPerStay: {
+              __typename: "PriceDisplay",
+              amountRounded: "₹ 34,536",
+            },
+          },
+        },
+        districtName: "Santa Maria Maior",
+        basicPropertyData: {
+          photos: {
+            main: {
+              highResUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square600/438349362.webp?k=839ea9b903c6e84a280ab906746e62f0b3079c922803f2cc757ae6880ae4a93a&o=&s=1",
+                __typename: "PhotoResource",
+              },
+              lowResJpegUrl: {
+                relativeUrl:
+                  "/xdata/images/hotel/square200/438349362.jpg?k=945831cd5b475fda1a5db4ba027d78a3a3f93b40e432678baf576eaae613e0fb&o=",
+                __typename: "PhotoResource",
+              },
+              __typename: "Photo",
+            },
+            __typename: "PropertyPhotos",
+          },
+          name: "Casa Portuguesa Prata",
+          location: {
+            countryCode: "pt",
+            city: "Lisboa",
+            __typename: "Location",
+            country: "Portugal",
+          },
+          __typename: "BasicPropertyData",
+          reviews: {
+            totalScore: 8,
+            __typename: "Reviews",
+            reviewsCount: 45,
+          },
+          id: 1794417,
+          pageName: "casa-portuguesa-prata",
+        },
+      },
     ],
-    "title": "Quick and easy trip planner",
-    "childrenAges": [],
-    "campaignId": "8d2ef4ac-1cf8-4530-9f94-a43dd558eb0b",
-    "__typename": "TripTypeDestinationsResult",
-    "carouselName": "trip_type_destinations_carousel",
-    "destinations": [
-        {
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046613.jpg?k=bf730767ccc5a12020fddd6584eb018e535432b59030c7e658ac5d3e6a5ddfae&o=",
-            "destId": 20001594,
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "distance": "920 km from Virginia Beach",
-            "order": 0,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "destType": "CITY",
-            "title": "Fort Payne"
-        },
-        {
-            "destType": "CITY",
-            "title": "Scottsboro",
-            "order": 1,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "destId": 20003996,
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "distance": "939 km from Virginia Beach",
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046637.jpg?k=53a51eede5f1bb68de7da2e8934a6ee90cc3ff71bdfd83ca9e7e7f564bdeb9af&o="
-        },
-        {
-            "distance": "961 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "destId": 20001657,
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046614.jpg?k=650431ed861bf6b20fed6bb50df813a22df3bbcc7047e7aabe42a8c96a764822&o=",
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "title": "Gadsden",
-            "destType": "CITY",
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "order": 2
-        },
-        {
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046619.jpg?k=8174e87b8ebec19ac13d2c135b5892d61f780828f7d6469c76b0eb2e9da05c4d&o=",
-            "distance": "973 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "destId": 20001854,
-            "order": 3,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "destType": "CITY",
-            "title": "Guntersville"
-        },
-        {
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046623.jpg?k=638b9bb3f8bb3460bfa44632c4ebde6abf38d9d5a0180c4cf2f5b3795a968869&o=",
-            "destId": 20002147,
-            "distance": "985 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "order": 4,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "destType": "CITY",
-            "title": "Huntsville"
-        },
-        {
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046598.jpg?k=95ca09f9a0641cd11efd132f71fd9ed1c196b067da0e6fb28ba9ff1ece40631c&o=",
-            "destId": 20000152,
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "distance": "988 km from Virginia Beach",
-            "order": 5,
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "destType": "CITY",
-            "title": "Auburn"
-        },
-        {
-            "title": "Madison",
-            "destType": "CITY",
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "order": 6,
-            "destId": 20002633,
-            "distance": "1,000 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046627.jpg?k=a9b89290cce3e7bb1114eab98a833fd43d3de96a4ced605b5c4155c3c0c3dcd6&o=",
-            "typeIds": [
-                "ROMANCE"
-            ]
-        },
-        {
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "order": 7,
-            "title": "Decatur",
-            "destType": "CITY",
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046604.jpg?k=48e76dd124e4a4ff56b2c1c0c73bd54318e6d5b7a97ff23c9de2809ae8c2ecbd&o=",
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "destId": 20001162,
-            "distance": "1,024 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null
-        },
-        {
-            "distance": "1,050 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "destId": 20000374,
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046599.jpg?k=d95a92040fd980f8300af9d799aa3990275bf8f07925c43def20996485e1a5fc&o=",
-            "destType": "CITY",
-            "title": "Birmingham",
-            "order": 8,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null
-        },
-        {
-            "title": "Hoover",
-            "destType": "CITY",
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "order": 9,
-            "distance": "1,057 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "destId": 20002094,
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046621.jpg?k=f0444aefddff73bc1b7fcdd468acc32de85bbbde28fc64599bf4f9f557d14082&o=",
-            "typeIds": [
-                "ROMANCE"
-            ]
-        },
-        {
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "order": 10,
-            "title": "Montgomery",
-            "destType": "CITY",
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046629.jpg?k=252bf32cf0a9a4904413dcef766a0ba5a45dbc8cebc30add334a238efa0f9361&o=",
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "distance": "1,067 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "destId": 20002903
-        },
-        {
-            "title": "Dothan",
-            "destType": "CITY",
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "order": 11,
-            "distance": "1,069 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "destId": 20001223,
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046606.jpg?k=aedeeb17b9d1abd50b0b7d3fa6545d0d193335c50ec28b43573694080fd73369&o=",
-            "typeIds": [
-                "ROMANCE"
-            ]
-        },
-        {
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "distance": "1,075 km from Virginia Beach",
-            "destId": 20003634,
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046635.jpg?k=9809e451d9cf6c469607d7cf64a1fb93608193cd0bad5d2da26d47c27eeaf59b&o=",
-            "destType": "CITY",
-            "title": "Prattville",
-            "order": 12,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null
-        },
-        {
-            "order": 13,
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "destType": "CITY",
-            "title": "Florence",
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046609.jpg?k=4d6771db8c18655fe3092da291c3e2e7a6a239a223a357ca02210a56026962ed&o=",
-            "destId": 20001555,
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "distance": "1,078 km from Virginia Beach"
-        },
-        {
-            "destId": 20004535,
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "distance": "1,130 km from Virginia Beach",
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046641.jpg?k=0ecfa55a66cef39f88009a5b846cfd30fc0e1de3d30df0d5385f597606d25143&o=",
-            "typeIds": [
-                "ROMANCE"
-            ],
-            "title": "Tuscaloosa",
-            "destType": "CITY",
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "order": 14
-        },
-        {
-            "destType": "CITY",
-            "title": "Gulf Shores",
-            "order": 15,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "distance": "1,310 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/222880695.jpg?k=2c689ec79dbf7b65baf09008150151f0f119622905e74a193b62c8338a12022f&o=",
-            "destId": 20001848,
-            "typeIds": [
-                "BEACH"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046618.jpg?k=70bdd0a85efed704e8f6b4ebafa281709afebb22a320f959433b74b21f82acbe&o="
-        },
-        {
-            "title": "Pinetop-Lakeside",
-            "destType": "CITY",
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "order": 16,
-            "destId": 20006910,
-            "distance": "3,075 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046717.jpg?k=35d32c052ba925c20177ab5799b202a1f5e14276a21737e3fd9151eb1a6e3abf&o=",
-            "typeIds": [
-                "NATURE_ACTIVE"
-            ]
-        },
-        {
-            "typeIds": [
-                "NATURE_ACTIVE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046710.jpg?k=6e8760b0ba38fb3ff8c22993bd526f8d09278f706e5f26cfe5fafc1aa9a74808&o=",
-            "destId": 20006816,
-            "distance": "3,137 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/315951458.jpg?k=44535256d16d211ce1ce185a9e428fd448578e1cde24ff095ea5d339e096e8c9&o=",
-            "order": 17,
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "destType": "CITY",
-            "title": "Page"
-        },
-        {
-            "title": "Flagstaff",
-            "destType": "CITY",
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "order": 18,
-            "distance": "3,195 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/235429968.jpg?k=88a4b0e6f38ad904bb5dad00d9942fbb73615b73550f50b98ea9e743ff75aec9&o=",
-            "destId": 20006240,
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046690.jpg?k=8948e81eb7b87910e59e676e8d7dce4f3315843b11b1752601260828bb80cca6&o=",
-            "typeIds": [
-                "NATURE_ACTIVE"
-            ]
-        },
-        {
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046723.jpg?k=bedf73729a4d5c66821c49517e6efa021fe9cbb16d7afe9d2e3687f81651e563&o=",
-            "typeIds": [
-                "NATURE_ACTIVE"
-            ],
-            "destId": 20007140,
-            "distance": "3,216 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "order": 19,
-            "title": "Sedona",
-            "destType": "CITY"
-        },
-        {
-            "title": "Bishop",
-            "destType": "CITY",
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "order": 20,
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "distance": "3,729 km from Virginia Beach",
-            "destId": 20011659,
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046809.jpg?k=30a73a14019a7bda50013fdeaaf4940921df19256c3e3ee2c1485444e0d230f3&o=",
-            "typeIds": [
-                "NATURE_ACTIVE"
-            ]
-        },
-        {
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046830.jpg?k=a295f2ecfad8db8672260f9e2359fb1eaaf9f00c59d35fb909b4766da20a9fc0&o=",
-            "typeIds": [
-                "BEACH"
-            ],
-            "destId": 20012027,
-            "distance": "3,761 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/221654916.jpg?k=dac2405b1a4799e642bea30505958117f5301c81d4a0fd59ccf5a3979a12576a&o=",
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "order": 21,
-            "title": "Carlsbad",
-            "destType": "CITY"
-        },
-        {
-            "order": 22,
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "destType": "CITY",
-            "title": "Avalon",
-            "typeIds": [
-                "NATURE_RELAX"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046793.jpg?k=079c26c198083c952ce330771afeaeb3ebd0d601360c259b24adfa0f1a4f4243&o=",
-            "destId": 20011436,
-            "distance": "3,841 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/235755070.jpg?k=24ab1901f4f5d63caf83327f0c49158042bd4ff0b9a027f998bf7feb0450c428&o="
-        },
-        {
-            "distance": "4,011 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "destId": 20011946,
-            "typeIds": [
-                "NATURE_RELAX"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046825.jpg?k=e1de89f0bc6e34c8f2ebd05ed30e93124ab60706ab9b0866587c18b7cfedb9a9&o=",
-            "destType": "CITY",
-            "title": "Cambria",
-            "order": 23,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null
-        },
-        {
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "order": 24,
-            "title": "Carmel",
-            "destType": "CITY",
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046832.jpg?k=0d4c8bad4dfb248df6cb227c8fbca482fa7be299b1a65b38c570b36073dca155&o=",
-            "typeIds": [
-                "BEACH"
-            ],
-            "distance": "4,055 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "destId": 20012034
-        },
-        {
-            "order": 25,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "destType": "CITY",
-            "title": "Calistoga",
-            "typeIds": [
-                "NATURE_RELAX"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046824.jpg?k=d4ad21f131f8e73b29192bc9622198a6f8ff9e4d0780be63355b9ad3df62e3fd&o=",
-            "destId": 20011932,
-            "distance": "4,059 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/175695781.jpg?k=403300b314e1d73be3840447773b5e7093489296ea5061c20a0d98754b3948e7&o="
-        },
-        {
-            "typeIds": [
-                "NATURE_RELAX"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046853.jpg?k=479c4808cd469c0d919bd330d3504c20e3cb1f305e3787dcc0f0b5aa6eabea67&o=",
-            "destId": 20012390,
-            "distance": "4,130 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/328287963.jpg?k=a2526366d7bf67ad4c694442b5b33a14b337db92b364a118c5bc5d1a9aa6e478&o=",
-            "order": 26,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "destType": "CITY",
-            "title": "Crescent City"
-        },
-        {
-            "typeIds": [
-                "NATURE_RELAX"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046883.jpg?k=75aefedf7aea8646d208c894f7b7c682444237f2c7539fb783b08b4eadd97699&o=",
-            "distance": "4,143 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/384167912.jpg?k=da52ac6bb8fec869ad5d782d7f15bcd5e47be70c6824e6c374aa6d4af5189437&o=",
-            "destId": 20013021,
-            "order": 27,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "destType": "CITY",
-            "title": "Fort Bragg"
-        },
-        {
-            "formattedPrice": null,
-            "__typename": "TripTypeDestination",
-            "order": 28,
-            "title": "Fairbanks",
-            "destType": "CITY",
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046644.jpg?k=47f99faeb5724b22f5ff8c121ca761095e8088ca0ed21dae591163ccca238ae0&o=",
-            "typeIds": [
-                "NATURE_RELAX"
-            ],
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/224582205.jpg?k=b553357ebb22073bbe5500825d861928ada564051e4ad2eacb2ec74e2990049d&o=",
-            "distance": "5,504 km from Virginia Beach",
-            "destId": 20005153
-        },
-        {
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "order": 29,
-            "title": "Seward",
-            "destType": "CITY",
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046664.jpg?k=c29d82ce579cc4012e576c5f1ce7bdc458b418d585cec0ad857e4d92689f3257&o=",
-            "typeIds": [
-                "NATURE_ACTIVE"
-            ],
-            "tripTypeThemeUpsortPhotoUrl": null,
-            "distance": "5,637 km from Virginia Beach",
-            "destId": 20005528
-        },
-        {
-            "typeIds": [
-                "NATURE_ACTIVE"
-            ],
-            "imageUrl": "/xdata/images/xphoto/<SIZE>/140046642.jpg?k=c9e9d25aea449f9594430b6964146b312cb2c39a319c6eed3f5a366918d958e9&o=",
-            "destId": 20004981,
-            "distance": "5,646 km from Virginia Beach",
-            "tripTypeThemeUpsortPhotoUrl": "/xdata/images/hotel/<SIZE>/261621433.jpg?k=cbc52036aa018094c050b7d029746c1c8e463f8cdc645b6ad5942228ee9f3923&o=",
-            "order": 30,
-            "__typename": "TripTypeDestination",
-            "formattedPrice": null,
-            "destType": "CITY",
-            "title": "Anchorage"
-        }
-    ],
-    "nbChildren": 0,
-    "subtitle": "Pick a vibe and explore the top destinations in the United States",
-    "checkout": "2023-04-22",
-    "checkin": "2023-04-21"
-},getslove:{
-  "landingOptions": {
-      "nbAdults": 2,
-      "checkin": "2023-04-20",
-      "destType": "CITY",
-      "nbRooms": 0,
-      "selectedFilters": "review_score=50",
-      "childrenAges": [],
-      "destId": -510625,
-      "nbChildren": 0,
-      "checkout": "2023-04-21",
-      "sorter": null,
-      "__typename": "LandingOptions",
-      "page": "SEARCH_RESULTS_PAGE",
-      "travelPurpose": 0
+    subtitle: null,
+    title: null,
   },
-  "__typename": "AcidCarouselOutput",
-  "hasAvailability": true,
-  "acidCards": [
-      {
-          "priceDisplayInfo": {
-              "__typename": "PriceDisplayInfo",
-              "displayPrice": {
-                  "__typename": "PriceDisplayAggregated",
-                  "amountPerStay": {
-                      "amountRounded": "₹ 11,914",
-                      "__typename": "PriceDisplay"
-                  }
-              }
-          },
-          "districtName": "Old Town",
-          "basicPropertyData": {
-              "pageName": "aparthotel",
-              "id": 260295,
-              "reviews": {
-                  "reviewsCount": 2145,
-                  "__typename": "Reviews",
-                  "totalScore": 8.6
-              },
-              "__typename": "BasicPropertyData",
-              "name": "Aparthotel Stare Miasto",
-              "location": {
-                  "city": "Kraków",
-                  "countryCode": "pl",
-                  "country": "Poland",
-                  "__typename": "Location"
-              },
-              "photos": {
-                  "main": {
-                      "lowResJpegUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square200/13125860.jpg?k=b5f4783a8a6ecf84738e080755acfebf943253d71f4458fbe2510a356cf3d8c8&o=",
-                          "__typename": "PhotoResource"
-                      },
-                      "highResUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square600/13125860.webp?k=e148feeb802ac3d28d1391dad9e4cf1e12d9231f897d0b53ca067bde8a9d3355&o=&s=1"
-                      },
-                      "__typename": "Photo"
-                  },
-                  "__typename": "PropertyPhotos"
-              }
-          },
-          "__typename": "AcidCardOutput",
-          "landingOptions": null
-      },
-      {
-          "__typename": "AcidCardOutput",
-          "landingOptions": null,
-          "districtName": "06. Terézváros",
-          "basicPropertyData": {
-              "__typename": "BasicPropertyData",
-              "id": 78365,
-              "pageName": "7seasons-apartments-budapest",
-              "reviews": {
-                  "__typename": "Reviews",
-                  "reviewsCount": 7625,
-                  "totalScore": 8.8
-              },
-              "photos": {
-                  "__typename": "PropertyPhotos",
-                  "main": {
-                      "__typename": "Photo",
-                      "lowResJpegUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square200/87428762.jpg?k=3f7ea7636b2689409ba55ce84f1b3c8921054cbeaebc747a517f1b2caead7a31&o=",
-                          "__typename": "PhotoResource"
-                      },
-                      "highResUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square600/87428762.webp?k=9a065fcd92168145d8c8358701662c76793535597b678efc8f6921c8e3c188e6&o=&s=1",
-                          "__typename": "PhotoResource"
-                      }
-                  }
-              },
-              "location": {
-                  "__typename": "Location",
-                  "country": "Hungary",
-                  "countryCode": "hu",
-                  "city": "Budapest"
-              },
-              "name": "7Seasons Apartments Budapest"
-          },
-          "priceDisplayInfo": {
-              "displayPrice": {
-                  "__typename": "PriceDisplayAggregated",
-                  "amountPerStay": {
-                      "amountRounded": "₹ 10,393",
-                      "__typename": "PriceDisplay"
-                  }
-              },
-              "__typename": "PriceDisplayInfo"
-          }
-      },
-      {
-          "districtName": "Split City Centre",
-          "basicPropertyData": {
-              "__typename": "BasicPropertyData",
-              "pageName": "villa-domina",
-              "id": 539886,
-              "reviews": {
-                  "__typename": "Reviews",
-                  "reviewsCount": 1088,
-                  "totalScore": 9.4
-              },
-              "photos": {
-                  "main": {
-                      "__typename": "Photo",
-                      "highResUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square600/44146554.webp?k=bc461f3aff9a66c15ddae3b3a7e10a44f6aea550cb89ce292cec7ca0b4ccecdb&o=&s=1"
-                      },
-                      "lowResJpegUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square200/44146554.jpg?k=c418ab13d5c0ad2402cb939d157a20953f233ffbba42753b0f00c4195626a1c1&o="
-                      }
-                  },
-                  "__typename": "PropertyPhotos"
-              },
-              "name": "Villa Domina",
-              "location": {
-                  "countryCode": "hr",
-                  "city": "Split",
-                  "__typename": "Location",
-                  "country": "Croatia"
-              }
-          },
-          "priceDisplayInfo": {
-              "displayPrice": {
-                  "__typename": "PriceDisplayAggregated",
-                  "amountPerStay": {
-                      "__typename": "PriceDisplay",
-                      "amountRounded": "₹ 5,306"
-                  }
-              },
-              "__typename": "PriceDisplayInfo"
-          },
-          "__typename": "AcidCardOutput",
-          "landingOptions": null
-      },
-      {
-          "__typename": "AcidCardOutput",
-          "landingOptions": null,
-          "districtName": "Centro",
-          "priceDisplayInfo": {
-              "__typename": "PriceDisplayInfo",
-              "displayPrice": {
-                  "__typename": "PriceDisplayAggregated",
-                  "amountPerStay": {
-                      "amountRounded": "₹ 12,494",
-                      "__typename": "PriceDisplay"
-                  }
-              }
-          },
-          "basicPropertyData": {
-              "name": "Oriente Palace Apartments",
-              "location": {
-                  "__typename": "Location",
-                  "country": "Spain",
-                  "city": "Madrid",
-                  "countryCode": "es"
-              },
-              "photos": {
-                  "__typename": "PropertyPhotos",
-                  "main": {
-                      "highResUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square600/95058973.webp?k=979587fd2ac8f7777a34758264d557eef57d0e98e58bdaeb121f5b968a20f810&o=&s=1"
-                      },
-                      "lowResJpegUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square200/95058973.jpg?k=a061dc2474962409577f55cce44e8bf56df849294da0e1244965e2351ec6683d&o="
-                      },
-                      "__typename": "Photo"
-                  }
-              },
-              "pageName": "oriente-palace-apartments",
-              "id": 2182677,
-              "reviews": {
-                  "totalScore": 8.9,
-                  "reviewsCount": 2666,
-                  "__typename": "Reviews"
-              },
-              "__typename": "BasicPropertyData"
-          }
-      },
-      {
-          "priceDisplayInfo": {
-              "displayPrice": {
-                  "amountPerStay": {
-                      "__typename": "PriceDisplay",
-                      "amountRounded": "₹ 25,228"
-                  },
-                  "__typename": "PriceDisplayAggregated"
-              },
-              "__typename": "PriceDisplayInfo"
-          },
-          "districtName": "Fortezza da Basso",
-          "basicPropertyData": {
-              "location": {
-                  "countryCode": "it",
-                  "city": "Florence",
-                  "country": "Italy",
-                  "__typename": "Location"
-              },
-              "name": "numa I Vita Apartments",
-              "photos": {
-                  "__typename": "PropertyPhotos",
-                  "main": {
-                      "lowResJpegUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square200/352170812.jpg?k=5c14d09931322b1c9414849e1b736fe36dcea264ee5bdaf008fb7b8fcc74ce64&o=",
-                          "__typename": "PhotoResource"
-                      },
-                      "highResUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square600/352170812.webp?k=75ffc5f9eb3f3cc394b901714c1544757b05849dbbdf30e4fc8c6df53931c131&o=&s=1",
-                          "__typename": "PhotoResource"
-                      },
-                      "__typename": "Photo"
-                  }
-              },
-              "pageName": "m7-contemporary-apartments-my-extra-home",
-              "id": 2132601,
-              "reviews": {
-                  "__typename": "Reviews",
-                  "reviewsCount": 1000,
-                  "totalScore": 9.3
-              },
-              "__typename": "BasicPropertyData"
-          },
-          "__typename": "AcidCardOutput",
-          "landingOptions": null
-      },
-      {
-          "priceDisplayInfo": {
-              "displayPrice": {
-                  "__typename": "PriceDisplayAggregated",
-                  "amountPerStay": {
-                      "__typename": "PriceDisplay",
-                      "amountRounded": "₹ 64,233"
-                  }
-              },
-              "__typename": "PriceDisplayInfo"
-          },
-          "districtName": "City of London",
-          "basicPropertyData": {
-              "pageName": "cheval-three-quays",
-              "id": 785838,
-              "reviews": {
-                  "totalScore": 9.5,
-                  "reviewsCount": 565,
-                  "__typename": "Reviews"
-              },
-              "__typename": "BasicPropertyData",
-              "name": "Cheval Three Quays at The Tower of London",
-              "location": {
-                  "__typename": "Location",
-                  "country": "United Kingdom",
-                  "city": "London",
-                  "countryCode": "gb"
-              },
-              "photos": {
-                  "main": {
-                      "__typename": "Photo",
-                      "lowResJpegUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square200/29466558.jpg?k=b374e34682efcde472aaebbeb8a8507c1b93d3e380c1b33cbcb708026e36afd3&o=",
-                          "__typename": "PhotoResource"
-                      },
-                      "highResUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square600/29466558.webp?k=fa323cf3e030ae6b41c8b475fe2853ae4e9e38148501d68dd5b915905dcea664&o=&s=1"
-                      }
-                  },
-                  "__typename": "PropertyPhotos"
-              }
-          },
-          "__typename": "AcidCardOutput",
-          "landingOptions": null
-      },
-      {
-          "__typename": "AcidCardOutput",
-          "landingOptions": null,
-          "priceDisplayInfo": {
-              "displayPrice": {
-                  "amountPerStay": {
-                      "amountRounded": "₹ 24,283",
-                      "__typename": "PriceDisplay"
-                  },
-                  "__typename": "PriceDisplayAggregated"
-              },
-              "__typename": "PriceDisplayInfo"
-          },
-          "districtName": "Sant Martí",
-          "basicPropertyData": {
-              "__typename": "BasicPropertyData",
-              "reviews": {
-                  "__typename": "Reviews",
-                  "reviewsCount": 373,
-                  "totalScore": 8.6
-              },
-              "id": 283745,
-              "pageName": "mar-bella-apartments",
-              "photos": {
-                  "main": {
-                      "__typename": "Photo",
-                      "lowResJpegUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square200/287103884.jpg?k=a08eede6935f718431632c93ffa92188c0a6697f90380e506475f5818d9402f7&o="
-                      },
-                      "highResUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square600/287103884.webp?k=1dda225f7472470d2e8524c258089c089c106e4dee40e93bf7d1ef9e4638720e&o=&s=1"
-                      }
-                  },
-                  "__typename": "PropertyPhotos"
-              },
-              "name": "RAMBLA BEACH Barcelonastuff Apartments",
-              "location": {
-                  "countryCode": "es",
-                  "city": "Barcelona",
-                  "__typename": "Location",
-                  "country": "Spain"
-              }
-          }
-      },
-      {
-          "landingOptions": null,
-          "__typename": "AcidCardOutput",
-          "districtName": "Kensington and Chelsea",
-          "basicPropertyData": {
-              "location": {
-                  "countryCode": "gb",
-                  "city": "London",
-                  "__typename": "Location",
-                  "country": "United Kingdom"
-              },
-              "name": "The Apartments by The Sloane Club",
-              "photos": {
-                  "main": {
-                      "highResUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square600/420377357.webp?k=73f8c029827076805ee781cdf818bb5e5e9b963227d74e4ebe071f3564ae4423&o=&s=1"
-                      },
-                      "lowResJpegUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square200/420377357.jpg?k=ce3ac93f628f46dc3747fb173abbb72a9625ffd892ddd21ab2a443151d698672&o=",
-                          "__typename": "PhotoResource"
-                      },
-                      "__typename": "Photo"
-                  },
-                  "__typename": "PropertyPhotos"
-              },
-              "reviews": {
-                  "__typename": "Reviews",
-                  "reviewsCount": 132,
-                  "totalScore": 9
-              },
-              "pageName": "the-apartments-by-the-sloane-club",
-              "id": 1129506,
-              "__typename": "BasicPropertyData"
-          },
-          "priceDisplayInfo": {
-              "__typename": "PriceDisplayInfo",
-              "displayPrice": {
-                  "__typename": "PriceDisplayAggregated",
-                  "amountPerStay": {
-                      "amountRounded": "₹ 56,953",
-                      "__typename": "PriceDisplay"
-                  }
-              }
-          }
-      },
-      {
-          "districtName": "Prague 1",
-          "priceDisplayInfo": {
-              "displayPrice": {
-                  "__typename": "PriceDisplayAggregated",
-                  "amountPerStay": {
-                      "amountRounded": "₹ 8,027",
-                      "__typename": "PriceDisplay"
-                  }
-              },
-              "__typename": "PriceDisplayInfo"
-          },
-          "basicPropertyData": {
-              "reviews": {
-                  "__typename": "Reviews",
-                  "reviewsCount": 413,
-                  "totalScore": 8.7
-              },
-              "pageName": "royal-boutique-residence",
-              "id": 381352,
-              "__typename": "BasicPropertyData",
-              "name": "3 Epoques Apartments by Prague Residences",
-              "location": {
-                  "country": "Czech Republic",
-                  "__typename": "Location",
-                  "countryCode": "cz",
-                  "city": "Praha 1"
-              },
-              "photos": {
-                  "main": {
-                      "__typename": "Photo",
-                      "highResUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square600/421852968.webp?k=f3889222c82f4a8e3783dddb5f1cc04d6140eeb2d5cb8297817a15aacfe4d191&o=&s=1",
-                          "__typename": "PhotoResource"
-                      },
-                      "lowResJpegUrl": {
-                          "__typename": "PhotoResource",
-                          "relativeUrl": "/xdata/images/hotel/square200/421852968.jpg?k=2b11c50ea80ba1b145e4508a7dabdec6ae4ba041cd3f3e43c4a5f49a059109c6&o="
-                      }
-                  },
-                  "__typename": "PropertyPhotos"
-              }
-          },
-          "__typename": "AcidCardOutput",
-          "landingOptions": null
-      },
-      {
-          "__typename": "AcidCardOutput",
-          "landingOptions": null,
-          "priceDisplayInfo": {
-              "__typename": "PriceDisplayInfo",
-              "displayPrice": {
-                  "__typename": "PriceDisplayAggregated",
-                  "amountPerStay": {
-                      "__typename": "PriceDisplay",
-                      "amountRounded": "₹ 34,536"
-                  }
-              }
-          },
-          "districtName": "Santa Maria Maior",
-          "basicPropertyData": {
-              "photos": {
-                  "main": {
-                      "highResUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square600/438349362.webp?k=839ea9b903c6e84a280ab906746e62f0b3079c922803f2cc757ae6880ae4a93a&o=&s=1",
-                          "__typename": "PhotoResource"
-                      },
-                      "lowResJpegUrl": {
-                          "relativeUrl": "/xdata/images/hotel/square200/438349362.jpg?k=945831cd5b475fda1a5db4ba027d78a3a3f93b40e432678baf576eaae613e0fb&o=",
-                          "__typename": "PhotoResource"
-                      },
-                      "__typename": "Photo"
-                  },
-                  "__typename": "PropertyPhotos"
-              },
-              "name": "Casa Portuguesa Prata",
-              "location": {
-                  "countryCode": "pt",
-                  "city": "Lisboa",
-                  "__typename": "Location",
-                  "country": "Portugal"
-              },
-              "__typename": "BasicPropertyData",
-              "reviews": {
-                  "totalScore": 8,
-                  "__typename": "Reviews",
-                  "reviewsCount": 45
-              },
-              "id": 1794417,
-              "pageName": "casa-portuguesa-prata"
-          }
-      }
-  ],
-  "subtitle": null,
-  "title": null
-}
 };
