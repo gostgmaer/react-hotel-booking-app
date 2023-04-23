@@ -63,9 +63,9 @@ export const SidebarTopElement = (second) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  useEffect(() => {
-    console.log(date);
-  }, [date]);
+  // useEffect(() => {
+  //   console.log(date);
+  // }, [date]);
 
   const handleDateChange = (item) => {
     setDate([item.selection]);
@@ -84,7 +84,7 @@ export const SidebarTopElement = (second) => {
       date: date,
       option: options,
     };
-    console.log(obj);
+    // console.log(obj);
     navigation.push("/search/searchelements");
   };
   return (

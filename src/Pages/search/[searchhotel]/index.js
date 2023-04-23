@@ -10,7 +10,7 @@ import Sidebar from "@/Components/serachhotel/sidebar/Sidebar";
 
 
 const index = () => {
-   console.log(searchQueries.search.filters);
+  //  console.log(searchQueries.search.filters);
   return (
     <Layout>
       <Box className="hotelList  w-full px-20 text-gray-950  py-8 gap-10  relative flex items-start">

@@ -42,9 +42,9 @@ export const SearchHotels = (second) => {
       key: "selection",
     },
   ]);
-  useEffect(() => {
-    console.log(date);
-  }, [date]);
+  // useEffect(() => {
+  //   console.log(date);
+  // }, [date]);
 
   const handleDateChange = (item) => {
     setDate([item.selection]);

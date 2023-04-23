@@ -17,7 +17,7 @@ const MyComponent = () => {
     "coins/markets",
     param
   );
-  console.log(data, error, isLoading, isValidating);
+  // console.log(data, error, isLoading, isValidating);
   mutate(param);
 
   if (isLoading) return <div>Error fetching data</div>;

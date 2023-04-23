@@ -10,7 +10,7 @@ const List = () => {
 
   useEffect(() => {
     setHeaderPage(null);
-    console.log(hotelList);
+    // console.log(hotelList);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

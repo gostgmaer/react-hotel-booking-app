@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 
 const Propertycard = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <Card
       sx={{ maxWidth: 345 }}
