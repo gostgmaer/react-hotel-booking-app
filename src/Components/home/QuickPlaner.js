@@ -16,13 +16,13 @@ import SimplePropertycard, { QuickPlanCard } from "../Elements/Simplecard";
 
 const Quickplaner = () => {
   const [value, setValue] = useState(null);
-  console.log(response);
+  // console.log(response);
   useEffect(() => {
     setValue(response.bydestination.destinations);
   }, []);
 
   const handleClick = (e) => {
-    console.log(e.target.value);
+   
     const neval = response.bydestination.destinations?.filter((item) => item.destType === e.target.value);
     setValue(neval);
     setTimeout(() => {

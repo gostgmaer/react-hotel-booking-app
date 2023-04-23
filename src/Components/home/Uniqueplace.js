@@ -17,7 +17,7 @@ import CardwithDeatils from "../Elements/CardwithDetails";
 
 const Uniqueplaces = () => {
   const [value, setValue] = useState(null);
-  console.log(response);
+  // console.log(response);
 
   return (
     <Box>

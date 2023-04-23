@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;500;600;700;800;900&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,6 +17,9 @@
   }
 }
 
+* {
+  font-family: "Noto Sans", sans-serif !important;
+}
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -26,6 +30,6 @@
     rgb(var(--background-start-rgb));
 } */
 
-.rdrMonth{
+.rdrMonth {
   width: 100% !important;
 }

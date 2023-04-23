@@ -17,9 +17,9 @@ import { SimpleBigcard } from "../Elements/Simplecard";
 const Propertytype = () => {
   const [value, setValue] = useState(null);
  
-  useEffect(() => {
-    console.log(value);
-  }, [value]);
+  // useEffect(() => {
+  //   // console.log(value);
+  // }, [value]);
   return (
     <Box>
       <Stack className="flex flex-col gap-1 my-2">

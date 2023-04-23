@@ -92,7 +92,7 @@ export const SimpleBigcard = ({ data }) => {
 export const UniquePlaceCard = ({ data }) => {
   //const imgUrl = data.imageUrl.replace("<SIZE>", "300x240");
 
-  console.log(data);
+  // console.log(data);
   return (
     <Card
       sx={{ maxWidth: 345 }}

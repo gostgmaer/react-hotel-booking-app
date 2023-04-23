@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const PropertyData = ({ data,isprice }) => {
-    console.log(data);
+    // console.log(data);
   return (
     <Box marginTop={'10px'} mb={'5px'} className="PropertyData">
       <Swiper
