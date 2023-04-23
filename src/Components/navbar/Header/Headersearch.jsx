@@ -63,7 +63,7 @@ export const SearchHotels = (second) => {
       date: date,
       option: options,
     };
-    console.log(obj);
+    // console.log(obj);
     navigation.push("/search/searchelements");
   };
   return (

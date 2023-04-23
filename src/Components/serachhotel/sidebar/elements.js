@@ -16,7 +16,9 @@ import { filterData } from "@/assets/Mock/filter";
 export const PopularFilter = ({ data }) => {
   return (
     <Stack className="border p-2">
-      <Typography>Popular filters</Typography>
+      <Typography className=" text-md font-semibold">
+        Popular filters
+      </Typography>
       <FormControl sx={{}} component="fieldset" variant="standard">
         {/* <FormLabel component="legend">Assign responsibility</FormLabel> */}
         <FormGroup>
@@ -32,7 +34,7 @@ export const PopularFilter = ({ data }) => {
                   }
                 />
               }
-              label=<Typography className=" w-full flex text-sm  items-center justify-between">
+              label=<Typography className=" w-full flex text-sm font-thin items-center justify-between">
                 {item.value.text
                   ? item.value.text
                   : item.value.translationTag.translation}
@@ -49,7 +51,7 @@ export const PopularFilter = ({ data }) => {
 export const Sustainability = ({ data }) => {
   return (
     <Stack className="border p-2">
-      <Typography>Sustainability</Typography>
+      <Typography className=" text-md font-semibold">Sustainability</Typography>
       <FormControl sx={{}} component="fieldset" variant="standard">
         {/* <FormLabel component="legend">Assign responsibility</FormLabel> */}
         <FormGroup>
@@ -632,6 +634,17 @@ export const ShowMap = ({ data }) => {
           src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
         ></iframe>
       </div>
+    </Stack>
+  );
+};
+
+export const Setprice = (second) => {
+  const label = { inputProps: { "aria-label": "Switch demo" } };
+  return (
+    <Stack  className="border p-2">
+      <Typography>Your budget (per night)</Typography>
+      <Switch {...label} defaultChecked />
+      <LinearProgress variant="determinate" value={50} />
     </Stack>
   );
 };

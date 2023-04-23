@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React, { useEffect } from "react";
 import { hotelList } from "../../assets/Mock/bookingAll";
-import Hotelsfeatures from "../../Components/HotelsFeatures/Hotelsfeatures";
+import Hotelsfeatures from "../Elements/Hotelsfeatures";
 import { useGlobalAppContext } from "../../Context/useContext";
 import HotelSearchSidebar from "./hotelSearchSidebar";
 import './hotellist.scss'
