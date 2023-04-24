@@ -7,6 +7,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import Image from "next/image";
 
 
 const SimplePropertycard = ({ data }) => {
@@ -50,10 +51,12 @@ export const QuickPlanCard = ({ data }) => {
 
   return (
     <Stack>
-      <img
+      <Image
         className=" h-32 object-cover w-full mb-2"
         src={`${baseImageUrl}${imgUrl}`}
         alt={data.title}
+        height={100}
+        width={100}
       />
       <Box>
         {" "}
