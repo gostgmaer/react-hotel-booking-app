@@ -4,7 +4,6 @@ import { ShowMap } from "../../sidebar/elements";
 import { searchQueries } from "@/assets/Mock/searchproperty";
 
 const Contenttop = () => {
- 
   const [sort, setSort] = useState("popularity");
   return (
     <Box className=" flex justify-between items-start">
@@ -18,7 +17,8 @@ const Contenttop = () => {
             id="demo-simple-select"
             size="small"
             placeholder="Selct a sort"
-            className=" w-68 rounded-full"
+            className=" w-68 rounded-full text-blue-600"
+            startAdornment={<Typography width={90}>Sort by:</Typography>}
           >
             {searchQueries.search.sorters.map((item) => (
               <MenuItem

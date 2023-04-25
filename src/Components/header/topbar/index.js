@@ -39,7 +39,7 @@ const Topbar = () => {
           </Link>
           <Link
             className=" px-2 py-1 rounded font-semibold bg-gray-50 hover:bg-slate-200 hover:text-blue-900 text-blue-900"
-            href={"/"}
+            href={"/auth/login"}
           >
             Sign in
           </Link>

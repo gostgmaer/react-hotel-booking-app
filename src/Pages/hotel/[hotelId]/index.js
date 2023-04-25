@@ -1,7 +1,12 @@
-import React from 'react'
+import Layout from "@/layout"
+import { Box } from "@mui/material"
 
-export const index = () => {
+const Index = () => {
   return (
-    <div>index</div>
+    <Layout>
+      <Box></Box>
+    </Layout>
   )
 }
+
+export default Index
