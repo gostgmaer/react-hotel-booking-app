@@ -2,15 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    remotePatterns: [ 
+    remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'cf.bstatic.com',
-        port: '',
-        pathname: '/xdata/',
+        protocol: "https",
+        hostname: "**.bstatic.com",
       },
     ],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

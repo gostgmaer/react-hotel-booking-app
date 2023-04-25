@@ -9,7 +9,7 @@ const Rightcontent = () => {
   return (
     <Box>
       <Contenttop />
-      <Box className=" flex flex-col gap-3 mt-5">
+      <Box className=" flex flex-col gap-4 mt-5">
         {searchQueries.search.results.slice(0, 32).map((hotel) => (
           <Hotelsfeatures data={hotel} key={hotel.__typename}></Hotelsfeatures>
         ))}

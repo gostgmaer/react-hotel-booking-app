@@ -303,7 +303,7 @@ export const SidebarTopElement = (second) => {
           </div>
         )}
       </Stack>
-      <FormControl className="flex-row w-full justify-between">
+      <FormControl className="flex-row w-full items-center justify-between">
         <FormControlLabel
           sx={{
             "&> .MuiFormControlLabel-label": {
@@ -311,29 +311,25 @@ export const SidebarTopElement = (second) => {
             },
           }}
           className="!text-xs "
-          control={<Checkbox />}
+          control={<Checkbox size="small" />}
           label="Entire houses & apartments"
         />
         <Tooltip title="Add" arrow>
-          <IconButton>
-            <HelpOutline />
-          </IconButton>
+          <HelpOutline />
         </Tooltip>
       </FormControl>
-      <FormControl className="flex-row w-full justify-between">
+      <FormControl className="flex-row w-full items-center justify-between">
         <FormControlLabel
           sx={{
             "&> .MuiFormControlLabel-label": {
               fontSize: "12px",
             },
           }}
-          control={<Checkbox className=""  />}
+          control={<Checkbox size="small" className="" />}
           label="I'm travelling for work"
         />
         <Tooltip title="Add" arrow>
-          <IconButton>
-            <HelpOutline />
-          </IconButton>
+          <HelpOutline />
         </Tooltip>
       </FormControl>
 

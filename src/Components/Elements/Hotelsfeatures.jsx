@@ -21,14 +21,19 @@ const Hotelsfeatures = ({ data }) => {
   return (
     <Box className=" flex gap-3 w-full items-start">
       <Box className="left flex-1/2 relative">
-        <img
-          className=" w-56"
-          src={
-            baseImageUrl +
-            data.basicPropertyData.photos.main.highResUrl.relativeUrl
-          }
-          alt=""
-        />
+        <Link
+          href={`/hotel/${data.basicPropertyData.pageName}`}
+          className="text-sm flex flex-col items-start gap-0 font-semibold text-blue-600"
+        >
+          <img
+            className=" w-56"
+            src={
+              baseImageUrl +
+              data.basicPropertyData.photos.main.highResUrl.relativeUrl
+            }
+            alt=""
+          />
+        </Link>
         <Stack className=" absolute top-0 right-5">
           <IconButton>
             <Favorite></Favorite>
@@ -46,7 +51,7 @@ const Hotelsfeatures = ({ data }) => {
             <div className="title flex-1 flex gap-1 items-center">
               <Link
                 href={`/hotel/${data.basicPropertyData.pageName}`}
-                className="text-sm flex flex-col items-start gap-0 font-semibold text-black"
+                className="text-sm flex flex-col items-start gap-0 font-semibold text-blue-600"
               >
                 {data.displayName.text}
                 <Rating
@@ -105,13 +110,16 @@ const Hotelsfeatures = ({ data }) => {
         </Box>
         <Box className="buttom flex justify-between">
           <div className="bottomLeft text-xs flex flex-col items-start gap-1">
-            <div style={{ padding: "5px" }} className="bottomleftbed">
+            <div
+              style={{ padding: "5px" }}
+              className="bottomleftbed flex gap-2"
+            >
               <span style={{ fontWeight: "bold" }}>
                 Towers Exclusive, Guest room, 1 Queen
               </span>
               <span>1 double bed</span>
             </div>
-            <div className="bottomleftfeature flex flex-col items-start gap-0 font-medium text-green-700">
+            <div className="bottomleftfeature pl-2 border-l-2 ml-3 flex flex-col items-start gap-0 font-medium text-green-700">
               <p>Breakfast included</p>
               <p className=" flex  gap-1 items-center font-semibold">
                 <span>FREE cancellation </span> •
@@ -128,7 +136,6 @@ const Hotelsfeatures = ({ data }) => {
               <span>2 night</span>, <span>2 adult</span>
             </p>
             <span className="price text-xl font-semibold">
-              {" "}
               {data.priceDisplayInfo.displayPrice.amountPerStay.amountRounded}
             </span>
             <span className="text-xs  text-gray-500 ">
@@ -136,7 +143,7 @@ const Hotelsfeatures = ({ data }) => {
             </span>
             <Link
               href={`/hotel/${data.basicPropertyData.pageName}`}
-              className=" bg-blue-900 text-white p-2 rounded font-normal capitalize"
+              className=" bg-blue-900 text-white py-1 px-2 rounded font-normal capitalize"
             >
               See avaliabality <KeyboardArrowRight />
             </Link>
