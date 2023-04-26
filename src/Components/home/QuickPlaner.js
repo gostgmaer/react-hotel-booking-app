@@ -50,6 +50,7 @@ const Quickplaner = () => {
           {response.bydestination.types.map((item) => (
             <FormControlLabel
               value={item.id}
+              key={item.id}
               sx={{
                 "&.MuiFormControlLabel-root:has(span.Mui-checked)": {
                   backgroundColor: colors.blue[50],

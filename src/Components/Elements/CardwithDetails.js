@@ -23,24 +23,24 @@ const CardwithDeatils = ({ data }) => {
         className="text-sm flex flex-col items-start gap-0 font-semibold text-blue-600"
       >
         <Image
-          alt=""
+          alt= {data.basicPropertyData.name}
           src={
             baseImageUrl +
             data.basicPropertyData.photos.main.lowResJpegUrl.relativeUrl
           }
           height={220}
-          width={250}
+          width={300}
         />
       </Link>
 
       <CardContent className="flex flex-col gap-1 item-start p-0 bg-transparent mt-2">
-      <Link
-        href={`/hotel/${data.basicPropertyData.pageName}`}
-        className="text-sm flex flex-col items-start decoration-transparent gap-0 font-semibold text-blue-600"
-      >
-        {data.basicPropertyData.name}
-      </Link>
-     
+        <Link
+          href={`/hotel/${data.basicPropertyData.pageName}`}
+          className="text-sm flex flex-col items-start decoration-transparent gap-0 font-semibold text-blue-600"
+        >
+          {data.basicPropertyData.name}
+        </Link>
+
         <Typography variant="body2" color="text.secondary">
           {data.basicPropertyData.location.city},
           {data.basicPropertyData.location.country}

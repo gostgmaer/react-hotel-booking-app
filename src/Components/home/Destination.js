@@ -40,6 +40,7 @@ const Destination = () => {
           {response.bymonth.filters.map((item) => (
             <FormControlLabel
               value={item.month}
+              key={item.month}
               sx={{
                 "&.MuiFormControlLabel-root:has(span.Mui-checked)": {
                   backgroundColor: colors.blue[50],

@@ -22,7 +22,8 @@ const Contenttop = () => {
           >
             {searchQueries.search.sorters.map((item) => (
               <MenuItem
-                defaultValue={sort}
+                key={item.option.captionTranslationTag.translation}
+                // defaultValue={sort}
                 value={item.option.captionTranslationTag.translation}
               >
                 {item.option.captionTranslationTag.translation}
