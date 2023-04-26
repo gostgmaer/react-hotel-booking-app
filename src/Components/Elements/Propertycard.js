@@ -7,6 +7,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import Image from "next/image";
 
 const Propertycard = ({ data }) => {
   // console.log(data);
@@ -15,14 +16,23 @@ const Propertycard = ({ data }) => {
       sx={{ maxWidth: 345 }}
       className=" w-full bg-transparent shadow-none border-none"
     >
-      <CardMedia
+      <Image
+        alt={data.basicPropertyData.name}
+        src={
+          baseImageUrl +
+          data.basicPropertyData.photos.main.highResUrl.relativeUrl
+        }
+        height={220}
+        width={300}
+      />
+      {/* <CardMedia
         sx={{ height: 220 }}
         image={
           baseImageUrl +
           data.basicPropertyData.photos.main.highResUrl.relativeUrl
         }
         title="green iguana"
-      />
+      /> */}
       <CardContent className="flex flex-col pb-0 item-start !p-0 bg-transparent mt-2">
         <Typography gutterBottom className="font-bold text-md">
           {data.basicPropertyData.name}
@@ -30,7 +40,11 @@ const Propertycard = ({ data }) => {
         <Typography variant="body2" color="text.secondary" className=" text-xs">
           {data.basicPropertyData.districtName}
         </Typography>
-        <Typography variant="body2" className="text-xs flex items-center gap-2" color="text.secondary">
+        <Typography
+          variant="body2"
+          className="text-xs flex items-center gap-2"
+          color="text.secondary"
+        >
           Starting from
           <span>
             {data.priceDisplayInfo.displayPrice.amountPerStay.amountRounded}

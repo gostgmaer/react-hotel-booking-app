@@ -9,17 +9,19 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 
-
 const SimplePropertycard = ({ data }) => {
   const imgUrl = data.imageUrl.replace("<SIZE>", "300x240");
 
   return (
     <Stack className="gap-2">
-      <img
-        className=" h-32 object-cover w-full"
-        src={`${baseImageUrl}${imgUrl}`}
+      <Image
+        className="object-cover w-full"
         alt={data.title}
+        src={baseImageUrl + imgUrl}
+        height={220}
+        width={250}
       />
+
       <Typography className="font-semibold text-sm">{data.title}</Typography>
     </Stack>
   );
@@ -28,17 +30,23 @@ const SimplePropertycard = ({ data }) => {
 export default SimplePropertycard;
 
 export const ExploreCard = ({ data }) => {
-const imgUrl = data.image.url.replace("<SIZE>", "300x240");
+  const imgUrl = data.image.url.replace("<SIZE>", "300x240");
 
   return (
     <Stack>
-      <img
-        className=" h-32 object-cover w-full mb-2"
-         src={`${imgUrl}`}
+     <Image
+        className="h-32 object-cover w-full mb-2"
         alt={data.title}
+        src={imgUrl}
+        height={220}
+        width={250}
       />
-      <Box >
-       
+      {/* <img
+        className=" h-32 object-cover w-full mb-2"
+        src={`${imgUrl}`}
+        alt={data.title}
+      /> */}
+      <Box>
         <Typography className=" text-sm font-semibold">{data.title}</Typography>
         <Typography className="text-xs">{data.subtitle}</Typography>
       </Box>
@@ -74,18 +82,25 @@ export const SimpleBigcard = ({ data }) => {
       sx={{ maxWidth: 345 }}
       className=" w-full bg-transparent shadow-none border-none"
     >
-      <CardMedia
+     <Image
+        className="object-cover w-full"
+        alt={data.title}
+        src={data.image.url}
+        height={220}
+        width={250}
+      />
+      {/* <CardMedia
         sx={{ height: 200 }}
         image={data.image.url}
-        title= {data.title}
-      />
+        title={data.title}
+      /> */}
       <CardContent className="flex flex-col gap-1 item-start p-0 bg-transparent mt-2">
         <Typography gutterBottom className="font-bold text-md">
-         {data.title}
+          {data.title}
         </Typography>
 
         <Typography variant="body2" className="text-xs" color="text.secondary">
-       {data.subtitle}
+          {data.subtitle}
         </Typography>
       </CardContent>
     </Card>

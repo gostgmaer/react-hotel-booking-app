@@ -10,8 +10,8 @@ const Rightcontent = () => {
     <Box>
       <Contenttop />
       <Box className=" flex flex-col gap-4 mt-5">
-        {searchQueries.search.results.slice(0, 32).map((hotel) => (
-          <Hotelsfeatures data={hotel} key={hotel.__typename}></Hotelsfeatures>
+        {searchQueries.search.results.slice(0, 32).map((hotel,index) => (
+          <Hotelsfeatures data={hotel} key={index}></Hotelsfeatures>
         ))}
         <ListPagination />
       </Box>
