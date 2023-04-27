@@ -1,30 +1,23 @@
 import {
   BedOutlined,
   CalendarTodayOutlined,
-  LocationCity,
-  Minimize,
-  Person,
   Add,
   Remove,
-  CalendarViewDay,
+  PersonOutline,
 } from "@mui/icons-material";
 import {
   Box,
   Button,
   FormControl,
-  Grid,
   IconButton,
   OutlinedInput,
   Stack,
-  TextField,
-  Typography,
 } from "@mui/material";
 
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 
 import React, { Fragment, useEffect, useState } from "react";
-import { countries, top100Films } from "../../../assets/Mock/Data";
 import { DateRangePicker, DateRange } from "react-date-range";
 import { format } from "date-fns";
 import { useRouter } from "next/router";
@@ -42,10 +35,6 @@ export const SearchHotels = (second) => {
       key: "selection",
     },
   ]);
-  // useEffect(() => {
-  //   console.log(date);
-  // }, [date]);
-
   const handleDateChange = (item) => {
     setDate([item.selection]);
   };
@@ -104,7 +93,7 @@ export const SearchHotels = (second) => {
           <span
             onClick={() => setOpenDate(!openDate)}
             className="headerSearchtext"
-          >{`${format(date[0].startDate, "eee d MMM")}  ---  ${format(
+          >{`${format(date[0].startDate, "eee d MMM")}  --  ${format(
             date[0].endDate,
             "eee d MMM"
           )}`}</span>
@@ -124,73 +113,73 @@ export const SearchHotels = (second) => {
       </Stack>
       <Stack direction={"row"} position={"relative"} flex={1}>
         <Stack direction={"row"} gap={1}>
-          <Person></Person>
+          <PersonOutline></PersonOutline>
           <span
             onClick={() => setOpenOptions(!openOptions)}
-            className="headerSearchtext"
+            className="headerSearchtext capitalize"
           >{`adult ${options.adult} . children ${options.children} . room ${options.room}`}</span>
         </Stack>
 
         {openOptions && (
-          <div className="flex p-8 flex-col gap-2 rounded absolute top-8 right-0 left-0 w-full bg-white border text-cyan-950">
+          <div className="flex p-4 flex-col gap-2 rounded absolute top-8 right-0 left-0 w-full bg-white border text-cyan-950">
             <div className="optionItem flex justify-between items-center ">
               <span className="label">Adult</span>
-              <div className="counter border p-1">
+              <div className="counter border border-gray-400 p-0 flex items-center gap-1">
                 <IconButton
-                  className="minus "
+                  className="minus p-1 rounded-none "
                   disabled={options.adult <= 1}
                   onClick={() => handleOption("adult", "d")}
                 >
                   <Remove />
                 </IconButton>
-                <span className="value">{options.adult}</span>
+                <span className="value p-1">{options.adult}</span>
                 <IconButton
-                  className="plus"
+                  className="plus p-1 rounded-none"
                   onClick={() => handleOption("adult", "i")}
                 >
                   <Add />
                 </IconButton>
               </div>
             </div>
-            <div className="optionItem optionItem flex justify-between items-center p-2">
+            <div className="optionItem optionItem flex justify-between items-center">
               <span className="label">Children</span>
-              <div className="counter">
+              <div className="counter border border-gray-400 p-0 flex items-center gap-1">
                 <IconButton
-                  className="minus"
+                  className="minus p-1 rounded-none "
                   disabled={options.children <= 0}
                   onClick={() => handleOption("children", "d")}
                 >
                   <Remove />
                 </IconButton>
-                <span className="value">{options.children}</span>
+                <span className="value p-1">{options.children}</span>
                 <IconButton
-                  className="plus"
+                  className="plus p-1 rounded-none "
                   onClick={() => handleOption("children", "i")}
                 >
                   <Add />
                 </IconButton>
               </div>
             </div>
-            <div className="optionItem optionItem flex justify-between items-center p-2">
+            <div className="optionItem optionItem flex justify-between items-center">
               <span className="label">Room</span>
-              <div className="counter">
+              <div className="counter border border-gray-400 p-0 flex items-center gap-1">
                 <IconButton
-                  className="minus"
+                  className="minus p-1 rounded-none "
                   disabled={options.room <= 1}
                   onClick={() => handleOption("room", "d")}
                 >
                   <Remove />
                 </IconButton>
-                <span className="value">{options.room}</span>
+                <span className="value p-1">{options.room}</span>
                 <IconButton
-                  className="plus"
+                  className="plus p-1 rounded-none "
                   onClick={() => handleOption("room", "i")}
                 >
                   <Add />
                 </IconButton>
               </div>
             </div>
-            <div className="optionItem optionItem flex justify-center items-center p-2">
+            <div className="optionItem optionItem flex justify-center items-center">
               <Button
                 className="done w-full"
                 variant="outlined"

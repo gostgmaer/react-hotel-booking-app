@@ -1,10 +1,13 @@
+import ControlledAccordions from "@/Components/hoteldetails/top/Covidworn"
 import Layout from "@/layout"
 import { Box } from "@mui/material"
 
 const Index = () => {
   return (
     <Layout>
-      <Box></Box>
+      <Box>
+        <ControlledAccordions/>
+      </Box>
     </Layout>
   )
 }
