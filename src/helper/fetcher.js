@@ -11,6 +11,6 @@ export const useApi = (endpoint, params) => {
   const response = useSWR([url], fetcher, {
     revalidateOnMount: false,
     shouldRetryOnError: false,
-  });
+  }); 
   return response;
 };

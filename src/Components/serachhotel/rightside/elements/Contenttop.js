@@ -3,13 +3,15 @@ import React, { useState } from "react";
 import { ShowMap } from "../../sidebar/elements";
 import { searchQueries } from "@/assets/Mock/searchproperty";
 
+
 const Contenttop = () => {
   const [sort, setSort] = useState("popularity");
   return (
     <Box className=" flex justify-between items-start">
       <Box className="w-68 flex flex-col gap-2">
         <Typography className=" text-2xl font-semibold">
-          Kolkata: {483} properties
+
+          Kolkata: ({searchQueries.search.results.length}) properties
         </Typography>
         <FormControl fullWidth>
           <Select
