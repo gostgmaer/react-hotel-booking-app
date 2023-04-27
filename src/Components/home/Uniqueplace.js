@@ -26,7 +26,7 @@ const Uniqueplaces = () => {
         Stay at our top unique properties
         </Typography>
         <Typography className="text-sm opacity-80">
-        From castles and villas to boats and igloos, we've got it all
+        From castles and villas to boats and igloos, we have got it all
         </Typography>
       </Stack>
     

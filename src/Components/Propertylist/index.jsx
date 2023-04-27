@@ -1,4 +1,3 @@
-import { Image } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import React, { Fragment } from "react";
 import { Typography } from "@mui/material";
@@ -10,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Image from "next/image";
 const PropertyList = () => {
   return (
     <Fragment>
@@ -27,18 +27,19 @@ const PropertyList = () => {
         ))}
       </Box> */}
 
-      <Box marginTop={'10px'} mb={'5px'} className="PropertyList">
+      <Box marginTop={"10px"} mb={"5px"} className="PropertyList">
         <Swiper
           slidesPerView={5}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           navigation={true}
           modules={[Navigation, Pagination]}
-          className="mySwiper">
+          className="mySwiper"
+        >
           {propertyType.map((item) => (
             <SwiperSlide key={item.id}>
               <Box className="propertyItem">
-                <img style={{ width: "220px" }} src={item.image} alt="" />
+                <Image height={200} width={220} src={item.image} alt="image alt" />
                 <Typography variant="h5">{item.title}</Typography>
                 <Typography variant="body2">{item.description}</Typography>
               </Box>
