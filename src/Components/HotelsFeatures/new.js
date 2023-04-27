@@ -15,6 +15,7 @@ import {
 } from "@mui/icons-material";
 import { baseImageUrl } from "@/services/config";
 import Link from "next/link";
+import Image from "next/image";
 
 const Hotelsfeatures = ({ data }) => {
   console.log(data);
@@ -25,7 +26,9 @@ const Hotelsfeatures = ({ data }) => {
   >
     <Box className=" flex gap-3 w-full items-start">
       <Box className="left flex-1/2 relative">
-        <img
+        <Image
+        width={270}
+        height={220}
           className=" w-56"
           src={
             baseImageUrl +

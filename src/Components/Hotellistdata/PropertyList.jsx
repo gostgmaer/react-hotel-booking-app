@@ -1,4 +1,4 @@
-import { Image } from "@mui/icons-material";
+
 import { Box } from "@mui/material";
 import React, { Fragment } from "react";
 import { Typography } from "@mui/material";
@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Image from "next/image";
 
 const PropertyData = ({ data,isprice }) => {
     // console.log(data);
@@ -23,7 +24,7 @@ const PropertyData = ({ data,isprice }) => {
         {data.map((item) => (
           <SwiperSlide key={item.id}>
             <Box className="propertyItem">
-              <img style={{ width: "275px" }} src={item.main_photo_url} alt="" />
+              <Image height={220} width={275}  src={item.main_photo_url} alt="ioue" />
               <Box fontSize={"1rem !important"} display={"block"}>
                 <Typography variant="h5">{item.hotel_name}</Typography>
                 <Typography variant="body2">{item?.address?.substring(0,40)}</Typography>

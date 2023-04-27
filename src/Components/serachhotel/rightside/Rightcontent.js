@@ -5,15 +5,25 @@ import Hotelsfeatures from "@/Components/Elements/Hotelsfeatures";
 import { searchQueries } from "@/assets/Mock/searchproperty";
 import { useState } from "react";
 
+// console.log((searchQueries.search.results.length/32).toFixed(0));
 const Rightcontent = () => {
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(32);
   return (
     <Box>
       <Contenttop />
       <Box className=" flex flex-col gap-4 mt-5">
-        {searchQueries.search.results.slice(0, 32).map((hotel,index) => (
-          <Hotelsfeatures data={hotel} key={index}></Hotelsfeatures>
-        ))}
-        <ListPagination />
+        {searchQueries.search.results
+          .slice(page * rowsPerPage, (page + 1) * 32)
+          .map((hotel, index) => (
+            <Hotelsfeatures data={hotel} key={index}></Hotelsfeatures>
+          ))}
+        <ListPagination
+          setPage={setPage}
+          page={page}
+          rowsPerPage={rowsPerPage}
+          setRowsPerPage={setRowsPerPage}
+        />
       </Box>
     </Box>
   );
@@ -21,27 +31,26 @@ const Rightcontent = () => {
 
 export default Rightcontent;
 
-export function ListPagination() {
-  const [page, setPage] = useState(2);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
-
+export function ListPagination(props) {
+  console.log(props);
   const handleChangePage = (event, newPage) => {
-    setPage(newPage);
+    props.setPage(newPage);
   };
 
   const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
+    props.setRowsPerPage(parseInt(event.target.value, 32));
+    props.setPage(0);
   };
 
   return (
     <TablePagination
+      rowsPerPageOptions={[32, 64, 128]}
       component="div"
       count={searchQueries.search.results.length}
       className="w-full"
-      page={page}
+      page={props.page}
       onPageChange={handleChangePage}
-      rowsPerPage={rowsPerPage}
+      rowsPerPage={props.rowsPerPage}
       onRowsPerPageChange={handleChangeRowsPerPage}
     />
   );

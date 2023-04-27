@@ -27,7 +27,7 @@ const Emailform = () => {
           Save time, save money!
         </Typography>
         <Typography variant="h4" fontSize={14}>
-          Sign up and we'll send the best deals to you
+          Sign up and we ll send the best deals to you
         </Typography>
       </Box>
       <Box width={"40%"}>
