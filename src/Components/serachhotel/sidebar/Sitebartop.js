@@ -303,7 +303,7 @@ export const SidebarTopElement = (second) => {
           </div>
         )}
       </Stack>
-      <FormControl className="flex-row w-full items-center justify-between">
+      <FormControl className="!flex-row w-full !items-center !justify-between">
         <FormControlLabel
           sx={{
             "&> .MuiFormControlLabel-label": {
@@ -318,7 +318,7 @@ export const SidebarTopElement = (second) => {
           <HelpOutline />
         </Tooltip>
       </FormControl>
-      <FormControl className="flex-row w-full items-center justify-between">
+      <FormControl className="!flex-row w-full !items-center !justify-between">
         <FormControlLabel
           sx={{
             "&> .MuiFormControlLabel-label": {
