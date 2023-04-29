@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 
 import Layout from "@/layout";
 import Herosection from "@/Components/home/Herosection";
@@ -12,7 +10,6 @@ import Propertytype from "@/Components/home/Propertytype";
 import Quickplaner from "@/Components/home/QuickPlaner";
 import Uniqueplaces from "@/Components/home/Uniqueplace";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
