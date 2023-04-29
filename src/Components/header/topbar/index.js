@@ -16,15 +16,15 @@ const Topbar = () => {
       <Box>
         <Typography className="text-white">Logo</Typography>
       </Box>
-      <Box className=" text-gray-50 flex gap-2 items-center">
+      <Box className=" !text-gray-50 flex gap-2 items-center">
         <Box className="flex items-center gap-1">
-          <Button className=" text-white hover:opacity-80">INR</Button>
-          <Button className=" text-white hover:opacity-80">IN</Button>
-          <IconButton className=" text-white hover:opacity-80">
+          <Button className=" !text-white hover:opacity-80">INR</Button>
+          <Button className=" !text-white hover:opacity-80">IN</Button>
+          <IconButton className=" !text-white hover:opacity-80">
             <MdHelp />
           </IconButton>
           <Button
-            className=" text-white capitalize hover:opacity-80"
+            className=" !text-white capitalize hover:opacity-80"
             variant="text"
           >
             List your property

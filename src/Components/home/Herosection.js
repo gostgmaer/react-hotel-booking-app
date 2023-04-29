@@ -9,10 +9,10 @@ const Herosection = () => {
     <Box className=" w-full bg-blue-900 px-20 text-gray-50 flex flex-col py-8 gap-10 mb-10 relative">
       <Box>
         {" "}
-        <Typography variant="h2">Find your next stay</Typography>
-        <Typography variant="h4">
+        <h2 className="text-2xl">Find your next stay</h2>
+        <h4 className="text-xl">
           Search low prices on hotels, homes and much more...
-        </Typography>
+        </h4>
       </Box>
 
       <Box position={"relative"}>

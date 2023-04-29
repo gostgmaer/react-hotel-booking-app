@@ -16,14 +16,14 @@ const CardwithDeatils = ({ data }) => {
   return (
     <Card
       sx={{ maxWidth: 345 }}
-      className=" bg-transparent shadow-none border-none"
+      className=" bg-transparent !shadow-none !border-none"
     >
       <Link
         href={`/hotel/${data.basicPropertyData.pageName}`}
         className="text-sm flex flex-col items-start gap-0 font-semibold text-blue-600"
       >
         <Image
-          alt= {data.basicPropertyData.name}
+          alt={data.basicPropertyData.name}
           src={
             baseImageUrl +
             data.basicPropertyData.photos.main.lowResJpegUrl.relativeUrl
@@ -41,22 +41,18 @@ const CardwithDeatils = ({ data }) => {
           {data.basicPropertyData.name}
         </Link>
 
-        <Typography variant="body2" color="text.secondary">
+        <p>
           {data.basicPropertyData.location.city},
           {data.basicPropertyData.location.country}
-        </Typography>
+        </p>
 
-        <Typography
-          className=" flex gap-2 justify-start items-center"
-          variant="body2"
-          color="text.secondary"
-        >
+        <p className=" flex gap-2 justify-start items-center">
           <span className=" p-1 rounded bg-blue-950 text-white">
             {data.basicPropertyData.reviews.totalScore.toFixed(1)}
           </span>
           <span> {data.basicPropertyData.reviews.text}</span>
           <span> {data.basicPropertyData.reviews.reviewsCount} reviews</span>
-        </Typography>
+        </p>
       </CardContent>
     </Card>
   );
