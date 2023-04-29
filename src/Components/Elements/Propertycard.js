@@ -14,7 +14,7 @@ const Propertycard = ({ data }) => {
   return (
     <Card
       sx={{ maxWidth: 345 }}
-      className=" w-full bg-transparent shadow-none border-none"
+      className=" w-full !bg-transparent !shadow-none !border-none"
     >
       <Image
         alt={data.basicPropertyData.name}
@@ -25,24 +25,17 @@ const Propertycard = ({ data }) => {
         height={220}
         width={300}
       />
-      {/* <CardMedia
-        sx={{ height: 220 }}
-        image={
-          baseImageUrl +
-          data.basicPropertyData.photos.main.highResUrl.relativeUrl
-        }
-        title="green iguana"
-      /> */}
+     
       <CardContent className="flex flex-col pb-0 item-start !p-0 bg-transparent mt-2">
-        <Typography gutterBottom className="font-bold text-md">
+        <Typography gutterBottom className="!font-bold !text-sm">
           {data.basicPropertyData.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary" className=" text-xs">
+        <Typography variant="body2" color="text.secondary" className=" !text-xs">
           {data.basicPropertyData.districtName}
         </Typography>
         <Typography
           variant="body2"
-          className="text-xs flex items-center gap-2"
+          className="!text-xs flex items-center gap-2"
           color="text.secondary"
         >
           Starting from

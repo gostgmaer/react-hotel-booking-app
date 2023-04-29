@@ -10,14 +10,14 @@ const Perfectstay = () => {
   return (
     <Box width={"100%"} className="text-black m-0">
       <Stack className="flex flex-col gap-1 my-2">
-        <Typography className=" text-xl font-semibold">
+        <h3 className=" text-xl font-semibold">
           Looking for the perfect stay?
-        </Typography>
-        <Typography className="text-sm opacity-80">
+        </h3>
+        <p className="text-sm opacity-80">
           Travellers with similar searches booked these properties
-        </Typography>
+        </p>
       </Stack>
-      <Box className ="py-3"></Box>
+      <Box className="py-3"></Box>
       <Slider
         slide={4}
         Card={Propertycard}

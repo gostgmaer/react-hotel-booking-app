@@ -22,14 +22,14 @@ const Uniqueplaces = () => {
   return (
     <Box>
       <Stack className="flex flex-col gap-1 my-2">
-        <Typography className="text-xl font-semibold">
-        Stay at our top unique properties
-        </Typography>
-        <Typography className="text-sm opacity-80">
-        From castles and villas to boats and igloos, we have got it all
-        </Typography>
+        <h3 className="text-xl font-semibold">
+          Stay at our top unique properties
+        </h3>
+        <p className="text-sm opacity-80">
+          From castles and villas to boats and igloos, we have got it all
+        </p>
       </Stack>
-    
+
       <Box className="py-3">
         <Slider
           slide={4}

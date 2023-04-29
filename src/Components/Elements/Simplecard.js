@@ -22,7 +22,7 @@ const SimplePropertycard = ({ data }) => {
         width={250}
       />
 
-      <Typography className="font-semibold text-sm">{data.title}</Typography>
+      <p className="font-semibold text-sm">{data.title}</p>
     </Stack>
   );
 };
@@ -34,7 +34,7 @@ export const ExploreCard = ({ data }) => {
 
   return (
     <Stack>
-     <Image
+      <Image
         className="h-32 object-cover w-full mb-2"
         alt={data.title}
         src={imgUrl}
@@ -47,8 +47,8 @@ export const ExploreCard = ({ data }) => {
         alt={data.title}
       /> */}
       <Box>
-        <Typography className=" text-sm font-semibold">{data.title}</Typography>
-        <Typography className="text-xs">{data.subtitle}</Typography>
+        <p className=" text-sm font-semibold">{data.title}</p>
+        <p className="text-xs">{data.subtitle}</p>
       </Box>
     </Stack>
   );
@@ -80,9 +80,9 @@ export const SimpleBigcard = ({ data }) => {
   return (
     <Card
       sx={{ maxWidth: 345 }}
-      className=" w-full bg-transparent shadow-none border-none"
+      className=" w-full !bg-transparent !shadow-none !border-none"
     >
-     <Image
+      <Image
         className="object-cover w-full"
         alt={data.title}
         src={data.image.url}
@@ -95,13 +95,11 @@ export const SimpleBigcard = ({ data }) => {
         title={data.title}
       /> */}
       <CardContent className="flex flex-col gap-1 item-start p-0 bg-transparent mt-2">
-        <Typography gutterBottom className="font-bold text-md">
-          {data.title}
-        </Typography>
+        <p className="font-bold text-md">{data.title}</p>
 
-        <Typography variant="body2" className="text-xs" color="text.secondary">
+        <p className="text-xs" color="text.secondary">
           {data.subtitle}
-        </Typography>
+        </p>
       </CardContent>
     </Card>
   );

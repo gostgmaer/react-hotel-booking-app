@@ -23,7 +23,7 @@ const Propertytype = () => {
   return (
     <Box>
       <Stack className="flex flex-col gap-1 my-2">
-        <Typography className=" text-xl font-semibold ">Browse by property type</Typography>
+        <h3 className=" text-xl font-semibold ">Browse by property type</h3>
       </Stack>
 
       <Box className="py-3">

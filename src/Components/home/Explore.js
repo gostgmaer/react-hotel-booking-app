@@ -20,8 +20,8 @@ const Explore = () => {
   return (
     <Box>
       <Stack className="flex flex-col gap-1 my-2">
-        <Typography className=" text-xl font-semibold">Explore India</Typography>
-        <Typography className="text-sm opacity-80">These popular destinations have a lot to offer</Typography>
+        <h3 className=" text-xl font-semibold">Explore India</h3>
+        <p className="text-sm opacity-80">These popular destinations have a lot to offer</p>
       </Stack>
 
       <Box className="py-3">

@@ -23,12 +23,12 @@ const Destination = () => {
   return (
     <Box>
       <Stack className="flex flex-col gap-1 my-3">
-        <Typography className=" text-xl font-semibold">
+        <h3 className=" text-xl font-semibold">
           Popular destinations by month
-        </Typography>
-        <Typography className="text-sm opacity-80">
+        </h3>
+        <p className="text-sm opacity-80">
           Travellers from Virginia are loving these places
-        </Typography>
+        </p>
       </Stack>
       <Stack direction={"row"} className="headerlist gap-1 my-2 items-center">
         <RadioGroup
@@ -49,7 +49,7 @@ const Destination = () => {
                   color: "rgb(29 78 216 / var(--tw-text-opacity))",
                 },
               }}
-              control={<Radio size="small" className="hidden " />}
+              control={<Radio size="small" className="!hidden" />}
               label={item.text}
               className="bg-transparent hover:bg-gray-200 mx-2 hover:rounded-full ml-0  py-2 px-4 text-xs "
             />
