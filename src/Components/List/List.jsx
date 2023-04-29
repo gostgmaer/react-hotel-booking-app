@@ -6,10 +6,9 @@ import { useGlobalAppContext } from "../../Context/useContext";
 import HotelSearchSidebar from "./hotelSearchSidebar";
 import './hotellist.scss'
 const List = () => {
-  const { setHeaderPage } = useGlobalAppContext();
 
   useEffect(() => {
-    setHeaderPage(null);
+
     // console.log(hotelList);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -26,11 +25,7 @@ const List = () => {
       <Box  bgcolor={"#FEBB02"} className="leftSide" flex={1}>
         <HotelSearchSidebar />
       </Box>
-      <Box className="rightSide"  >
-        {hotelList.result.map((hotel) => (
-          <Hotelsfeatures key={hotel.id}></Hotelsfeatures>
-        ))}
-      </Box>
+     
     </Box>
   );
 };
